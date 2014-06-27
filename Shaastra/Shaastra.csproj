@@ -93,6 +93,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Lectures\lecturedetails.xaml.cs">
+      <DependentUpon>lecturedetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Lectures\lectures.xaml.cs">
       <DependentUpon>lectures.xaml</DependentUpon>
     </Compile>
@@ -112,6 +115,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Lectures\lecturedetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Lectures\lectures.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

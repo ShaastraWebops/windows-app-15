@@ -52,7 +52,7 @@
             <Image Source="Assets/hexagon_layout.png" Height="198" x:Name="MiddleImageBg"/>
 
             <!--Top-->
-            <Image x:Name="TopImage" Source="Assets/nameBoard/pic1x.png" Height="198" Margin="-1,68,1,399">
+            <Image x:Name="TopImage" Tap="TopImage_Tap" Source="Assets/nameBoard/pic1x.png" Height="198" Margin="-1,68,1,399">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <CompositeTransform x:Name="Top_c" TranslateY="0"/>

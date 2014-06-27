@@ -52,6 +52,15 @@ namespace Shaastra.Lectures
             set1.Start();
             set1.Tick += set1_Tick;
         }
+
+       
+        void navigator_Tick(object sender, EventArgs e)
+        {
+            string lecturername = "NoName";
+            (sender as DispatcherTimer).Stop();
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?lect=" + lecturername, UriKind.RelativeOrAbsolute));
+        }
+
         void set1_Tick(object sender, EventArgs e)
         {
             DispatcherTimer sub1 = new DispatcherTimer();
@@ -246,6 +255,26 @@ namespace Shaastra.Lectures
                 store12 = (BitmapImage)BottomImage.Source;
             }
             (sender as DispatcherTimer).Stop();
+        }
+
+        private void TopImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            Move_Up_Top.Begin();
+            Move_Down_Bottom.Begin();
+
+            Move_Left_Top_Left.BeginTime = new TimeSpan(0, 0, 0, 0, 250);
+            Move_Right_Bottom_Right.BeginTime = new TimeSpan(0, 0, 0, 0, 250);
+            Move_Left_Top_Left.Begin();
+            Move_Right_Bottom_Right.Begin();
+
+            Move_Up_Top_Right.BeginTime = new TimeSpan(0, 0, 0, 0, 500);
+            Move_Down_Bottom_Left.BeginTime = new TimeSpan(0, 0, 0, 0, 500);
+            Move_Up_Top_Right.Begin();
+            Move_Down_Bottom_Left.Begin();
+            DispatcherTimer navigator = new DispatcherTimer();
+            navigator.Interval = new TimeSpan(0, 0, 0, 0, 600);
+            navigator.Start();
+            navigator.Tick += navigator_Tick;
         }
     }
 }

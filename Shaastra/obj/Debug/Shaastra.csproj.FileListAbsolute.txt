@@ -38,3 +38,4 @@ C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.csp
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.pdb
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\XapCacheFile.xml
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Lectures\lecturedetails.g.cs
