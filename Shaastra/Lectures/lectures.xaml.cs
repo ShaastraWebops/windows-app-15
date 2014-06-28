@@ -9,6 +9,8 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Windows.Threading;
 using System.Windows.Media.Imaging;
+using System.Threading;
+using System.Windows.Media;
 
 namespace Shaastra.Lectures
 {
@@ -30,9 +32,13 @@ namespace Shaastra.Lectures
         BitmapImage store32 = new BitmapImage(new Uri(@"Assets/nameBoard/pic6x.png", UriKind.Relative));
 
         // Constructor
+        
         public lectures()
         {
             InitializeComponent();
+
+            //popup
+
             //TiltEffect.TiltableItems.Add(typeof(Image));        //Do something about tilting images
             //ApplicationBar appBar = new ApplicationBar();             //Leave it for now
             //appBar.IsMenuEnabled = false;
@@ -54,12 +60,6 @@ namespace Shaastra.Lectures
         }
 
        
-        void navigator_Tick(object sender, EventArgs e)
-        {
-            string lecturername = "NoName";
-            (sender as DispatcherTimer).Stop();
-            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?lect=" + lecturername, UriKind.RelativeOrAbsolute));
-        }
 
         void set1_Tick(object sender, EventArgs e)
         {
@@ -259,22 +259,9 @@ namespace Shaastra.Lectures
 
         private void TopImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            Move_Up_Top.Begin();
-            Move_Down_Bottom.Begin();
-
-            Move_Left_Top_Left.BeginTime = new TimeSpan(0, 0, 0, 0, 250);
-            Move_Right_Bottom_Right.BeginTime = new TimeSpan(0, 0, 0, 0, 250);
-            Move_Left_Top_Left.Begin();
-            Move_Right_Bottom_Right.Begin();
-
-            Move_Up_Top_Right.BeginTime = new TimeSpan(0, 0, 0, 0, 500);
-            Move_Down_Bottom_Left.BeginTime = new TimeSpan(0, 0, 0, 0, 500);
-            Move_Up_Top_Right.Begin();
-            Move_Down_Bottom_Left.Begin();
-            DispatcherTimer navigator = new DispatcherTimer();
-            navigator.Interval = new TimeSpan(0, 0, 0, 0, 600);
-            navigator.Start();
-            navigator.Tick += navigator_Tick;
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml", UriKind.Relative));
         }
+
+        
     }
 }
