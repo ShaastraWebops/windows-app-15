@@ -179,6 +179,7 @@
     <Content Include="Lectures\Assets\nameBoard\pic8x.png" />
     <Content Include="Lectures\Assets\nameBoard\pic9x.png" />
     <Content Include="Lectures\Assets\sample.jpg" />
+    <Content Include="Lectures\Assets\sample_portrait.jpg" />
     <Content Include="Lectures\Assets\shaastra_logo_opaque.png" />
     <Content Include="Lectures\Assets\transparent.png" />
     <Content Include="Lectures\Assets\trnsRect.png" />
