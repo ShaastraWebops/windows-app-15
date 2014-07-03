@@ -38,20 +38,19 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="White">
-        
+
         <phone:Pivot>
             <phone:PivotItem>
                 <phone:PivotItem.Header>
-                    <TextBlock FontSize="60" Text="about" Style="{StaticResource PanoramaItemHeaderTextStyle}" Foreground="Black" FontFamily="Segoe WP Light"/>
+                    <TextBlock FontSize="40" Text="about" Style="{StaticResource PanoramaItemHeaderTextStyle}" Foreground="Black" FontFamily="Segoe WP Light"/>
                 </phone:PivotItem.Header>
-                <Grid Margin="-6,-25,-6,0">
-                    
+                <Grid Margin="-6,-22,-6,0">
+
                     <Rectangle Stroke="Black" Margin="5" RadiusX="0" RadiusY="0" Opacity="0.3"/>
                     <Rectangle Stroke="Black" Margin="4" RadiusX="0" RadiusY="0" Opacity="0.25"/>
                     <Rectangle Stroke="Black" Margin="3" RadiusX="0" RadiusY="0" Opacity="0.2"/>
                     <Rectangle Stroke="Black" Margin="2" RadiusX="0" RadiusY="0" Opacity="0.15"/>
                     <Rectangle Stroke="Black" Margin="1" RadiusX="0" RadiusY="0" Opacity="0.1"/>
-
                     <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>
                     <ScrollViewer Margin="0,0,0,10" Height="707">
                         <StackPanel Margin="0,0,0,0">
@@ -71,9 +70,33 @@
 
             <phone:PivotItem>
                 <phone:PivotItem.Header>
-                    <TextBlock FontSize="60" Text="details" Style="{StaticResource PanoramaItemHeaderTextStyle}" Foreground="Black" FontFamily="Segoe WP Light"/>
+                    <TextBlock FontSize="40" Text="details" Style="{StaticResource PanoramaItemHeaderTextStyle}" Foreground="Black" FontFamily="Segoe WP Light"/>
                 </phone:PivotItem.Header>
-                <Grid Background="Aqua">
+                <Grid Margin="-6,-22,-6,0">
+                    <Rectangle Stroke="Black" Margin="5" RadiusX="0" RadiusY="0" Opacity="0.3"/>
+                    <Rectangle Stroke="Black" Margin="4" RadiusX="0" RadiusY="0" Opacity="0.25"/>
+                    <Rectangle Stroke="Black" Margin="3" RadiusX="0" RadiusY="0" Opacity="0.2"/>
+                    <Rectangle Stroke="Black" Margin="2" RadiusX="0" RadiusY="0" Opacity="0.15"/>
+                    <Rectangle Stroke="Black" Margin="1" RadiusX="0" RadiusY="0" Opacity="0.1"/>
+                    <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>
+                    <ScrollViewer Margin="5,5,5,0" Height="730">
+                        <StackPanel>
+                            
+                            <StackPanel HorizontalAlignment="Center" toolkit:TiltEffect.IsTiltEnabled="True" VerticalAlignment="Center" Orientation="Vertical">
+                                <TextBlock HorizontalAlignment="Center" Width="57" FontSize="60" Foreground="LightGray" FontFamily="Segoe WP" >at</TextBlock>
+                                <TextBlock x:Name="eventLocation" HorizontalAlignment="Center" Foreground="Black" TextWrapping="Wrap" FontSize="30">Student Facilities Centre (SFC)</TextBlock>
+                                <Button x:Name="glonass" Click="glonass_Click" Foreground="DarkSlateBlue" BorderBrush="LightGray" BorderThickness="2" FontSize="20" Content="Take me there" Width="186"/>
+                            </StackPanel>
+
+                            <StackPanel VerticalAlignment="Center" Orientation="Vertical" HorizontalAlignment="Center" toolkit:TiltEffect.IsTiltEnabled="True">
+                                <TextBlock HorizontalAlignment="Center" FontSize="60" Foreground="LightGray" FontFamily="Segoe WP">on</TextBlock>
+                                <TextBlock x:Name="eventDate" HorizontalAlignment="Center" Foreground="Black" FontSize="30">15th January 2015</TextBlock>
+                                <TextBlock x:Name="eventTime" HorizontalAlignment="Center" Foreground="Black" FontSize="30">1800 hrs</TextBlock>
+                                <Button x:Name="notifier" Click="notifier_Click" Foreground="DarkSlateBlue" BorderBrush="LightGray" BorderThickness="2" FontSize="20" Width="181">Remind me</Button>
+                            </StackPanel>
+                            
+                        </StackPanel>
+                    </ScrollViewer>
                 </Grid>
             </phone:PivotItem>
         </phone:Pivot>

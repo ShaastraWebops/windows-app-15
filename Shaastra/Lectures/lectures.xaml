@@ -86,7 +86,7 @@
             </Image>
 
             <!--Bottom-->
-            <Image x:Name="BottomImage" Source="Assets/nameBoard/pic2x.png" Height="198" Margin="0,401,0,66">
+            <Image x:Name="BottomImage" Tap="BottomImage_Tap" Source="Assets/nameBoard/pic2x.png" Height="198" Margin="0,401,0,66">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <CompositeTransform x:Name="Bottom_c" TranslateY="0"/>
@@ -98,7 +98,7 @@
             </Image>
 
             <!--Bottom Right-->
-            <Image x:Name="BottomRightImage" Source="Assets/nameBoard/pic4x.png" Height="198" Margin="144,318,-144,149">
+            <Image x:Name="BottomRightImage" Tap="BottomRightImage_Tap" Source="Assets/nameBoard/pic4x.png" Height="198" Margin="144,318,-144,149">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <CompositeTransform x:Name="Bottom_Right_c" TranslateY="0"/>
@@ -110,7 +110,7 @@
             </Image>
 
             <!--Bottom Left-->
-            <Image x:Name="BottomLeftImage" Source="Assets/nameBoard/pic6x.png" Height="198" Margin="-144,317,144,150">
+            <Image x:Name="BottomLeftImage" Tap="BottomLeftImage_Tap" Source="Assets/nameBoard/pic6x.png" Height="198" Margin="-144,317,144,150">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <CompositeTransform x:Name="Bottom_Left_c" TranslateY="0"/>
@@ -122,7 +122,7 @@
             </Image>
 
             <!--Top Right-->
-            <Image x:Name="TopRightImage" Source="Assets/nameBoard/pic5x.png" Height="198" Margin="144,151,-144,316">
+            <Image x:Name="TopRightImage" Tap="TopRightImage_Tap" Source="Assets/nameBoard/pic5x.png" Height="198" Margin="144,151,-144,316">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <CompositeTransform x:Name="Top_Right_c" TranslateY="0"/>
@@ -134,7 +134,7 @@
             </Image>
 
             <!--Top Left-->
-            <Image x:Name="TopLeftImage" Source="Assets/nameBoard/pic3x.png" Height="198" Margin="-145,151,145,316">
+            <Image x:Name="TopLeftImage" Tap="TopLeftImage_Tap" Source="Assets/nameBoard/pic3x.png" Height="198" Margin="-145,151,145,316">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <CompositeTransform x:Name="Top_Left_c" TranslateY="0"/>
@@ -169,14 +169,13 @@
         <Storyboard x:Name="Rot_Up_Top">
             <DoubleAnimation AutoReverse="True"
                    Duration="0:0:0.5"
-                   From="0" 
+                   From="0"
                    Storyboard.TargetName="Top_cr"
                    Storyboard.TargetProperty="RotationY"
-                   To="90">
-                <!--      <DoubleAnimation.EasingFunction>
-                    <CircleEase EasingMode="EaseOut"/>
-                </DoubleAnimation.EasingFunction>    -->
+                   To="90"
+                  >
             </DoubleAnimation>
+           
         </Storyboard>
         <Storyboard x:Name="Move_Up_Top">
             <DoubleAnimation AutoReverse="False"

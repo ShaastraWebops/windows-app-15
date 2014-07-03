@@ -16,5 +16,15 @@ namespace Shaastra.Lectures
         {
             InitializeComponent();
         }
+
+        private void glonass_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void notifier_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

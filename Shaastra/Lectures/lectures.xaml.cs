@@ -103,8 +103,15 @@ namespace Shaastra.Lectures
             else
             {
                 rswitchTaps3 = !rswitchTaps3;
-                TopRightImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/hexagon_face.png", UriKind.Relative));
-                BottomLeftImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/hexagon_face.png", UriKind.Relative));
+                string s31, s32;
+                s31 = (TopRightImage.Source as BitmapImage).UriSource.ToString();
+                s32 = (BottomLeftImage.Source as BitmapImage).UriSource.ToString();
+                s31 = s31.Replace("nameBoard", "tileFaces");
+                s32 = s32.Replace("nameBoard", "tileFaces");
+                s31 = s31.Replace("x", "f");
+                s32 = s32.Replace("x", "f");
+                TopRightImage.Source = new BitmapImage(new Uri(@s31, UriKind.Relative));
+                BottomLeftImage.Source = new BitmapImage(new Uri(@s32, UriKind.Relative));
             }
             (sender as DispatcherTimer).Stop();
         }
@@ -120,8 +127,15 @@ namespace Shaastra.Lectures
             else
             {
                 rswitchTaps2 = !rswitchTaps2;
-                TopLeftImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/hexagon_face.png", UriKind.Relative));
-                BottomRightImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/hexagon_face.png", UriKind.Relative));
+                string s21, s22;
+                s21 = (TopLeftImage.Source as BitmapImage).UriSource.ToString();
+                s22 = (BottomRightImage.Source as BitmapImage).UriSource.ToString();
+                s21 = s21.Replace("nameBoard", "tileFaces");
+                s22 = s22.Replace("nameBoard", "tileFaces");
+                s21 = s21.Replace("x", "f");
+                s22 = s22.Replace("x", "f");
+                TopLeftImage.Source = new BitmapImage(new Uri(@s21, UriKind.Relative));
+                BottomRightImage.Source = new BitmapImage(new Uri(@s22, UriKind.Relative));
             }
             (sender as DispatcherTimer).Stop();
         }
@@ -137,8 +151,15 @@ namespace Shaastra.Lectures
             else
             {
                 rswitchTaps1 = !rswitchTaps1;
-                TopImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/hexagon_face.png", UriKind.Relative));
-                BottomImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/hexagon_face.png", UriKind.Relative));
+                string s11, s12;
+                s11 = (TopImage.Source as BitmapImage).UriSource.ToString();
+                s12 = (BottomImage.Source as BitmapImage).UriSource.ToString();
+                s11 = s11.Replace("nameBoard", "tileFaces");
+                s12 = s12.Replace("nameBoard", "tileFaces");
+                s11 = s11.Replace("x", "f");
+                s12 = s12.Replace("x", "f");
+                TopImage.Source = new BitmapImage(new Uri(@s11, UriKind.Relative));
+                BottomImage.Source = new BitmapImage(new Uri(@s12, UriKind.Relative));
             }
             (sender as DispatcherTimer).Stop();
         }
@@ -259,7 +280,56 @@ namespace Shaastra.Lectures
 
         private void TopImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml", UriKind.Relative));
+            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
+            argVal = argVal.Replace("Assets/nameBoard/", "");
+            argVal = argVal.Replace("Assets/tileFaces/", "");
+            argVal = argVal.Replace(".png", "");
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key="+argVal, UriKind.Relative));
+        }
+
+        private void BottomImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
+            argVal = argVal.Replace("Assets/nameBoard/", "");
+            argVal = argVal.Replace("Assets/tileFaces/", "");
+            argVal = argVal.Replace(".png", "");
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
+        }
+
+        private void BottomRightImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
+            argVal = argVal.Replace("Assets/nameBoard/", "");
+            argVal = argVal.Replace("Assets/tileFaces/", "");
+            argVal = argVal.Replace(".png", "");
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
+        }
+
+        private void BottomLeftImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
+            argVal = argVal.Replace("Assets/nameBoard/", "");
+            argVal = argVal.Replace("Assets/tileFaces/", "");
+            argVal = argVal.Replace(".png", "");
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
+        }
+
+        private void TopRightImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
+            argVal = argVal.Replace("Assets/nameBoard/", "");
+            argVal = argVal.Replace("Assets/tileFaces/", "");
+            argVal = argVal.Replace(".png", "");
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
+        }
+
+        private void TopLeftImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
+            argVal = argVal.Replace("Assets/nameBoard/", "");
+            argVal = argVal.Replace("Assets/tileFaces/", "");
+            argVal = argVal.Replace(".png", "");
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
         }
 
         
