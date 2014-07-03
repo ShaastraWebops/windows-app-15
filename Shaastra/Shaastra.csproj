@@ -96,6 +96,8 @@
     <Compile Include="Lectures\dataPrompt.xaml.cs">
       <DependentUpon>dataPrompt.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Lectures\FileHelper.cs" />
+    <Compile Include="Lectures\lectureDetailRootObject.cs" />
     <Compile Include="Lectures\lecturedetails.xaml.cs">
       <DependentUpon>lecturedetails.xaml</DependentUpon>
     </Compile>
@@ -136,11 +138,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Lectures\lecture_data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Shaastra_2014_07_03_16_31_25.sap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\AlignmentGrid.png" />
@@ -225,6 +231,9 @@
   <ItemGroup>
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />

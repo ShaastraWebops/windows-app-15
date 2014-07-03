@@ -31,12 +31,12 @@ namespace Shaastra.Lectures
         BitmapImage store31 = new BitmapImage(new Uri(@"Assets/nameBoard/pic5x.png", UriKind.Relative));
         BitmapImage store32 = new BitmapImage(new Uri(@"Assets/nameBoard/pic6x.png", UriKind.Relative));
 
+        
         // Constructor
         
         public lectures()
         {
             InitializeComponent();
-
             //popup
 
             //TiltEffect.TiltableItems.Add(typeof(Image));        //Do something about tilting images

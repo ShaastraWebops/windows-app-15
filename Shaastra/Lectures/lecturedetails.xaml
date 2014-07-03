@@ -18,20 +18,20 @@
     <toolkit:TransitionService.NavigationInTransition>
         <toolkit:NavigationInTransition>
             <toolkit:NavigationInTransition.Backward>
-                <toolkit:SwivelTransition Mode="BackwardIn"/>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
             </toolkit:NavigationInTransition.Backward>
             <toolkit:NavigationInTransition.Forward>
-                <toolkit:SwivelTransition Mode="ForwardIn"/>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
             </toolkit:NavigationInTransition.Forward>
         </toolkit:NavigationInTransition>
     </toolkit:TransitionService.NavigationInTransition>
     <toolkit:TransitionService.NavigationOutTransition>
         <toolkit:NavigationOutTransition>
             <toolkit:NavigationOutTransition.Backward>
-                <toolkit:SwivelTransition Mode="BackwardOut"/>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
             </toolkit:NavigationOutTransition.Backward>
             <toolkit:NavigationOutTransition.Forward>
-                <toolkit:SwivelTransition Mode="ForwardOut"/>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
             </toolkit:NavigationOutTransition.Forward>
         </toolkit:NavigationOutTransition>
     </toolkit:TransitionService.NavigationOutTransition>
@@ -56,7 +56,7 @@
                         <StackPanel Margin="0,0,0,0">
                             <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="personName"  Text="Stephen Wolfram" FontSize="47" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
                             <Image Margin="0,10,0,10" x:Name="profilePic" MaxHeight="400" MaxWidth="442" Source="Assets/sample.jpg"/>
-                            <RichTextBox TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
+                            <RichTextBox x:Name="descbox" TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
                                 <Paragraph>
                                     Vinod Khosla, a famous Indian-American entrepreneur and a venture capitalist, is the co-founder of SUN Microsystems, and the founder of Khosla Ventures. He is an advocate of clean energy and technology. In addition, Khosla is a member of the board of trustees of the Blum center for developing economies at UC, Berkeley, which is focussed on finding solutions to address the crisis of extreme poverty and disease in the developing world.
                                 </Paragraph>

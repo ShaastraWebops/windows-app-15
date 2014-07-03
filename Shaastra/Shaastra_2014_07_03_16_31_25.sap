@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProfilerSession Type="MemoryPerformanceAnalysis" Name="Shaastra1428372347">
+  <TargetApplication Name="Shaastra_Debug_AnyCPU" SourceProject="Shaastra.csproj" Type="WindowsPhone">
+    <ApplicationBinary Path="Bin\Debug\Shaastra_Debug_AnyCPU.xap" Timestamp="6/28/2014 5:04:40 PM" />
+    <ApplicationIconPath Path="" />
+    <SymbolPaths>
+      <Path Value="Bin\Debug\" />
+    </SymbolPaths>
+  </TargetApplication>
+  <Settings>
+    <Probe Name="Visual">
+      <CollectElementLevelCosting Enabled="True" />
+      <CollectSnapshots Enabled="True" Interval="1000" Resampling="2" />
+      <CollectMediaEvents Enabled="False" />
+      <CollectCacheDetails Enabled="False" />
+    </Probe>
+    <Probe Name="Code">
+      <SampleCallStack Enabled="False" Depth="" Interval="1000" />
+      <CollectPerformanceCounters Enabled="False" />
+    </Probe>
+    <Probe Name="Memory">
+      <MemoryCallStack Enabled="True" Depth="8" />
+      <ObjectTree Enabled="True" Interval="5" />
+    </Probe>
+  </Settings>
+  <Data>
+    <Logs>
+      <File Type="NativeFormat" Path="PerfLogs\Shaastra1428372347\tmp66EC.spl" />
+    </Logs>
+  </Data>
+  <TargetDeviceSettings OSVersion="8.10.12397" AvailablePhysicalMemoryAtStartup="0" ProcessorArchitectureType="Arm" ProcessorInformation="Unknown" IsEmulator="False" />
+</ProfilerSession>

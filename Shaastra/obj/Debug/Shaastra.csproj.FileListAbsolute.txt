@@ -92,3 +92,6 @@ C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\vi-VN\Micros
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.csprojResolveAssemblyReference.cache
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Lectures\lecture_data.json
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Newtonsoft.Json.xml
