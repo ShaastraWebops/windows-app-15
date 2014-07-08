@@ -56,9 +56,16 @@ namespace Shaastra.Lectures
                     dt = new DateTime(element.year, element.month, element.date, element.hrs, element.mins, 0);
                     eventDate.Text = dt.DayOfWeek.ToString() + ", " + dt.Day + "/" + dt.Month + "/" + dt.Year;
                     eventTime.Text = dt.Hour.ToString() + dt.Minute.ToString() + " hrs";
+                    break;
                 }
             }
         }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+           
+        }
+
 
         private async void glonass_Click(object sender, RoutedEventArgs e)
         {

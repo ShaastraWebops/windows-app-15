@@ -24,16 +24,15 @@ namespace Shaastra.Lectures
         bool rswitchTaps2 = false;
         bool rswitchTaps3 = false;    //This is for storing the Rotation Flip property of the no. of taps for each pair of images
 
-        BitmapImage store11 = new BitmapImage(new Uri(@"Assets/nameBoard/pic1x.png", UriKind.Relative));
+        BitmapImage store11 = new BitmapImage(new Uri(@"Asets/nameBoard/pic3x.png", UriKind.Relative));
+        BitmapImage store22 = new BitmapImage(new Uri(@"Asssets/nameBoard/pic1x.png", UriKind.Relative));
         BitmapImage store12 = new BitmapImage(new Uri(@"Assets/nameBoard/pic2x.png", UriKind.Relative));
-        BitmapImage store21 = new BitmapImage(new Uri(@"Assets/nameBoard/pic3x.png", UriKind.Relative));
-        BitmapImage store22 = new BitmapImage(new Uri(@"Assets/nameBoard/pic4x.png", UriKind.Relative));
+        BitmapImage store21 = new BitmapImage(new Uri(@"Assets/nameBoard/pic4x.png", UriKind.Relative));
         BitmapImage store31 = new BitmapImage(new Uri(@"Assets/nameBoard/pic5x.png", UriKind.Relative));
         BitmapImage store32 = new BitmapImage(new Uri(@"Assets/nameBoard/pic6x.png", UriKind.Relative));
 
         
         // Constructor
-        
         public lectures()
         {
             InitializeComponent();
@@ -53,13 +52,12 @@ namespace Shaastra.Lectures
 
 
             //Timer For flipping
-            DispatcherTimer set1 = new DispatcherTimer();
+            DispatcherTimer set1 = new DispatcherTimer();            
             set1.Interval = new TimeSpan(0, 0, 0, 5, 0);
             set1.Start();
             set1.Tick += set1_Tick;
         }
 
-       
 
         void set1_Tick(object sender, EventArgs e)
         {
