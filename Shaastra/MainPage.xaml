@@ -71,6 +71,8 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <Button x:Name="clickLectures" Click="clickLectures_Click" Height="80" Width="250" Content="Lectures" Margin="40,59,166,468"></Button>
+            <Button x:Name="clickEvents" Click="clickEvents_Click" Height="80" Width="250" Content="Events" Margin="40,144,166,383">
+            </Button>
         </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are

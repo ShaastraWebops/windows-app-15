@@ -93,6 +93,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Events\events.xaml.cs">
+      <DependentUpon>events.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Lectures\dataPrompt.xaml.cs">
       <DependentUpon>dataPrompt.xaml</DependentUpon>
     </Compile>
@@ -123,6 +126,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Events\events.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Lectures\dataPrompt.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -145,6 +152,23 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Events\Assets\Aero.png" />
+    <Content Include="Events\Assets\AlignmentGrid.png" />
+    <Content Include="Events\Assets\ApplicationIcon.png" />
+    <Content Include="Events\Assets\BE.png" />
+    <Content Include="Events\Assets\Code.png" />
+    <Content Include="Events\Assets\DB.png" />
+    <Content Include="Events\Assets\Elec.png" />
+    <Content Include="Events\Assets\FS.png" />
+    <Content Include="Events\Assets\IQ.png" />
+    <Content Include="Events\Assets\Shows.png" />
+    <Content Include="Events\Assets\SL.png" />
+    <Content Include="Events\Assets\Tiles\FlipCycleTileLarge.png" />
+    <Content Include="Events\Assets\Tiles\FlipCycleTileMedium.png" />
+    <Content Include="Events\Assets\Tiles\FlipCycleTileSmall.png" />
+    <Content Include="Events\Assets\Tiles\IconicTileMediumLarge.png" />
+    <Content Include="Events\Assets\Tiles\IconicTileSmall.png" />
+    <Content Include="Events\Assets\WS.png" />
     <Content Include="Lectures\lecture_data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

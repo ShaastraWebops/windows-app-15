@@ -1,0 +1,213 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Shaastra.Events.events"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.Resources>
+        <Storyboard x:Key="aero_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Aero" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+        <Storyboard x:Key="db_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="DB" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+        <Storyboard x:Key="code_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Code" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+        <Storyboard x:Key="iq_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="IQ" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+        <Storyboard x:Key="elec_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Elec" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+        <Storyboard x:Key="fs_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="FS" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+        <Storyboard x:Key="sl_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="SL" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+        <Storyboard x:Key="ws_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="WS" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+        <Storyboard x:Key="shows_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Shows" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+        <Storyboard x:Key="be_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="BE" Storyboard.TargetProperty="Opacity" To="1"/>
+        </Storyboard>
+
+        <Storyboard x:Key="aero_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Aero" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+        </Storyboard>
+        <Storyboard x:Key="db_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="DB" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+        </Storyboard>
+        <Storyboard x:Key="code_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Code" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+        </Storyboard>
+        <Storyboard x:Key="iq_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="IQ" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+        </Storyboard>
+        <Storyboard x:Key="elec_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Elec" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+        </Storyboard>
+        <Storyboard x:Key="fs_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="FS" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+        </Storyboard>
+        <Storyboard x:Key="sl_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="SL" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+        </Storyboard>
+        <Storyboard x:Key="ws_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="WS" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+        </Storyboard>
+        <Storyboard x:Key="shows_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Shows" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+        </Storyboard>
+        <Storyboard x:Key="be_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="BE" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="SHAASTRA" Foreground="Black" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="events" Foreground="Black" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,368,12">
+            <ScrollViewer>
+                <StackPanel>
+                    <Button x:Name="Aero_Button" Click="Aero_Button_Click" Height="90" Width="90">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="Black" BorderThickness="5">
+                                    <Image Source="\Events\Assets\Aero.png" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="DB_Button" Click="DB_Button_Click" Height="90" Width="90">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="Black" BorderThickness="5">
+                                    <Image Source="\Events\Assets\DB.png" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="Code_Button" Click="Code_Button_Click" Height="90" Width="90">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="Black" BorderThickness="5">
+                                    <Image Source="\Events\Assets\Code.png" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="IQ_Button" Click="IQ_Button_Click" Height="90" Width="90">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="Black" BorderThickness="5">
+                                    <Image Source="\Events\Assets\IQ.png" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="Elec_Button" Click="Elec_Button_Click" Height="90" Width="90">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="Black" BorderThickness="5">
+                                    <Image Source="\Events\Assets\Elec.png" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="FS_Button" Click="FS_Button_Click" Height="90" Width="90">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="Black" BorderThickness="5">
+                                    <Image Source="\Events\Assets\FS.png" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="SL_Button" Click="SL_Button_Click" Height="90" Width="90">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="Black" BorderThickness="5">
+                                    <Image Source="\Events\Assets\SL.png" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="WS_Button" Click="WS_Button_Click" Height="90" Width="90">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="Black" BorderThickness="5">
+                                    <Image Source="\Events\Assets\WS.png" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="Shows_Button" Click="Shows_Button_Click" Height="90" Width="90">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="Black" BorderThickness="5">
+                                    <Image Source="\Events\Assets\Shows.png" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="BE_Button" Click="BE_Button_Click" Height="90" Width="90">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="Black" BorderThickness="5">
+                                    <Image Source="\Events\Assets\BE.png" Stretch="Fill"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        
+        <Grid x:Name="Aero" Opacity="0" Background="Red" Grid.Row="1" Margin="120,0,12,12">
+        </Grid>
+        <Grid x:Name="DB" Opacity="0" Background="Orange" Grid.Row="1" Margin="120,0,12,12">
+        </Grid>
+        <Grid x:Name="Code" Opacity="0" Background="Green" Grid.Row="1" Margin="120,0,12,12">
+        </Grid>
+        <Grid x:Name="IQ" Opacity="0" Background="Turquoise" Grid.Row="1" Margin="120,0,12,12">
+        </Grid>
+        <Grid x:Name="Elec" Opacity="0" Background="Blue" Grid.Row="1" Margin="120,0,12,12">
+        </Grid>
+        <Grid x:Name="FS" Opacity="0" Background="Purple" Grid.Row="1" Margin="120,0,12,12">
+        </Grid>
+        <Grid x:Name="SL" Opacity="0" Background="Lime" Grid.Row="1" Margin="120,0,12,12">
+        </Grid>
+        <Grid x:Name="WS" Opacity="0" Background="Gold" Grid.Row="1" Margin="120,0,12,12">
+        </Grid>
+        <Grid x:Name="Shows" Opacity="0" Background="Brown" Grid.Row="1" Margin="120,0,12,12">
+        </Grid>
+        <Grid x:Name="BE" Opacity="0" Background="Yellow" Grid.Row="1" Margin="120,0,12,12">
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
