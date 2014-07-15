@@ -176,3 +176,7 @@ C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\zh-TW\M
 C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\XapCacheFile.xml
 C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Microsoft.Phone.Controls.dll
 C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Events\events.g.cs
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shows\shows.g.cs
