@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="13-07-2014 18:12:56">
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="13-07-2014 18:12:55" />
+﻿<xapCache source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="15-07-2014 14:40:17">
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="15-07-2014 14:40:16" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Aero.png" archivePath="Events\Assets\Aero.png" lastWriteTime="13-07-2014 18:04:33" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\AlignmentGrid.png" archivePath="Events\Assets\AlignmentGrid.png" lastWriteTime="13-07-2014 18:04:33" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\ApplicationIcon.png" archivePath="Events\Assets\ApplicationIcon.png" lastWriteTime="13-07-2014 18:04:33" />
@@ -71,20 +71,22 @@
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="13-07-2014 18:00:58" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\tile310.png" archivePath="tile310.png" lastWriteTime="13-07-2014 18:00:58" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\tile70.png" archivePath="tile70.png" lastWriteTime="13-07-2014 18:00:58" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="13-07-2014 18:00:58" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="13-07-2014 18:00:58" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="13-07-2014 18:00:58" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="13-07-2014 18:00:58" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="13-07-2014 18:00:58" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="13-07-2014 18:09:17" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="15-07-2014 11:11:31" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="15-07-2014 11:11:31" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="15-07-2014 11:11:31" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="15-07-2014 11:11:31" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="15-07-2014 11:11:31" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="15-07-2014 14:26:47" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="13-07-2014 18:00:52" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="13-07-2014 18:00:52" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="13-07-2014 18:00:52" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="13-07-2014 18:00:52" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="13-07-2014 18:00:52" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="13-07-2014 18:00:52" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="13-07-2014 18:01:00" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="01-01-2013 18:57:00" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\packages\WPtoolkit.Kinnara.4.2014.06.10\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="15-07-2014 11:11:09" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="13-07-2014 18:00:59" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\packages\WPtoolkit.Kinnara.4.2014.06.10\lib\wp8\Microsoft.Phone.Controls.Toolkit.xml" archivePath="Microsoft.Phone.Controls.Toolkit.xml" lastWriteTime="15-07-2014 11:11:09" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="13-07-2014 18:00:59" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\shaastra_logo_opaque.png" archivePath="shaastra_logo_opaque.png" lastWriteTime="13-07-2014 18:00:58" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\tile336.png" archivePath="tile336.png" lastWriteTime="13-07-2014 18:00:58" />
