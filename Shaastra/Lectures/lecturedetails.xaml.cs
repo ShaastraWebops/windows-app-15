@@ -10,6 +10,7 @@ using Microsoft.Phone.Shell;
 using Windows.Storage;
 using System.IO;
 using System.Windows.Documents;
+using System.Windows.Media.Imaging;
 
 
 namespace Shaastra.Lectures
@@ -21,9 +22,18 @@ namespace Shaastra.Lectures
         string jsData;
         System.Device.Location.GeoCoordinate pos;
         DateTime dt;
+        BitmapImage bearer;
         public lecturedetails()
         {
             InitializeComponent();
+        }
+
+        protected override void OnRemovedFromJournal(System.Windows.Navigation.JournalEntryRemovedEventArgs e)
+        {
+            pos = null;
+            bearer.UriSource = null;
+            profilePic.Source = bearer;
+            GC.Collect();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -34,16 +44,16 @@ namespace Shaastra.Lectures
             TextReader dumper = new StreamReader(jsStream);
             jsData = dumper.ReadToEnd();
             scholars = Newtonsoft.Json.JsonConvert.DeserializeObject<List<lectureDetailRootObject>>(jsData);
-            foreach(lectureDetailRootObject element in scholars)
+            foreach (lectureDetailRootObject element in scholars)
             {
                 if (element.key == argVal || element.pic == argVal)
                 {
                     personName.Text = element.name;
                     string tempPic = element.pic;
-                    tempPic = tempPic.Replace("f","");
-                    tempPic = tempPic.Replace("x","");
-                    profilePic.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri("Assets\\pageFaces\\" + tempPic + ".jpg",UriKind.Relative));
-                    
+                    tempPic = tempPic.Replace("f", "");
+                    tempPic = tempPic.Replace("x", "");
+                    bearer = new BitmapImage(new Uri("Assets\\pageFaces\\" + tempPic + ".jpg", UriKind.Relative));
+                    profilePic.Source = bearer;
                     //Description Box
                     Paragraph dPara = new Paragraph();
                     Run dRun = new Run();
@@ -63,7 +73,7 @@ namespace Shaastra.Lectures
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-           
+
         }
 
 

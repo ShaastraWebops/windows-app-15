@@ -276,7 +276,7 @@ namespace Shaastra.Lectures
             (sender as DispatcherTimer).Stop();
         }
 
-        private void TopImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        private void Image_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
             argVal = argVal.Replace("Assets/nameBoard/", "");
@@ -285,50 +285,7 @@ namespace Shaastra.Lectures
             NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key="+argVal, UriKind.Relative));
         }
 
-        private void BottomImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
-            argVal = argVal.Replace("Assets/nameBoard/", "");
-            argVal = argVal.Replace("Assets/tileFaces/", "");
-            argVal = argVal.Replace(".png", "");
-            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
-        }
-
-        private void BottomRightImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
-            argVal = argVal.Replace("Assets/nameBoard/", "");
-            argVal = argVal.Replace("Assets/tileFaces/", "");
-            argVal = argVal.Replace(".png", "");
-            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
-        }
-
-        private void BottomLeftImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
-            argVal = argVal.Replace("Assets/nameBoard/", "");
-            argVal = argVal.Replace("Assets/tileFaces/", "");
-            argVal = argVal.Replace(".png", "");
-            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
-        }
-
-        private void TopRightImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
-            argVal = argVal.Replace("Assets/nameBoard/", "");
-            argVal = argVal.Replace("Assets/tileFaces/", "");
-            argVal = argVal.Replace(".png", "");
-            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
-        }
-
-        private void TopLeftImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            string argVal = ((sender as Image).Source as BitmapImage).UriSource.ToString();
-            argVal = argVal.Replace("Assets/nameBoard/", "");
-            argVal = argVal.Replace("Assets/tileFaces/", "");
-            argVal = argVal.Replace(".png", "");
-            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
-        }
+        
 
         
     }
