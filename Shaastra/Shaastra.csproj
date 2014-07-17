@@ -243,6 +243,13 @@
     <Content Include="Lectures\Assets\trnsRect.png" />
     <Content Include="README_FIRST.txt" />
     <Content Include="shaastra_logo_opaque.png" />
+    <Content Include="Shows\Assets\pic1.jpg" />
+    <Content Include="Shows\Assets\pic2.jpg" />
+    <Content Include="Shows\Assets\pic3.jpg" />
+    <Content Include="Shows\Assets\pic4.jpg" />
+    <Content Include="Shows\Assets\pic5.jpg" />
+    <Content Include="Shows\Assets\pic6.jpg" />
+    <Content Include="Shows\Assets\pic7.jpg" />
     <Content Include="tile310.png" />
     <Content Include="tile336.png" />
     <Content Include="tile70.png" />

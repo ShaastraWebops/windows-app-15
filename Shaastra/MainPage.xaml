@@ -71,9 +71,9 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <Button x:Name="clickLectures" Click="clickLectures_Click" Height="80" Width="250" Content="Lectures" Margin="40,59,166,468"></Button>
-            <Button x:Name="clickEvents" Click="clickEvents_Click" Height="80" Width="250" Content="Events" Margin="40,144,166,383">
-            </Button>
-        </Grid>
+            <Button x:Name="clickEvents" Click="clickEvents_Click" Height="80" Width="250" Content="Events" Margin="40,160,166,399"/>
+            <Button x:Name="clickShows" Click="clickShows_Click" Height="80" Width="250" Content="Shows" Margin="40,245,166,314"></Button>
+</Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
             aligned on common boundaries.  The image has a top margin of -32px to
