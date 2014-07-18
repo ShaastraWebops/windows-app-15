@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
+  <AppExtra AppPlatformVersion="8.0" xmlns="">
+    <Extra Name="SDOptOut" />
+  </AppExtra>
   <App xmlns="" ProductID="{7795db32-220f-425b-99c7-bc42b526e509}" Title="Shaastra" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Shaastra author" Description="Sample description" Publisher="Shaastra" PublisherID="{66476806-4c0b-4a5e-b53c-41004c5e41ec}">
     <IconPath IsRelative="true" IsResource="false">shaastra_logo_opaque.png</IconPath>
     <Capabilities>

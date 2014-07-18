@@ -24,14 +24,20 @@ namespace Shaastra.Lectures
         bool rswitchTaps2 = false;
         bool rswitchTaps3 = false;    //This is for storing the Rotation Flip property of the no. of taps for each pair of images
 
-        BitmapImage store11 = new BitmapImage(new Uri(@"Assets/nameBoard/pic3x.png", UriKind.Relative));
-        BitmapImage store22 = new BitmapImage(new Uri(@"Assets/nameBoard/pic1x.png", UriKind.Relative));
-        BitmapImage store12 = new BitmapImage(new Uri(@"Assets/nameBoard/pic2x.png", UriKind.Relative));
-        BitmapImage store21 = new BitmapImage(new Uri(@"Assets/nameBoard/pic4x.png", UriKind.Relative));
-        BitmapImage store31 = new BitmapImage(new Uri(@"Assets/nameBoard/pic5x.png", UriKind.Relative));
-        BitmapImage store32 = new BitmapImage(new Uri(@"Assets/nameBoard/pic6x.png", UriKind.Relative));
+        Uri store11 = (new Uri(@"Assets/nameBoard/pic3x.png", UriKind.Relative));
+        Uri store22 = (new Uri(@"Assets/nameBoard/pic1x.png", UriKind.Relative));
+        Uri store12 = (new Uri(@"Assets/nameBoard/pic2x.png", UriKind.Relative));
+        Uri store21 = (new Uri(@"Assets/nameBoard/pic4x.png", UriKind.Relative));
+        Uri store31 = (new Uri(@"Assets/nameBoard/pic5x.png", UriKind.Relative));
+        Uri store32 = (new Uri(@"Assets/nameBoard/pic6x.png", UriKind.Relative));
 
-        
+        BitmapImage mem11 = new BitmapImage();
+        BitmapImage mem12 = new BitmapImage();
+        BitmapImage mem21 = new BitmapImage();
+        BitmapImage mem22 = new BitmapImage();
+        BitmapImage mem31 = new BitmapImage();
+        BitmapImage mem32 = new BitmapImage();
+
         // Constructor
         public lectures()
         {
@@ -56,8 +62,34 @@ namespace Shaastra.Lectures
             set1.Interval = new TimeSpan(0, 0, 0, 5, 0);
             set1.Start();
             set1.Tick += set1_Tick;
+
+            //Set Image Sources
+            TopRightImage.Source = mem31;
+            BottomLeftImage.Source = mem32;
+            TopLeftImage.Source = mem21;
+            BottomRightImage.Source = mem22;
+            TopImage.Source = mem11;
+            BottomImage.Source = mem12;
+
+            //Initialize with default images
+            mem11.UriSource = store11;
+            mem12.UriSource = store12;
+            mem21.UriSource = store21;
+            mem22.UriSource = store22;
+            mem31.UriSource = store31;
+            mem32.UriSource = store32;
+
         }
 
+        protected override void OnRemovedFromJournal(System.Windows.Navigation.JournalEntryRemovedEventArgs e)
+        {
+            mem11.UriSource = null;
+            mem12.UriSource = null;
+            mem21.UriSource = null;
+            mem22.UriSource = null;
+            mem31.UriSource = null;
+            mem32.UriSource = null;
+        }
 
         void set1_Tick(object sender, EventArgs e)
         {
@@ -95,8 +127,8 @@ namespace Shaastra.Lectures
             if (rswitchTaps3)
             {
                 rswitchTaps3 = !rswitchTaps3;
-                TopRightImage.Source = store31;
-                BottomLeftImage.Source = store32;
+                mem31.UriSource = store31;
+                mem32.UriSource = store32;
             }
             else
             {
@@ -108,8 +140,8 @@ namespace Shaastra.Lectures
                 s32 = s32.Replace("nameBoard", "tileFaces");
                 s31 = s31.Replace("x", "f");
                 s32 = s32.Replace("x", "f");
-                TopRightImage.Source = new BitmapImage(new Uri(@s31, UriKind.Relative));
-                BottomLeftImage.Source = new BitmapImage(new Uri(@s32, UriKind.Relative));
+                mem31.UriSource = (new Uri(@s31, UriKind.Relative));
+                mem32.UriSource = (new Uri(@s32, UriKind.Relative));
             }
             (sender as DispatcherTimer).Stop();
         }
@@ -119,8 +151,8 @@ namespace Shaastra.Lectures
             if (rswitchTaps2)
             {
                 rswitchTaps2 = !rswitchTaps2;
-                TopLeftImage.Source = store21;
-                BottomRightImage.Source = store22;
+                mem21.UriSource = store21;
+                mem22.UriSource = store22;
             }
             else
             {
@@ -132,8 +164,8 @@ namespace Shaastra.Lectures
                 s22 = s22.Replace("nameBoard", "tileFaces");
                 s21 = s21.Replace("x", "f");
                 s22 = s22.Replace("x", "f");
-                TopLeftImage.Source = new BitmapImage(new Uri(@s21, UriKind.Relative));
-                BottomRightImage.Source = new BitmapImage(new Uri(@s22, UriKind.Relative));
+                mem21.UriSource = (new Uri(@s21, UriKind.Relative));
+                mem22.UriSource = (new Uri(@s22, UriKind.Relative));
             }
             (sender as DispatcherTimer).Stop();
         }
@@ -143,8 +175,8 @@ namespace Shaastra.Lectures
             if (rswitchTaps1)
             {
                 rswitchTaps1 = !rswitchTaps1;
-                TopImage.Source = store11;
-                BottomImage.Source = store12;
+                mem11.UriSource = store11;
+                mem12.UriSource = store12;
             }
             else
             {
@@ -156,8 +188,8 @@ namespace Shaastra.Lectures
                 s12 = s12.Replace("nameBoard", "tileFaces");
                 s11 = s11.Replace("x", "f");
                 s12 = s12.Replace("x", "f");
-                TopImage.Source = new BitmapImage(new Uri(@s11, UriKind.Relative));
-                BottomImage.Source = new BitmapImage(new Uri(@s12, UriKind.Relative));
+                mem11.UriSource = (new Uri(@s11, UriKind.Relative));
+                mem12.UriSource = (new Uri(@s12, UriKind.Relative));
             }
             (sender as DispatcherTimer).Stop();
         }
@@ -218,18 +250,18 @@ namespace Shaastra.Lectures
             if (switchTaps3)
             {
                 switchTaps3 = !switchTaps3;
-                TopRightImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic5x.png", UriKind.Relative));
-                BottomLeftImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic6x.png", UriKind.Relative));
-                store31 = (BitmapImage)TopRightImage.Source;
-                store32 = (BitmapImage)BottomLeftImage.Source;
+                mem31.UriSource = (new Uri(@"Assets/nameBoard/pic5x.png", UriKind.Relative));
+                mem32.UriSource = (new Uri(@"Assets/nameBoard/pic6x.png", UriKind.Relative));
+                store31 = mem31.UriSource;
+                store32 = mem32.UriSource;
             }
             else
             {
                 switchTaps3 = !switchTaps3;
-                TopRightImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic11x.png", UriKind.Relative));
-                BottomLeftImage.Source = new BitmapImage(new Uri(@"Assets/hexagon_unfocused.png", UriKind.Relative));
-                store31 = (BitmapImage)TopRightImage.Source;
-                store32 = (BitmapImage)BottomLeftImage.Source;
+                mem31.UriSource = (new Uri(@"Assets/nameBoard/pic11x.png", UriKind.Relative));
+                mem32.UriSource = (new Uri(@"Assets/hexagon_unfocused.png", UriKind.Relative));
+                store31 = mem31.UriSource;
+                store32 = mem32.UriSource;
             }
             (sender as DispatcherTimer).Stop();
         }
@@ -239,18 +271,18 @@ namespace Shaastra.Lectures
             if (switchTaps2)
             {
                 switchTaps2 = !switchTaps2;
-                TopLeftImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic3x.png", UriKind.Relative));
-                BottomRightImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic4x.png", UriKind.Relative));
-                store21 = (BitmapImage)TopLeftImage.Source;
-                store22 = (BitmapImage)BottomRightImage.Source;
+                mem21.UriSource = (new Uri(@"Assets/nameBoard/pic3x.png", UriKind.Relative));
+                mem22.UriSource = (new Uri(@"Assets/nameBoard/pic4x.png", UriKind.Relative));
+                store21 = mem21.UriSource;
+                store22 = mem22.UriSource;
             }
             else
             {
                 switchTaps2 = !switchTaps2;
-                TopLeftImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic9x.png", UriKind.Relative));
-                BottomRightImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic10x.png", UriKind.Relative));
-                store21 = (BitmapImage)TopLeftImage.Source;
-                store22 = (BitmapImage)BottomRightImage.Source;
+                mem21.UriSource = (new Uri(@"Assets/nameBoard/pic9x.png", UriKind.Relative));
+                mem22.UriSource = (new Uri(@"Assets/nameBoard/pic10x.png", UriKind.Relative));
+                store21 = mem21.UriSource;
+                store22 = mem22.UriSource;
             }
             (sender as DispatcherTimer).Stop();
         }
@@ -260,18 +292,18 @@ namespace Shaastra.Lectures
             if (switchTaps1)
             {
                 switchTaps1 = !switchTaps1;
-                TopImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic1x.png", UriKind.Relative));
-                BottomImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic2x.png", UriKind.Relative));
-                store11 = (BitmapImage)TopImage.Source;
-                store12 = (BitmapImage)BottomImage.Source;
+                mem11.UriSource = (new Uri(@"Assets/nameBoard/pic1x.png", UriKind.Relative));
+                mem12.UriSource = (new Uri(@"Assets/nameBoard/pic2x.png", UriKind.Relative));
+                store11 = mem11.UriSource;
+                store12 = mem12.UriSource;
             }
             else
             {
                 switchTaps1 = !switchTaps1;
-                TopImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic7x.png", UriKind.Relative));
-                BottomImage.Source = new BitmapImage(new Uri(@"Assets/nameBoard/pic8x.png", UriKind.Relative));
-                store11 = (BitmapImage)TopImage.Source;
-                store12 = (BitmapImage)BottomImage.Source;
+                mem11.UriSource = (new Uri(@"Assets/nameBoard/pic7x.png", UriKind.Relative));
+                mem12.UriSource = (new Uri(@"Assets/nameBoard/pic8x.png", UriKind.Relative));
+                store11 = mem11.UriSource;
+                store12 = mem12.UriSource;
             }
             (sender as DispatcherTimer).Stop();
         }
