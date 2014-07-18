@@ -171,11 +171,11 @@
                    Duration="0:0:0.5"
                    From="0"
                    Storyboard.TargetName="Top_cr"
-                   Storyboard.TargetProperty="RotationY"
+                   Storyboard.TargetProperty="RotationX"
                    To="90"
                   >
                 <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseIn"/>
+                    <ExponentialEase EasingMode="EaseOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
            
@@ -212,10 +212,10 @@
                    
                    From="0" 
                    Storyboard.TargetName="Top_Right_cr"
-                   Storyboard.TargetProperty="RotationY"
+                   Storyboard.TargetProperty="RotationX"
                    To="90">
                 <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseIn"/>
+                    <ExponentialEase EasingMode="EaseOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
@@ -252,10 +252,10 @@
                    
                    From="0" 
                    Storyboard.TargetName="Bottom_cr"
-                   Storyboard.TargetProperty="RotationY"
+                   Storyboard.TargetProperty="RotationX"
                    To="90">
                 <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseIn"/>
+                    <ExponentialEase EasingMode="EaseOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
@@ -292,10 +292,10 @@
                    From="0" 
                                          
                    Storyboard.TargetName="Bottom_Left_cr"
-                   Storyboard.TargetProperty="RotationY"
+                   Storyboard.TargetProperty="RotationX"
                    To="90">
                 <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseIn"/>
+                    <ExponentialEase EasingMode="EaseOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
@@ -332,10 +332,10 @@
                    From="0"
                    
                    Storyboard.TargetName="Top_Left_cr"
-                   Storyboard.TargetProperty="RotationY"
+                   Storyboard.TargetProperty="RotationX"
                    To="90">
                 <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseIn"/>
+                    <ExponentialEase EasingMode="EaseOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
@@ -372,10 +372,10 @@
                    From="0"
                    
                    Storyboard.TargetName="Bottom_Right_cr"
-                   Storyboard.TargetProperty="RotationY"
+                   Storyboard.TargetProperty="RotationX"
                    To="90">
                 <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseIn"/>
+                    <ExponentialEase EasingMode="EaseOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
