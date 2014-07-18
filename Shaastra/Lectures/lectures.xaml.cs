@@ -94,30 +94,30 @@ namespace Shaastra.Lectures
         void set1_Tick(object sender, EventArgs e)
         {
             DispatcherTimer sub1 = new DispatcherTimer();
-            sub1.Interval = new TimeSpan(0, 0, 0, 0, 500);
+            sub1.Interval = new TimeSpan(0, 0, 0, 0, 250);
             sub1.Tick += sub1_Tick;
             sub1.Start();
 
             DispatcherTimer sub2 = new DispatcherTimer();
-            sub2.Interval = new TimeSpan(0, 0, 0, 0, 750);
+            sub2.Interval = new TimeSpan(0, 0, 0, 0, 375);
             sub2.Tick += sub2_Tick;
             sub2.Start();
 
             DispatcherTimer sub3 = new DispatcherTimer();
-            sub3.Interval = new TimeSpan(0, 0, 0, 0, 1000);
+            sub3.Interval = new TimeSpan(0, 0, 0, 0, 500);
             sub3.Tick += sub3_Tick;
             sub3.Start();
 
             Rot_Up_Top.Begin();
             Rot_Down_Bottom.Begin();
 
-            Rot_Left_Top_Left.BeginTime = new TimeSpan(0, 0, 0, 0, 250);
-            Rot_Right_Bottom_Right.BeginTime = new TimeSpan(0, 0, 0, 0, 250);
+            Rot_Left_Top_Left.BeginTime = new TimeSpan(0, 0, 0, 0, 125);
+            Rot_Right_Bottom_Right.BeginTime = new TimeSpan(0, 0, 0, 0, 125);
             Rot_Left_Top_Left.Begin();
             Rot_Right_Bottom_Right.Begin();
 
-            Rot_Up_Top_Right.BeginTime = new TimeSpan(0, 0, 0, 0, 500);
-            Rot_Down_Bottom_Left.BeginTime = new TimeSpan(0, 0, 0, 0, 500);
+            Rot_Up_Top_Right.BeginTime = new TimeSpan(0, 0, 0, 0, 250);
+            Rot_Down_Bottom_Left.BeginTime = new TimeSpan(0, 0, 0, 0, 250);
             Rot_Up_Top_Right.Begin();
             Rot_Down_Bottom_Left.Begin();
         }

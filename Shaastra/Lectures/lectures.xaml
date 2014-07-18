@@ -168,7 +168,7 @@
 
         <Storyboard x:Name="Rot_Up_Top">
             <DoubleAnimation AutoReverse="True"
-                   Duration="0:0:0.5"
+                   Duration="0:0:0.25"
                    From="0"
                    Storyboard.TargetName="Top_cr"
                    Storyboard.TargetProperty="RotationX"
@@ -208,7 +208,7 @@
 
         <Storyboard x:Name="Rot_Up_Top_Right">
             <DoubleAnimation AutoReverse="True"
-                   Duration="0:0:0.5"
+                   Duration="0:0:0.25"
                    
                    From="0" 
                    Storyboard.TargetName="Top_Right_cr"
@@ -248,7 +248,7 @@
 
         <Storyboard x:Name="Rot_Down_Bottom">
             <DoubleAnimation AutoReverse="True"
-                   Duration="0:0:0.5"
+                   Duration="0:0:0.25"
                    
                    From="0" 
                    Storyboard.TargetName="Bottom_cr"
@@ -288,7 +288,7 @@
 
         <Storyboard x:Name="Rot_Down_Bottom_Left">
             <DoubleAnimation AutoReverse="True"
-                   Duration="0:0:0.5"
+                   Duration="0:0:0.25"
                    From="0" 
                                          
                    Storyboard.TargetName="Bottom_Left_cr"
@@ -328,7 +328,7 @@
 
         <Storyboard x:Name="Rot_Left_Top_Left">
             <DoubleAnimation AutoReverse="True"
-                   Duration="0:0:0.5"
+                   Duration="0:0:0.25"
                    From="0"
                    
                    Storyboard.TargetName="Top_Left_cr"
@@ -368,7 +368,7 @@
 
         <Storyboard x:Name="Rot_Right_Bottom_Right">
             <DoubleAnimation AutoReverse="True"
-                   Duration="0:0:0.5"
+                   Duration="0:0:0.25"
                    From="0"
                    
                    Storyboard.TargetName="Bottom_Right_cr"
