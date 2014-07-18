@@ -30,7 +30,6 @@ C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\AppManifest.
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Properties\WMAppManifest.xml
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\App.g.cs
-C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Lectures\dataPrompt.g.cs
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Lectures\lecturedetails.g.cs
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Lectures\lectures.g.cs
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\MainPage.g.cs

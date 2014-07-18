@@ -96,9 +96,6 @@
     <Compile Include="Events\events.xaml.cs">
       <DependentUpon>events.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Lectures\dataPrompt.xaml.cs">
-      <DependentUpon>dataPrompt.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Lectures\FileHelper.cs" />
     <Compile Include="Lectures\lectureDetailRootObject.cs" />
     <Compile Include="Lectures\lecturedetails.xaml.cs">
@@ -129,10 +126,6 @@
     <Page Include="Events\events.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Lectures\dataPrompt.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Lectures\lecturedetails.xaml">
       <SubType>Designer</SubType>

@@ -38,6 +38,8 @@ namespace Shaastra.Lectures
         BitmapImage mem31 = new BitmapImage();
         BitmapImage mem32 = new BitmapImage();
 
+        DispatcherTimer set1;
+
         // Constructor
         public lectures()
         {
@@ -58,7 +60,7 @@ namespace Shaastra.Lectures
 
 
             //Timer For flipping
-            DispatcherTimer set1 = new DispatcherTimer();            
+            set1 = new DispatcherTimer();            
             set1.Interval = new TimeSpan(0, 0, 0, 5, 0);
             set1.Start();
             set1.Tick += set1_Tick;
@@ -89,6 +91,9 @@ namespace Shaastra.Lectures
             mem22.UriSource = null;
             mem31.UriSource = null;
             mem32.UriSource = null;
+            set1.Tick -= set1_Tick;
+            set1.Stop();
+            breathe.Stop();
         }
 
         void set1_Tick(object sender, EventArgs e)
