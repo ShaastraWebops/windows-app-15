@@ -24,10 +24,10 @@ namespace Shaastra.Lectures
         bool rswitchTaps2 = false;
         bool rswitchTaps3 = false;    //This is for storing the Rotation Flip property of the no. of taps for each pair of images
 
-        Uri store11 = (new Uri(@"Assets/nameBoard/pic3x.png", UriKind.Relative));
-        Uri store22 = (new Uri(@"Assets/nameBoard/pic1x.png", UriKind.Relative));
+        Uri store11 = (new Uri(@"Assets/nameBoard/pic1x.png", UriKind.Relative));
         Uri store12 = (new Uri(@"Assets/nameBoard/pic2x.png", UriKind.Relative));
-        Uri store21 = (new Uri(@"Assets/nameBoard/pic4x.png", UriKind.Relative));
+        Uri store21 = (new Uri(@"Assets/nameBoard/pic3x.png", UriKind.Relative));
+        Uri store22 = (new Uri(@"Assets/nameBoard/pic4x.png", UriKind.Relative));
         Uri store31 = (new Uri(@"Assets/nameBoard/pic5x.png", UriKind.Relative));
         Uri store32 = (new Uri(@"Assets/nameBoard/pic6x.png", UriKind.Relative));
 

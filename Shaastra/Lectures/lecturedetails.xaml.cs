@@ -11,6 +11,9 @@ using Windows.Storage;
 using System.IO;
 using System.Windows.Documents;
 using System.Windows.Media.Imaging;
+using Microsoft.Phone.Tasks;
+using Windows.Devices.Geolocation;
+using System.Device.Location;
 
 
 namespace Shaastra.Lectures
@@ -77,10 +80,16 @@ namespace Shaastra.Lectures
         }
 
 
-        private async void glonass_Click(object sender, RoutedEventArgs e)
+        private void glonass_Click(object sender, RoutedEventArgs e)
         {
-            string launchNokiaMaps = "directions://v2.0/route/destination/?latlon=" + pos.Latitude + "," + pos.Longitude + "&mode=walk";
-            await Windows.System.Launcher.LaunchUriAsync(new Uri(launchNokiaMaps));
+            //string launchNokiaMaps = "directions://v2.0/route/destination/?latlon=" + pos.Latitude + "," + pos.Longitude + "&mode=walk&appid=7795db32-220f-425b-99c7-bc42b526e509";
+            //await Windows.System.Launcher.LaunchUriAsync(new Uri(launchNokiaMaps));
+            MapsDirectionsTask routeGen = new MapsDirectionsTask();
+            routeGen.End = new LabeledMapLocation();
+            routeGen.End.Label = eventLocation.Text;
+            routeGen.End.Location = pos;
+            routeGen.Show();
+            
         }
 
         private void notifier_Click(object sender, RoutedEventArgs e)
