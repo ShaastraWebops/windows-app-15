@@ -19,19 +19,40 @@
         <phone:Pivot x:Name="mainPivot" SelectionChanged="mainPivot_SelectionChanged">
             <phone:PivotItem x:Name="pivOne" Margin="0,0">
                 <Grid>
-                    <Image x:Name="imgOne"/>
+                    <Image x:Name="imgOne" CacheMode="BitMapCache" Stretch="UniformToFill">
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener PinchStarted="OnPinchStarted" PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+                        <Image.RenderTransform>
+                            <CompositeTransform ScaleX="1" ScaleY="1" TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                    </Image>
                 </Grid>
             </phone:PivotItem>
-        
+
             <phone:PivotItem x:Name="pivTwo" Margin="0,0">
                 <Grid>
-                    <Image x:Name="imgTwo"/>
+                    <Image x:Name="imgTwo" CacheMode="BitMapCache" Stretch="UniformToFill">
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener PinchStarted="OnPinchStarted" PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+                        <Image.RenderTransform>
+                            <CompositeTransform ScaleX="1" ScaleY="1" TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                    </Image>
                 </Grid>
             </phone:PivotItem>
-       
+
             <phone:PivotItem x:Name="pivThree" Margin="0,0">
                 <Grid>
-                    <Image x:Name="imgThree"/>
+                    <Image x:Name="imgThree" CacheMode="BitMapCache" Stretch="UniformToFill">
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener PinchStarted="OnPinchStarted" PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+                        <Image.RenderTransform>
+                            <CompositeTransform ScaleX="1" ScaleY="1" TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                    </Image>
                 </Grid>
             </phone:PivotItem>
         </phone:Pivot>
