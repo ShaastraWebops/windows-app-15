@@ -17,46 +17,41 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <phone:Pivot x:Name="mainPivot" SelectionChanged="mainPivot_SelectionChanged">
-
-            <phone:Pivot.HeaderTemplate>
-                <DataTemplate/>
-            </phone:Pivot.HeaderTemplate>
-
-            <phone:PivotItem Margin="0" x:Name="pivOne">
+            <phone:PivotItem x:Name="pivOne" Margin="0,0">
                 <Grid>
-                    <Image x:Name="imgOne" Tap="img_Tap" CacheMode="BitMapCache" Stretch="UniformToFill">
-                        <Image.RenderTransform>
-                            <CompositeTransform ScaleX="1" ScaleY="1" />
-                        </Image.RenderTransform>
+                    <Image x:Name="imgOne" CacheMode="BitMapCache" Stretch="UniformToFill">
                         <toolkit:GestureService.GestureListener>
-                            <toolkit:GestureListener DoubleTap="swipeOne_DoubleTap" PinchStarted="GestureListener_PinchStarted" PinchDelta="OnPinchDelta" DragDelta="Image_DragDelta" />
+                            <toolkit:GestureListener PinchStarted="OnPinchStarted" PinchDelta="OnPinchDelta"/>
                         </toolkit:GestureService.GestureListener>
+                        <Image.RenderTransform>
+                            <CompositeTransform ScaleX="1" ScaleY="1" TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
                     </Image>
                 </Grid>
             </phone:PivotItem>
 
-            <phone:PivotItem Margin="0" x:Name="pivTwo">
+            <phone:PivotItem x:Name="pivTwo" Margin="0,0">
                 <Grid>
-                    <Image x:Name="imgTwo" Tap="img_Tap" CacheMode="BitMapCache" Stretch="UniformToFill">
-                        <Image.RenderTransform>
-                            <CompositeTransform ScaleX="1" ScaleY="1" />
-                        </Image.RenderTransform>
+                    <Image x:Name="imgTwo" CacheMode="BitMapCache" Stretch="UniformToFill">
                         <toolkit:GestureService.GestureListener>
-                            <toolkit:GestureListener DoubleTap="swipeOne_DoubleTap" PinchStarted="GestureListener_PinchStarted" PinchDelta="OnPinchDelta" DragDelta="Image_DragDelta" />
+                            <toolkit:GestureListener PinchStarted="OnPinchStarted" PinchDelta="OnPinchDelta"/>
                         </toolkit:GestureService.GestureListener>
+                        <Image.RenderTransform>
+                            <CompositeTransform ScaleX="1" ScaleY="1" TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
                     </Image>
                 </Grid>
             </phone:PivotItem>
 
-            <phone:PivotItem Margin="0" x:Name="pivThree">
+            <phone:PivotItem x:Name="pivThree" Margin="0,0">
                 <Grid>
-                    <Image x:Name="imgThree" Tap="img_Tap" CacheMode="BitMapCache" Stretch="UniformToFill">
-                        <Image.RenderTransform>
-                            <CompositeTransform ScaleX="1" ScaleY="1" />
-                        </Image.RenderTransform>
+                    <Image x:Name="imgThree" CacheMode="BitMapCache" Stretch="UniformToFill">
                         <toolkit:GestureService.GestureListener>
-                            <toolkit:GestureListener DoubleTap="swipeOne_DoubleTap" PinchStarted="GestureListener_PinchStarted" PinchDelta="OnPinchDelta" DragDelta="Image_DragDelta" />
+                            <toolkit:GestureListener PinchStarted="OnPinchStarted" PinchDelta="OnPinchDelta"/>
                         </toolkit:GestureService.GestureListener>
+                        <Image.RenderTransform>
+                            <CompositeTransform ScaleX="1" ScaleY="1" TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
                     </Image>
                 </Grid>
             </phone:PivotItem>
