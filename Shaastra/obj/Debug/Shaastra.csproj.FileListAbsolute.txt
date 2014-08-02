@@ -97,7 +97,6 @@ C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Newtonsoft.J
 C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.csprojResolveAssemblyReference.cache
 C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\App.g.cs
 C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Events\events.g.cs
-C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Lectures\dataPrompt.g.cs
 C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Lectures\lecturedetails.g.cs
 C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Lectures\lectures.g.cs
 C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\MainPage.g.cs
