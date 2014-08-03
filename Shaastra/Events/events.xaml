@@ -98,7 +98,7 @@
     </phone:PhoneApplicationPage.Resources>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="White">
+    <Grid x:Name="LayoutRoot" Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -106,8 +106,8 @@
 
         
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="SHAASTRA" Foreground="Black" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="events" Foreground="Black" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="SHAASTRA" Foreground="White" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="events" Foreground="White" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -117,7 +117,7 @@
                     <Button x:Name="Aero_Button" Click="Aero_Button_Click" Height="90" Width="90">
                         <Button.Template>
                             <ControlTemplate>
-                                <Border BorderBrush="Black" BorderThickness="5">
+                                <Border BorderBrush="White" BorderThickness="5">
                                     <Image Source="\Events\Assets\Aero.png" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
@@ -126,7 +126,7 @@
                     <Button x:Name="DB_Button" Click="DB_Button_Click" Height="90" Width="90">
                         <Button.Template>
                             <ControlTemplate>
-                                <Border BorderBrush="Black" BorderThickness="5">
+                                <Border BorderBrush="White" BorderThickness="5">
                                     <Image Source="\Events\Assets\DB.png" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
@@ -135,7 +135,7 @@
                     <Button x:Name="Code_Button" Click="Code_Button_Click" Height="90" Width="90">
                         <Button.Template>
                             <ControlTemplate>
-                                <Border BorderBrush="Black" BorderThickness="5">
+                                <Border BorderBrush="White" BorderThickness="5">
                                     <Image Source="\Events\Assets\Code.png" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
@@ -144,7 +144,7 @@
                     <Button x:Name="IQ_Button" Click="IQ_Button_Click" Height="90" Width="90">
                         <Button.Template>
                             <ControlTemplate>
-                                <Border BorderBrush="Black" BorderThickness="5">
+                                <Border BorderBrush="White" BorderThickness="5">
                                     <Image Source="\Events\Assets\IQ.png" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
@@ -153,7 +153,7 @@
                     <Button x:Name="Elec_Button" Click="Elec_Button_Click" Height="90" Width="90">
                         <Button.Template>
                             <ControlTemplate>
-                                <Border BorderBrush="Black" BorderThickness="5">
+                                <Border BorderBrush="White" BorderThickness="5">
                                     <Image Source="\Events\Assets\Elec.png" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
@@ -162,7 +162,7 @@
                     <Button x:Name="FS_Button" Click="FS_Button_Click" Height="90" Width="90">
                         <Button.Template>
                             <ControlTemplate>
-                                <Border BorderBrush="Black" BorderThickness="5">
+                                <Border BorderBrush="White" BorderThickness="5">
                                     <Image Source="\Events\Assets\FS.png" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
@@ -171,7 +171,7 @@
                     <Button x:Name="SL_Button" Click="SL_Button_Click" Height="90" Width="90">
                         <Button.Template>
                             <ControlTemplate>
-                                <Border BorderBrush="Black" BorderThickness="5">
+                                <Border BorderBrush="White" BorderThickness="5">
                                     <Image Source="\Events\Assets\SL.png" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
@@ -180,7 +180,7 @@
                     <Button x:Name="WS_Button" Click="WS_Button_Click" Height="90" Width="90">
                         <Button.Template>
                             <ControlTemplate>
-                                <Border BorderBrush="Black" BorderThickness="5">
+                                <Border BorderBrush="White" BorderThickness="5">
                                     <Image Source="\Events\Assets\WS.png" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
@@ -189,7 +189,7 @@
                     <Button x:Name="Shows_Button" Click="Shows_Button_Click" Height="90" Width="90">
                         <Button.Template>
                             <ControlTemplate>
-                                <Border BorderBrush="Black" BorderThickness="5">
+                                <Border BorderBrush="White" BorderThickness="5">
                                     <Image Source="\Events\Assets\Shows.png" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
@@ -198,7 +198,7 @@
                     <Button x:Name="BE_Button" Click="BE_Button_Click" Height="90" Width="90">
                         <Button.Template>
                             <ControlTemplate>
-                                <Border BorderBrush="Black" BorderThickness="5">
+                                <Border BorderBrush="White" BorderThickness="5">
                                     <Image Source="\Events\Assets\BE.png" Stretch="Fill"/>
                                 </Border>
                             </ControlTemplate>
