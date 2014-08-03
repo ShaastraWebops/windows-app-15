@@ -10,6 +10,7 @@ using Microsoft.Phone.Shell;
 using System.Windows.Media.Imaging;
 using System.Windows.Media;
 using Coding4Fun.Toolkit.Controls;
+using System.Windows.Threading;
 
 namespace Shaastra.Shows
 {
@@ -22,6 +23,8 @@ namespace Shaastra.Shows
         UIElement nowShowing;
         bool isLockedToggle = false;
 
+        DispatcherTimer tickie;
+
         public shows()
         {
             InitializeComponent();
@@ -30,6 +33,15 @@ namespace Shaastra.Shows
             bearer = new BitmapImage(new Uri(@"Assets/pic1.jpg", UriKind.Relative));
             imgOne.Source = bearer;
             nowShowing = imgOne;
+            tickie = new DispatcherTimer();
+            tickie.Interval = new TimeSpan(0, 0, 4);
+            tickie.Tick += tickie_Tick;
+            tickie.Start();
+        }
+
+        void tickie_Tick(object sender, EventArgs e)
+        {
+            swypeStory.Begin();
         }
 
         protected override void OnRemovedFromJournal(System.Windows.Navigation.JournalEntryRemovedEventArgs e)
@@ -37,6 +49,8 @@ namespace Shaastra.Shows
             imgOne = null;
             imgTwo = null;
             imgThree = null;
+            tickie.Stop();
+            tickie.Tick -= tickie_Tick;
             GC.Collect();
         }
 

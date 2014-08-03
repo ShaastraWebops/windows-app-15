@@ -117,6 +117,7 @@
     <Compile Include="Shows\shows.xaml.cs">
       <DependentUpon>shows.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Shows\swipeFx.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

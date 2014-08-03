@@ -22,7 +22,9 @@
                 <DataTemplate/>
             </phone:Pivot.HeaderTemplate>
 
-            <phone:PivotItem Margin="0" x:Name="pivOne">
+            
+
+        <phone:PivotItem Margin="0" x:Name="pivOne">
                 <Grid>
                     <Image x:Name="imgOne" Tap="img_Tap" CacheMode="BitMapCache" Stretch="UniformToFill">
                         <Image.RenderTransform>
@@ -63,4 +65,9 @@
         </phone:Pivot>
     </Grid>
 
+    <phone:PhoneApplicationPage.Resources>
+        <Storyboard x:Name="swypeStory">
+            <DoubleAnimation Storyboard.TargetName="pivotSlideKey" Storyboard.TargetProperty="TranslateX" From="0" To="1000" Duration="0:0:2" AutoReverse="False"/>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
 </phone:PhoneApplicationPage>
