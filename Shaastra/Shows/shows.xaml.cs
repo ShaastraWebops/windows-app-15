@@ -9,26 +9,21 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Windows.Media.Imaging;
 using System.Windows.Media;
+using Coding4Fun.Toolkit.Controls;
+using System.Windows.Threading;
 
 namespace Shaastra.Shows
 {
     public partial class shows : PhoneApplicationPage
     {
-        //pan/zoom vars
-        // these two fully define the zoom state:
-        private double TotalImageScale = 1d;
-        private Point ImagePosition = new Point(0, 0);
-
-        private Point _oldFinger1;
-        private Point _oldFinger2;
-        private double _oldScaleFactor;
-
-
         const int MAX_IMAGES = 7;
         int stateStore;
         int imageStore;
         BitmapImage bearer;
         UIElement nowShowing;
+        bool isLockedToggle = false;
+
+        DispatcherTimer tickie;
 
         public shows()
         {
@@ -38,6 +33,15 @@ namespace Shaastra.Shows
             bearer = new BitmapImage(new Uri(@"Assets/pic1.jpg", UriKind.Relative));
             imgOne.Source = bearer;
             nowShowing = imgOne;
+            tickie = new DispatcherTimer();
+            tickie.Interval = new TimeSpan(0, 0, 4);
+            tickie.Tick += tickie_Tick;
+            tickie.Start();
+        }
+
+        void tickie_Tick(object sender, EventArgs e)
+        {
+            swypeStory.Begin();
         }
 
         protected override void OnRemovedFromJournal(System.Windows.Navigation.JournalEntryRemovedEventArgs e)
@@ -45,6 +49,8 @@ namespace Shaastra.Shows
             imgOne = null;
             imgTwo = null;
             imgThree = null;
+            tickie.Stop();
+            tickie.Tick -= tickie_Tick;
             GC.Collect();
         }
 
@@ -98,65 +104,130 @@ namespace Shaastra.Shows
             stateStore = state;
         }
 
-        private void OnPinchStarted(object s, PinchStartedGestureEventArgs e)
+        private void img_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            _oldFinger1 = e.GetPosition(nowShowing, 0);
-            _oldFinger2 = e.GetPosition(nowShowing, 1);
-            _oldScaleFactor = 1;
+            isLockedToggle = !isLockedToggle;
+            mainPivot.IsLocked = isLockedToggle;
+
+            //Show Toast Message *******************************************
+            ToastPrompt toast = GetToastWithImgAndTitle(isLockedToggle);
+            toast.TextWrapping = TextWrapping.NoWrap;
+            toast.MillisecondsUntilHidden = 1000;
+            toast.Show();
+            //End Toast Message ********************************************
+        }
+        private static ToastPrompt GetToastWithImgAndTitle(bool truth)
+        {
+            string textmsg;
+            if (truth)
+            {
+                textmsg = "Zoom enabled";
+            }
+            else
+            {
+                textmsg = "Zoom disabled";
+            }
+            return new ToastPrompt
+            {
+                Title = "Shaastra",
+                TextOrientation = System.Windows.Controls.Orientation.Horizontal,
+                Message = textmsg
+            };
         }
 
-        private void OnPinchDelta(object s, PinchGestureEventArgs e)
+        //Zoom Pan ***************************************************************************************
+
+        private Point Center;
+        private double InitialScale;
+
+        private void GestureListener_PinchStarted(object sender, PinchStartedGestureEventArgs e)
         {
-            var scaleFactor = e.DistanceRatio / _oldScaleFactor;
+            //Testing pivotLock attribute
+            if (!isLockedToggle)
+            {
+                return;
+            }
+            // Store the initial rotation angle and scaling
+            InitialScale = (nowShowing.RenderTransform as CompositeTransform).ScaleX;
+            // Calculate the center for the zooming
+            Point firstTouch = e.GetPosition(nowShowing, 0);
+            Point secondTouch = e.GetPosition(nowShowing, 1);
 
-            var currentFinger1 = e.GetPosition(nowShowing, 0);
-            var currentFinger2 = e.GetPosition(nowShowing, 1);
-
-            var translationDelta = GetTranslationDelta(
-                currentFinger1,
-                currentFinger2,
-                _oldFinger1,
-                _oldFinger2,
-                ImagePosition,
-                scaleFactor);
-
-            _oldFinger1 = currentFinger1;
-            _oldFinger2 = currentFinger2;
-            _oldScaleFactor = e.DistanceRatio;
-
-            UpdateImage(scaleFactor, translationDelta);
+            Center = new Point(firstTouch.X + (secondTouch.X - firstTouch.X) / 2.0, firstTouch.Y + (secondTouch.Y - firstTouch.Y) / 2.0);
         }
 
-        private void UpdateImage(double scaleFactor, Point delta)
+        private void OnPinchDelta(object sender, PinchGestureEventArgs e)
         {
-            TotalImageScale *= scaleFactor;
-            ImagePosition = new Point(ImagePosition.X + delta.X, ImagePosition.Y + delta.Y);
+            //Testing pivotLock attribute
+            if (!isLockedToggle)
+            {
+                return;
+            }
+            // If its less that the original  size or more than 4x then don’t apply
+            if (InitialScale * e.DistanceRatio > 4 || (InitialScale != 1 && e.DistanceRatio == 1) || InitialScale * e.DistanceRatio < 1)
+                return;
 
-            var transform = (CompositeTransform)nowShowing.RenderTransform;
-            transform.ScaleX = TotalImageScale;
-            transform.ScaleY = TotalImageScale;
-            transform.TranslateX = ImagePosition.X;
-            transform.TranslateY = ImagePosition.Y;
+            // If its original size then center it back
+            if (e.DistanceRatio <= 1.08)
+            {
+                (nowShowing.RenderTransform as CompositeTransform).CenterX = 0;
+                (nowShowing.RenderTransform as CompositeTransform).CenterY = 0;
+                (nowShowing.RenderTransform as CompositeTransform).TranslateX = 0;
+                (nowShowing.RenderTransform as CompositeTransform).TranslateY = 0;
+            }
+
+            (nowShowing.RenderTransform as CompositeTransform).CenterX = Center.X;
+            (nowShowing.RenderTransform as CompositeTransform).CenterY = Center.Y;
+
+            // Update the rotation and scaling
+            if (this.Orientation == PageOrientation.Landscape)
+            {
+                // When in landscape we need to zoom faster, if not it looks choppy
+                (nowShowing.RenderTransform as CompositeTransform).ScaleX = InitialScale * (1 + (e.DistanceRatio - 1) * 2);
+            }
+            else
+            {
+                (nowShowing.RenderTransform as CompositeTransform).ScaleX = InitialScale * e.DistanceRatio;
+            }
+            (nowShowing.RenderTransform as CompositeTransform).ScaleY = (nowShowing.RenderTransform as CompositeTransform).ScaleX;
         }
 
-        private Point GetTranslationDelta(Point currentFinger1, Point currentFinger2, Point oldFinger1, Point oldFinger2, Point currentPosition, double scaleFactor)
+        private void Image_DragDelta(object sender, DragDeltaGestureEventArgs e)
         {
-            var newPos1 = new Point(
-                currentFinger1.X + (currentPosition.X - oldFinger1.X) * scaleFactor,
-                currentFinger1.Y + (currentPosition.Y - oldFinger1.Y) * scaleFactor);
+            //Testing pivotLock attribute
+            if (!isLockedToggle)
+            {
+                return;
+            }
+            // if is not touch enabled or the scale is different than 1 then don’t allow moving
+            if ((nowShowing.RenderTransform as CompositeTransform).ScaleX <= 1.1)
+                return;
 
-            var newPos2 = new Point(
-                currentFinger2.X + (currentPosition.X - oldFinger2.X) * scaleFactor,
-                currentFinger2.Y + (currentPosition.Y - oldFinger2.Y) * scaleFactor);
+            double centerX = (nowShowing.RenderTransform as CompositeTransform).CenterX;
+            double centerY = (nowShowing.RenderTransform as CompositeTransform).CenterY;
+            double translateX = (nowShowing.RenderTransform as CompositeTransform).TranslateX;
+            double translateY = (nowShowing.RenderTransform as CompositeTransform).TranslateY;
+            double scale = (nowShowing.RenderTransform as CompositeTransform).ScaleX;
+            double width = (nowShowing as Image).ActualWidth;
+            double height = (nowShowing as Image).ActualHeight;
 
-            var newPos = new Point(
-                (newPos1.X + newPos2.X) / 2,
-                (newPos1.Y + newPos2.Y) / 2);
+            // Verify limits to not allow the image to get out of area
+            if (centerX - scale * centerX + translateX + e.HorizontalChange < 0 && centerX + scale * (width - centerX) + translateX + e.HorizontalChange > width)
+            {
+                (nowShowing.RenderTransform as CompositeTransform).TranslateX += e.HorizontalChange;
+            }
 
-            return new Point(
-                newPos.X - currentPosition.X,
-                newPos.Y - currentPosition.Y);
+            if (centerY - scale * centerY + translateY + e.VerticalChange < 0 && centerY + scale * (height - centerY) + translateY + e.VerticalChange > height)
+            {
+                (nowShowing.RenderTransform as CompositeTransform).TranslateY += e.VerticalChange;
+            }
+
+            return;
         }
+
+
+        //Zoom Pan ***************************************************************************************
+
 
     }
 }
