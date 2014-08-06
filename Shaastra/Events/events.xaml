@@ -35,65 +35,157 @@
     </toolkit:TransitionService.NavigationOutTransition>
     <phone:PhoneApplicationPage.Resources>
         <Storyboard x:Key="aero_in">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Aero" Storyboard.TargetProperty="Opacity" To="1"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="AeroTrans" Storyboard.TargetProperty="X" From="358" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Aero" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i1_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Aero_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="db_in">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="DB" Storyboard.TargetProperty="Opacity" To="1"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="DBTrans" Storyboard.TargetProperty="X" From="358" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="DB" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i2_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="DB_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="code_in">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Code" Storyboard.TargetProperty="Opacity" To="1"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="CodeTrans" Storyboard.TargetProperty="X" From="358" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Code" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i3_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Code_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="iq_in">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="IQ" Storyboard.TargetProperty="Opacity" To="1"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="IQTrans" Storyboard.TargetProperty="X" From="358" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="IQ" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i4_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="IQ_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="elec_in">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Elec" Storyboard.TargetProperty="Opacity" To="1"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="ElecTrans" Storyboard.TargetProperty="X" From="358" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Elec" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i5_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Elec_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="fs_in">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="FS" Storyboard.TargetProperty="Opacity" To="1"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="FSTrans" Storyboard.TargetProperty="X" From="358" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="FS" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i6_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="FS_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="sl_in">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="SL" Storyboard.TargetProperty="Opacity" To="1"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="SLTrans" Storyboard.TargetProperty="X" From="358" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="SL" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i7_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="SL_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="ws_in">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="WS" Storyboard.TargetProperty="Opacity" To="1"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="WSTrans" Storyboard.TargetProperty="X" From="358" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="WS" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i8_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="WS_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="shows_in">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Shows" Storyboard.TargetProperty="Opacity" To="1"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="ShowsTrans" Storyboard.TargetProperty="X" From="358" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Shows" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i9_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Shows_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="be_in">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="BE" Storyboard.TargetProperty="Opacity" To="1"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="BETrans" Storyboard.TargetProperty="X" From="358" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="BE" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i10_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="BE_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
+        </Storyboard>
+        <Storyboard x:Key="Button_dis">
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Aero_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="DB_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Code_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="IQ_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Elec_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="FS_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="SL_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="WS_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Shows_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="BE_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+        </Storyboard>
+
+        <Storyboard x:Key="Button_app">
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Aero_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="DB_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Code_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="IQ_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Elec_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="FS_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="SL_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="WS_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Shows_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="BE_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
         </Storyboard>
 
         <Storyboard x:Key="aero_out">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Aero" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="AeroTrans" Storyboard.TargetProperty="X" From="0" To="358" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Aero" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i1_Trans" Storyboard.TargetProperty="X" From="0" To="-120" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Aero_img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="db_out">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="DB" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="DBTrans" Storyboard.TargetProperty="X" From="0" To="358" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="DB" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i2_Trans" Storyboard.TargetProperty="X" From="0" To="-120" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="DB_img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="code_out">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Code" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="CodeTrans" Storyboard.TargetProperty="X" From="0" To="358" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Code" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i3_Trans" Storyboard.TargetProperty="X" From="0" To="-120" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Code_img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="iq_out">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="IQ" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="IQTrans" Storyboard.TargetProperty="X" From="0" To="358" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="IQ" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i4_Trans" Storyboard.TargetProperty="X" From="0" To="-120" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="IQ_img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="elec_out">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Elec" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="ElecTrans" Storyboard.TargetProperty="X" From="0" To="358" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Elec" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i5_Trans" Storyboard.TargetProperty="X" From="0" To="-120" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Elec_img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="fs_out">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="FS" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="FSTrans" Storyboard.TargetProperty="X" From="0" To="358" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="FS" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i6_Trans" Storyboard.TargetProperty="X" From="0" To="-120" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="FS_img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="sl_out">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="SL" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="SLTrans" Storyboard.TargetProperty="X" From="0" To="358" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="SL" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i7_Trans" Storyboard.TargetProperty="X" From="0" To="-120" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="SL_img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="ws_out">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="WS" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="WSTrans" Storyboard.TargetProperty="X" From="0" To="358" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="WS" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i8_Trans" Storyboard.TargetProperty="X" From="0" To="-120" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="WS_img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="shows_out">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="Shows" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="ShowsTrans" Storyboard.TargetProperty="X" From="0" To="358" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Shows" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i9_Trans" Storyboard.TargetProperty="X" From="0" To="-120" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Shows_img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="be_out">
-            <DoubleAnimation BeginTime="0:0:0.1" Duration="0:0:0.1" Storyboard.TargetName="BE" Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="BETrans" Storyboard.TargetProperty="X" From="0" To="358" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="BE" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5" />
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i10_Trans" Storyboard.TargetProperty="X" From="0" To="-120" Duration="0:0:0.5"/>
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="BE_img" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
+        </Storyboard>
+
+        <Storyboard x:Key="back_in">
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Back_Button" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+        </Storyboard>
+        <Storyboard x:Key="back_out">
+            <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Back_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
         </Storyboard>
     </phone:PhoneApplicationPage.Resources>
 
@@ -111,122 +203,133 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,368,12">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,12,12,12">
             <ScrollViewer>
                 <StackPanel>
-                    <Button x:Name="Aero_Button" Click="Aero_Button_Click" Height="90" Width="90">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <Border BorderBrush="Transparent" BorderThickness="5">
-                                    <Image Source="\Events\Assets\Aero.png" Stretch="Fill"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                    <Button Content="Aerofest" Foreground="Black" FontSize="36" BorderThickness="0" Background="Red" FontFamily="Jokerman" x:Name="Aero_Button" Click="Aero_Button_Click" Height="90">
                     </Button>
-                    <Button x:Name="DB_Button" Click="DB_Button_Click" Height="90" Width="90">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <Border BorderBrush="Transparent" BorderThickness="5">
-                                    <Image Source="\Events\Assets\DB.png" Stretch="Fill"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                    <Button Content="Design and Build" Foreground="Black" FontSize="36" BorderThickness="0" Background="Orange" FontFamily="Jokerman" x:Name="DB_Button" Click="DB_Button_Click" Height="90">
                     </Button>
-                    <Button x:Name="Code_Button" Click="Code_Button_Click" Height="90" Width="90">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <Border BorderBrush="Transparent" BorderThickness="5">
-                                    <Image Source="\Events\Assets\Code.png" Stretch="Fill"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                    <Button Content="Coding" Foreground="Black" FontSize="36" BorderThickness="0" Background="Green" FontFamily="Jokerman" x:Name="Code_Button" Click="Code_Button_Click" Height="90">
                     </Button>
-                    <Button x:Name="IQ_Button" Click="IQ_Button_Click" Height="90" Width="90">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <Border BorderBrush="Transparent" BorderThickness="5">
-                                    <Image Source="\Events\Assets\IQ.png" Stretch="Fill"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                    <Button Content="Involve and Quizzes" Foreground="Black" FontSize="36" BorderThickness="0" Background="Turquoise" FontFamily="Jokerman" x:Name="IQ_Button" Click="IQ_Button_Click" Height="90">
                     </Button>
-                    <Button x:Name="Elec_Button" Click="Elec_Button_Click" Height="90" Width="90">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <Border BorderBrush="Transparent" BorderThickness="5">
-                                    <Image Source="\Events\Assets\Elec.png" Stretch="Fill"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                    <Button Content="Electronics" Foreground="Black" FontSize="36" BorderThickness="0" Background="Blue" FontFamily="Jokerman" x:Name="Elec_Button" Click="Elec_Button_Click" Height="90">
                     </Button>
-                    <Button x:Name="FS_Button" Click="FS_Button_Click" Height="90" Width="90">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <Border BorderBrush="Transparent" BorderThickness="5">
-                                    <Image Source="\Events\Assets\FS.png" Stretch="Fill"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                    <Button Content="Flagship" Foreground="Black" FontSize="36" BorderThickness="0" Background="Purple" FontFamily="Jokerman" x:Name="FS_Button" Click="FS_Button_Click" Height="90">
                     </Button>
-                    <Button x:Name="SL_Button" Click="SL_Button_Click" Height="90" Width="90">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <Border BorderBrush="Transparent" BorderThickness="5">
-                                    <Image Source="\Events\Assets\SL.png" Stretch="Fill"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                    <Button Content="Spotlight" Foreground="Black" FontSize="36" BorderThickness="0" Background="Lime" FontFamily="Jokerman" x:Name="SL_Button" Click="SL_Button_Click" Height="90">
                     </Button>
-                    <Button x:Name="WS_Button" Click="WS_Button_Click" Height="90" Width="90">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <Border BorderBrush="Transparent" BorderThickness="5">
-                                    <Image Source="\Events\Assets\WS.png" Stretch="Fill"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                    <Button Content="Workshop" Foreground="Black" FontSize="36" BorderThickness="0" Background="Gold" FontFamily="Jokerman" x:Name="WS_Button" Click="WS_Button_Click" Height="90">
                     </Button>
-                    <Button x:Name="Shows_Button" Click="Shows_Button_Click" Height="90" Width="90">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <Border BorderBrush="Transparent" BorderThickness="5">
-                                    <Image Source="\Events\Assets\Shows.png" Stretch="Fill"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                    <Button Content="Shows" Foreground="Black" FontSize="36" BorderThickness="0" Background="Brown" FontFamily="Jokerman" x:Name="Shows_Button" Click="Shows_Button_Click" Height="90">
                     </Button>
-                    <Button x:Name="BE_Button" Click="BE_Button_Click" Height="90" Width="90">
-                        <Button.Template>
-                            <ControlTemplate>
-                                <Border BorderBrush="Transparent" BorderThickness="5">
-                                    <Image Source="\Events\Assets\BE.png" Stretch="Fill"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                    <Button Content="B-Events" Foreground="Black" FontSize="36" BorderThickness="0" Background="Yellow" FontFamily="Jokerman" x:Name="BE_Button" Click="BE_Button_Click" Height="90">
                     </Button>
                 </StackPanel>
             </ScrollViewer>
+            <Button x:Name="Back_Button" BorderThickness="0" Click="Back_Button_Click" Background="Crimson" Opacity="0" Height="90" Width="90" Margin="12,500,370,12"/>
+            <Image x:Name="Aero_img" Source="\Assets\Aero.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="i1_Trans" X="-120"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="DB_img" Source="\Assets\DB.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="i2_Trans" X="-120"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Code_img" Source="\Assets\Code.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="i3_Trans" X="-120"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="IQ_img" Source="\Assets\IQ.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="i4_Trans" X="-120"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Elec_img" Source="\Assets\Elec.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="i5_Trans" X="-120"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="FS_img" Source="\Assets\FS.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="i6_Trans" X="-120"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="SL_img" Source="\Assets\SL.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="i7_Trans" X="-120"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="WS_img" Source="\Assets\WS.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="i8_Trans" X="-120"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Shows_img" Source="\Assets\Shows.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="i9_Trans" X="-120"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="BE_img" Source="\Assets\BE.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="i10_Trans" X="-120"/>
+                </Image.RenderTransform>
+            </Image>
         </Grid>
         
-        <Grid x:Name="Aero" Opacity="0" Background="Red" Grid.Row="1" Margin="120,0,12,12">
+        <Grid x:Name="Aero" Opacity="0" Background="Red" Grid.Row="1" Margin="120,12,12,12">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="AeroTrans" X="358"/>
+            </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="DB" Opacity="0" Background="Orange" Grid.Row="1" Margin="120,0,12,12">
+        <Grid x:Name="DB" Opacity="0" Background="Orange" Grid.Row="1" Margin="120,12,12,12">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="DBTrans" X="358"/>
+            </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="Code" Opacity="0" Background="Green" Grid.Row="1" Margin="120,0,12,12">
+        <Grid x:Name="Code" Opacity="0" Background="Green" Grid.Row="1" Margin="120,12,12,12">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="CodeTrans" X="358"/>
+            </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="IQ" Opacity="0" Background="Turquoise" Grid.Row="1" Margin="120,0,12,12">
+        <Grid x:Name="IQ" Opacity="0" Background="Turquoise" Grid.Row="1" Margin="120,12,12,12">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="IQTrans" X="358"/>
+            </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="Elec" Opacity="0" Background="Blue" Grid.Row="1" Margin="120,0,12,12">
+        <Grid x:Name="Elec" Opacity="0" Background="Blue" Grid.Row="1" Margin="120,12,12,12">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="ElecTrans" X="358"/>
+            </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="FS" Opacity="0" Background="Purple" Grid.Row="1" Margin="120,0,12,12">
+        <Grid x:Name="FS" Opacity="0" Background="Purple" Grid.Row="1" Margin="120,12,12,12">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="FSTrans" X="358"/>
+            </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="SL" Opacity="0" Background="Lime" Grid.Row="1" Margin="120,0,12,12">
+        <Grid x:Name="SL" Opacity="0" Background="Lime" Grid.Row="1" Margin="120,12,12,12">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="SLTrans" X="358"/>
+            </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="WS" Opacity="0" Background="Gold" Grid.Row="1" Margin="120,0,12,12">
+        <Grid x:Name="WS" Opacity="0" Background="Gold" Grid.Row="1" Margin="120,12,12,12">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="WSTrans" X="358"/>
+            </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="Shows" Opacity="0" Background="Brown" Grid.Row="1" Margin="120,0,12,12">
+        <Grid x:Name="Shows" Opacity="0" Background="Brown" Grid.Row="1" Margin="120,12,12,12">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="ShowsTrans" X="358"/>
+            </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="BE" Opacity="0" Background="Yellow" Grid.Row="1" Margin="120,0,12,12">
+        <Grid x:Name="BE" Opacity="0" Background="Yellow" Grid.Row="1" Margin="120,12,12,12">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="BETrans" X="358"/>
+            </Grid.RenderTransform>
         </Grid>
 
     </Grid>

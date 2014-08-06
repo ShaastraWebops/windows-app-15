@@ -37,462 +37,119 @@ namespace Shaastra.Events
 
         private void Aero_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (isDB)
-            {
-                Storyboard DB_dis = this.Resources["db_out"] as Storyboard;
-                DB_dis.Begin();
-                isDB = false;
-            }
-            if (isCode)
-            {
-                Storyboard Code_dis = this.Resources["code_out"] as Storyboard;
-                Code_dis.Begin();
-                isCode = false;
-            }
-            if (isIQ)
-            {
-                Storyboard IQ_dis = this.Resources["iq_out"] as Storyboard;
-                IQ_dis.Begin();
-                isIQ = false;
-            }
-            if (isElec)
-            {
-                Storyboard Elec_dis = this.Resources["elec_out"] as Storyboard;
-                Elec_dis.Begin();
-                isElec = false;
-            }
-            if (isFS)
-            {
-                Storyboard FS_dis = this.Resources["fs_out"] as Storyboard;
-                FS_dis.Begin();
-                isFS = false;
-            }
-            if (isSL)
-            {
-                Storyboard SL_dis = this.Resources["sl_out"] as Storyboard;
-                SL_dis.Begin();
-                isSL = false;
-            }
-            if (isWS)
-            {
-                Storyboard WS_dis = this.Resources["ws_out"] as Storyboard;
-                WS_dis.Begin();
-                isWS = false;
-            }
-            if (isShows)
-            {
-                Storyboard Shows_dis = this.Resources["shows_out"] as Storyboard;
-                Shows_dis.Begin();
-                isShows = false;
-            }
-            if (isBE)
-            {
-                Storyboard BE_dis = this.Resources["be_out"] as Storyboard;
-                BE_dis.Begin();
-                isBE = false;
-            }
-
-            if (!isAero)
-            {
-                Storyboard Aero_app = this.Resources["aero_in"] as Storyboard;
-                Aero_app.Begin();
-                isAero = true;
-            }
+            Storyboard Aero_app = this.Resources["aero_in"] as Storyboard;
+            Aero_app.Begin();
+            isAero = true;
+            Storyboard Back_app = this.Resources["back_in"] as Storyboard;
+            Back_app.Begin();
+            Storyboard Button_out = this.Resources["Button_dis"] as Storyboard;
+            Button_out.Begin();
         }
 
         private void DB_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (isAero)
-            {
-                Storyboard Aero_dis = this.Resources["aero_out"] as Storyboard;
-                Aero_dis.Begin();
-                isAero = false;
-            }
-            if (isCode)
-            {
-                Storyboard Code_dis = this.Resources["code_out"] as Storyboard;
-                Code_dis.Begin();
-                isCode = false;
-            }
-            if (isIQ)
-            {
-                Storyboard IQ_dis = this.Resources["iq_out"] as Storyboard;
-                IQ_dis.Begin();
-                isIQ = false;
-            }
-            if (isElec)
-            {
-                Storyboard Elec_dis = this.Resources["elec_out"] as Storyboard;
-                Elec_dis.Begin();
-                isElec = false;
-            }
-            if (isFS)
-            {
-                Storyboard FS_dis = this.Resources["fs_out"] as Storyboard;
-                FS_dis.Begin();
-                isFS = false;
-            }
-            if (isSL)
-            {
-                Storyboard SL_dis = this.Resources["sl_out"] as Storyboard;
-                SL_dis.Begin();
-                isSL = false;
-            }
-            if (isWS)
-            {
-                Storyboard WS_dis = this.Resources["ws_out"] as Storyboard;
-                WS_dis.Begin();
-                isWS = false;
-            }
-            if (isShows)
-            {
-                Storyboard Shows_dis = this.Resources["shows_out"] as Storyboard;
-                Shows_dis.Begin();
-                isShows = false;
-            }
-            if (isBE)
-            {
-                Storyboard BE_dis = this.Resources["be_out"] as Storyboard;
-                BE_dis.Begin();
-                isBE = false;
-            }
-
-            if (!isDB)
-            {
-                Storyboard DB_app = this.Resources["db_in"] as Storyboard;
-                DB_app.Begin();
-                isDB = true;
-            }
+            Storyboard DB_app = this.Resources["db_in"] as Storyboard;
+            DB_app.Begin();
+            isDB = true;
+            Storyboard Back_app = this.Resources["back_in"] as Storyboard;
+            Back_app.Begin();
+            Storyboard Button_out = this.Resources["Button_dis"] as Storyboard;
+            Button_out.Begin();
         }
 
         private void Code_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (isAero)
-            {
-                Storyboard Aero_dis = this.Resources["aero_out"] as Storyboard;
-                Aero_dis.Begin();
-                isAero = false;
-            }
-            if (isDB)
-            {
-                Storyboard DB_dis = this.Resources["db_out"] as Storyboard;
-                DB_dis.Begin();
-                isDB = false;
-            }
-            if (isIQ)
-            {
-                Storyboard IQ_dis = this.Resources["iq_out"] as Storyboard;
-                IQ_dis.Begin();
-                isIQ = false;
-            }
-            if (isElec)
-            {
-                Storyboard Elec_dis = this.Resources["elec_out"] as Storyboard;
-                Elec_dis.Begin();
-                isElec = false;
-            }
-            if (isFS)
-            {
-                Storyboard FS_dis = this.Resources["fs_out"] as Storyboard;
-                FS_dis.Begin();
-                isFS = false;
-            }
-            if (isSL)
-            {
-                Storyboard SL_dis = this.Resources["sl_out"] as Storyboard;
-                SL_dis.Begin();
-                isSL = false;
-            }
-            if (isWS)
-            {
-                Storyboard WS_dis = this.Resources["ws_out"] as Storyboard;
-                WS_dis.Begin();
-                isWS = false;
-            }
-            if (isShows)
-            {
-                Storyboard Shows_dis = this.Resources["shows_out"] as Storyboard;
-                Shows_dis.Begin();
-                isShows = false;
-            }
-            if (isBE)
-            {
-                Storyboard BE_dis = this.Resources["be_out"] as Storyboard;
-                BE_dis.Begin();
-                isBE = false;
-            }
-
-            if (!isCode)
-            {
-                Storyboard Code_app = this.Resources["code_in"] as Storyboard;
-                Code_app.Begin();
-                isCode = true;
-            }
+            Storyboard Code_app = this.Resources["code_in"] as Storyboard;
+            Code_app.Begin();
+            isCode = true;
+            Storyboard Back_app = this.Resources["back_in"] as Storyboard;
+            Back_app.Begin();
+            Storyboard Button_out = this.Resources["Button_dis"] as Storyboard;
+            Button_out.Begin();
         }
 
         private void IQ_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (isAero)
-            {
-                Storyboard Aero_dis = this.Resources["aero_out"] as Storyboard;
-                Aero_dis.Begin();
-                isAero = false; 
-            }
-            if (isDB)
-            {
-                Storyboard DB_dis = this.Resources["db_out"] as Storyboard;
-                DB_dis.Begin();
-                isDB = false;
-            }
-            if (isCode)
-            {
-                Storyboard Code_dis = this.Resources["code_out"] as Storyboard;
-                Code_dis.Begin();
-                isCode = false;
-            }
-            if (isElec)
-            {
-                Storyboard Elec_dis = this.Resources["elec_out"] as Storyboard;
-                Elec_dis.Begin();
-                isElec = false;
-            }
-            if (isFS)
-            {
-                Storyboard FS_dis = this.Resources["fs_out"] as Storyboard;
-                FS_dis.Begin();
-                isFS = false;
-            }
-            if (isSL)
-            {
-                Storyboard SL_dis = this.Resources["sl_out"] as Storyboard;
-                SL_dis.Begin();
-                isSL = false;
-            }
-            if (isWS)
-            {
-                Storyboard WS_dis = this.Resources["ws_out"] as Storyboard;
-                WS_dis.Begin();
-                isWS = false;
-            }
-            if (isShows)
-            {
-                Storyboard Shows_dis = this.Resources["shows_out"] as Storyboard;
-                Shows_dis.Begin();
-                isShows = false;
-            }
-            if (isBE)
-            {
-                Storyboard BE_dis = this.Resources["be_out"] as Storyboard;
-                BE_dis.Begin();
-                isBE = false;
-            }
-
-            if (!isIQ)
-            {
-                Storyboard IQ_app = this.Resources["iq_in"] as Storyboard;
-                IQ_app.Begin();
-                isIQ = true;
-            }
+            Storyboard IQ_app = this.Resources["iq_in"] as Storyboard;
+            IQ_app.Begin();
+            isIQ = true;
+            Storyboard Back_app = this.Resources["back_in"] as Storyboard;
+            Back_app.Begin();
+            Storyboard Button_out = this.Resources["Button_dis"] as Storyboard;
+            Button_out.Begin();
         }
 
         private void Elec_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (isAero)
-            {
-                Storyboard Aero_dis = this.Resources["aero_out"] as Storyboard;
-                Aero_dis.Begin();
-                isAero = false;
-            }
-            if (isDB)
-            {
-                Storyboard DB_dis = this.Resources["db_out"] as Storyboard;
-                DB_dis.Begin();
-                isDB = false;
-            }
-            if (isCode)
-            {
-                Storyboard Code_dis = this.Resources["code_out"] as Storyboard;
-                Code_dis.Begin();
-                isCode = false;
-            }
-            if (isIQ)
-            {
-                Storyboard IQ_dis = this.Resources["iq_out"] as Storyboard;
-                IQ_dis.Begin();
-                isIQ = false;
-            }
-            if (isFS)
-            {
-                Storyboard FS_dis = this.Resources["fs_out"] as Storyboard;
-                FS_dis.Begin();
-                isFS = false;
-            }
-            if (isSL)
-            {
-                Storyboard SL_dis = this.Resources["sl_out"] as Storyboard;
-                SL_dis.Begin();
-                isSL = false; 
-            }
-            if (isWS)
-            {
-                Storyboard WS_dis = this.Resources["ws_out"] as Storyboard;
-                WS_dis.Begin();
-                isWS = false;
-            }
-            if (isShows)
-            {
-                Storyboard Shows_dis = this.Resources["shows_out"] as Storyboard;
-                Shows_dis.Begin();
-                isShows = false;
-            }
-            if (isBE)
-            {
-                Storyboard BE_dis = this.Resources["be_out"] as Storyboard;
-                BE_dis.Begin();
-                isBE = false;
-            }
-
-            if (!isElec)
-            {
-                Storyboard Elec_app = this.Resources["elec_in"] as Storyboard;
-                Elec_app.Begin();
-                isElec = true;
-            }
+            Storyboard Elec_app = this.Resources["elec_in"] as Storyboard;
+            Elec_app.Begin();
+            isElec = true;
+            Storyboard Back_app = this.Resources["back_in"] as Storyboard;
+            Back_app.Begin();
+            Storyboard Button_out = this.Resources["Button_dis"] as Storyboard;
+            Button_out.Begin();
         }
 
         private void FS_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (isAero)
-            {
-                Storyboard Aero_dis = this.Resources["aero_out"] as Storyboard;
-                Aero_dis.Begin();
-                isAero = false;
-            }
-            if (isDB)
-            {
-                Storyboard DB_dis = this.Resources["db_out"] as Storyboard;
-                DB_dis.Begin();
-                isDB = false;
-            }
-            if (isCode)
-            {
-                Storyboard Code_dis = this.Resources["code_out"] as Storyboard;
-                Code_dis.Begin();
-                isCode = false;
-            }
-            if (isIQ)
-            {
-                Storyboard IQ_dis = this.Resources["iq_out"] as Storyboard;
-                IQ_dis.Begin();
-                isIQ = false;
-            }
-            if (isElec)
-            {
-                Storyboard Elec_dis = this.Resources["elec_out"] as Storyboard;
-                Elec_dis.Begin();
-                isElec = false;
-            }
-            if (isSL)
-            {
-                Storyboard SL_dis = this.Resources["sl_out"] as Storyboard;
-                SL_dis.Begin();
-                isSL = false;
-            }
-            if (isWS)
-            {
-                Storyboard WS_dis = this.Resources["ws_out"] as Storyboard;
-                WS_dis.Begin();
-                isWS = false;
-            }
-            if (isShows)
-            {
-                Storyboard Shows_dis = this.Resources["shows_out"] as Storyboard;
-                Shows_dis.Begin();
-                isShows = false;
-            }
-            if (isBE)
-            {
-                Storyboard BE_dis = this.Resources["be_out"] as Storyboard;
-                BE_dis.Begin();
-                isBE = false;
-            }
-
-            if (!isFS)
-            {
-                Storyboard FS_app = this.Resources["fs_in"] as Storyboard;
-                FS_app.Begin();
-                isFS = true;
-            }
+            Storyboard FS_app = this.Resources["fs_in"] as Storyboard;
+            FS_app.Begin();
+            isFS = true;
+            Storyboard Back_app = this.Resources["back_in"] as Storyboard;
+            Back_app.Begin();
+            Storyboard Button_out = this.Resources["Button_dis"] as Storyboard;
+            Button_out.Begin();
         }
 
         private void SL_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (isAero)
-            {
-                Storyboard Aero_dis = this.Resources["aero_out"] as Storyboard;
-                Aero_dis.Begin();
-                isAero = false;
-            }
-            if (isDB)
-            {
-                Storyboard DB_dis = this.Resources["db_out"] as Storyboard;
-                DB_dis.Begin();
-                isDB = false;
-            }
-            if (isCode)
-            {
-                Storyboard Code_dis = this.Resources["code_out"] as Storyboard;
-                Code_dis.Begin();
-                isCode = false;
-            }
-            if (isIQ)
-            {
-                Storyboard IQ_dis = this.Resources["iq_out"] as Storyboard;
-                IQ_dis.Begin();
-                isIQ = false;
-            }
-            if (isElec)
-            {
-                Storyboard Elec_dis = this.Resources["elec_out"] as Storyboard;
-                Elec_dis.Begin();
-                isElec = false;
-            }
-            if (isFS)
-            {
-                Storyboard FS_dis = this.Resources["fs_out"] as Storyboard;
-                FS_dis.Begin();
-                isFS = false;
-            }
-            if (isWS)
-            {
-                Storyboard WS_dis = this.Resources["ws_out"] as Storyboard;
-                WS_dis.Begin();
-                isWS = false;
-            }
-            if (isShows)
-            {
-                Storyboard Shows_dis = this.Resources["shows_out"] as Storyboard;
-                Shows_dis.Begin();
-                isShows = false; 
-            }
-            if (isBE)
-            {
-                Storyboard BE_dis = this.Resources["be_out"] as Storyboard;
-                BE_dis.Begin();
-                isBE = false;
-            }
-
-            if (!isSL)
-            {
-                Storyboard SL_app = this.Resources["sl_in"] as Storyboard;
-                SL_app.Begin();
-                isSL = true;
-            }
+            Storyboard SL_app = this.Resources["sl_in"] as Storyboard;
+            SL_app.Begin();
+            isSL = true;
+            Storyboard Back_app = this.Resources["back_in"] as Storyboard;
+            Back_app.Begin();
+            Storyboard Button_out = this.Resources["Button_dis"] as Storyboard;
+            Button_out.Begin();
         }
 
         private void WS_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (isAero)
+            Storyboard WS_app = this.Resources["ws_in"] as Storyboard;
+            WS_app.Begin();
+            isWS = true;
+            Storyboard Back_app = this.Resources["back_in"] as Storyboard;
+            Back_app.Begin();
+            Storyboard Button_out = this.Resources["Button_dis"] as Storyboard;
+            Button_out.Begin();
+        }
+
+        private void Shows_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Storyboard Shows_app = this.Resources["shows_in"] as Storyboard;
+            Shows_app.Begin();
+            isShows = true;
+            Storyboard Back_app = this.Resources["back_in"] as Storyboard;
+            Back_app.Begin();
+            Storyboard Button_out = this.Resources["Button_dis"] as Storyboard;
+            Button_out.Begin();
+        }
+
+        private void BE_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Storyboard BE_app = this.Resources["be_in"] as Storyboard;
+            BE_app.Begin();
+            isBE = true;
+            Storyboard Back_app = this.Resources["back_in"] as Storyboard;
+            Back_app.Begin();
+            Storyboard Button_out = this.Resources["Button_dis"] as Storyboard;
+            Button_out.Begin();
+        }
+
+        private void Back_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Storyboard Back_dis = this.Resources["back_out"] as Storyboard;
+            Back_dis.Begin();
+            if(isAero)
             {
                 Storyboard Aero_dis = this.Resources["aero_out"] as Storyboard;
                 Aero_dis.Begin();
@@ -532,7 +189,13 @@ namespace Shaastra.Events
             {
                 Storyboard SL_dis = this.Resources["sl_out"] as Storyboard;
                 SL_dis.Begin();
-                isSL = false; 
+                isSL = false;
+            }
+            if (isWS)
+            {
+                Storyboard WS_dis = this.Resources["ws_out"] as Storyboard;
+                WS_dis.Begin();
+                isWS = false;
             }
             if (isShows)
             {
@@ -546,142 +209,8 @@ namespace Shaastra.Events
                 BE_dis.Begin();
                 isBE = false;
             }
-
-            if (!isWS)
-            {
-                Storyboard WS_app = this.Resources["ws_in"] as Storyboard;
-                WS_app.Begin();
-                isWS = true;
-            }
-        }
-
-        private void Shows_Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (isAero)
-            {
-                Storyboard Aero_dis = this.Resources["aero_out"] as Storyboard;
-                Aero_dis.Begin();
-                isAero = false;
-            }
-            if (isDB)
-            {
-                Storyboard DB_dis = this.Resources["db_out"] as Storyboard;
-                DB_dis.Begin();
-                isDB = false;
-            }
-            if (isCode)
-            {
-                Storyboard Code_dis = this.Resources["code_out"] as Storyboard;
-                Code_dis.Begin();
-                isCode = false;
-            }
-            if (isIQ)
-            {
-                Storyboard IQ_dis = this.Resources["iq_out"] as Storyboard;
-                IQ_dis.Begin();
-                isIQ = false;
-            }
-            if (isElec)
-            {
-                Storyboard Elec_dis = this.Resources["elec_out"] as Storyboard;
-                Elec_dis.Begin();
-                isElec = false;
-            }
-            if (isFS)
-            {
-                Storyboard FS_dis = this.Resources["fs_out"] as Storyboard;
-                FS_dis.Begin();
-                isFS = false;
-            }
-            if (isSL)
-            {
-                Storyboard SL_dis = this.Resources["sl_out"] as Storyboard;
-                SL_dis.Begin();
-                isSL = false;
-            }
-            if (isWS)
-            {
-                Storyboard WS_dis = this.Resources["ws_out"] as Storyboard;
-                WS_dis.Begin();
-                isWS = false;
-            }
-            if (isBE)
-            {
-                Storyboard BE_dis = this.Resources["be_out"] as Storyboard;
-                BE_dis.Begin();
-                isBE = false; 
-            }
-
-            if (!isShows)
-            {
-                Storyboard Shows_app = this.Resources["shows_in"] as Storyboard;
-                Shows_app.Begin();
-                isShows = true;
-            }
-        }
-
-        private void BE_Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (isAero)
-            {
-                Storyboard Aero_dis = this.Resources["aero_out"] as Storyboard;
-                Aero_dis.Begin();
-                isAero = false;
-            }
-            if (isDB)
-            {
-                Storyboard DB_dis = this.Resources["db_out"] as Storyboard;
-                DB_dis.Begin();
-                isDB = false;
-            }
-            if (isCode)
-            {
-                Storyboard Code_dis = this.Resources["code_out"] as Storyboard;
-                Code_dis.Begin();
-                isCode = false;
-            }
-            if (isIQ)
-            {
-                Storyboard IQ_dis = this.Resources["iq_out"] as Storyboard;
-                IQ_dis.Begin();
-                isIQ = false;
-            }
-            if (isElec)
-            {
-                Storyboard Elec_dis = this.Resources["elec_out"] as Storyboard;
-                Elec_dis.Begin();
-                isElec = false;
-            }
-            if (isFS)
-            {
-                Storyboard FS_dis = this.Resources["fs_out"] as Storyboard;
-                FS_dis.Begin();
-                isFS = false;
-            }
-            if (isSL)
-            {
-                Storyboard SL_dis = this.Resources["sl_out"] as Storyboard;
-                SL_dis.Begin();
-                isSL = false;
-            }
-            if (isWS)
-            {
-                Storyboard WS_dis = this.Resources["ws_out"] as Storyboard;
-                WS_dis.Begin();
-                isWS = false;
-            }
-            if (isShows)
-            {
-                Storyboard Shows_dis = this.Resources["shows_out"] as Storyboard;
-                Shows_dis.Begin();
-                isShows = false;
-            }
-            if (!isBE)
-            {
-                Storyboard BE_app = this.Resources["be_in"] as Storyboard;
-                BE_app.Begin();
-                isBE = true;
-            }
+            Storyboard Button_in = this.Resources["Button_app"] as Storyboard;
+            Button_in.Begin();
         }
 
         // Sample code for building a localized ApplicationBar
