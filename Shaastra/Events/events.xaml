@@ -94,6 +94,7 @@
             <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="i10_Trans" Storyboard.TargetProperty="X" From="-120" To="0" Duration="0:0:0.5"/>
             <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="BE_img" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"/>
         </Storyboard>
+
         <Storyboard x:Key="Button_dis">
             <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="Aero_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
             <DoubleAnimation BeginTime="0:0:0.1" Storyboard.TargetName="DB_Button" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
@@ -203,7 +204,7 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,12,12,12">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,12,0,12">
             <ScrollViewer>
                 <StackPanel>
                     <Button Content="Aerofest" Foreground="Black" FontSize="36" BorderThickness="0" Background="Red" FontFamily="Jokerman" x:Name="Aero_Button" Click="Aero_Button_Click" Height="90">
@@ -229,104 +230,104 @@
                 </StackPanel>
             </ScrollViewer>
             <Button x:Name="Back_Button" BorderThickness="0" Click="Back_Button_Click" Background="Crimson" Opacity="0" Height="90" Width="90" Margin="12,500,370,12"/>
-            <Image x:Name="Aero_img" Source="\Assets\Aero.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+            <Image x:Name="Aero_img" Source="Assets/Aero.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i1_Trans" X="-120"/>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="DB_img" Source="\Assets\DB.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+            <Image x:Name="DB_img" Source="Assets/DB.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i2_Trans" X="-120"/>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="Code_img" Source="\Assets\Code.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+            <Image x:Name="Code_img" Source="Assets/Code.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i3_Trans" X="-120"/>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="IQ_img" Source="\Assets\IQ.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+            <Image x:Name="IQ_img" Source="Assets/IQ.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i4_Trans" X="-120"/>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="Elec_img" Source="\Assets\Elec.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+            <Image x:Name="Elec_img" Source="Assets/Elec.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i5_Trans" X="-120"/>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="FS_img" Source="\Assets\FS.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+            <Image x:Name="FS_img" Source="Assets/FS.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i6_Trans" X="-120"/>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="SL_img" Source="\Assets\SL.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+            <Image x:Name="SL_img" Source="Assets/SL.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i7_Trans" X="-120"/>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="WS_img" Source="\Assets\WS.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+            <Image x:Name="WS_img" Source="Assets/WS.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i8_Trans" X="-120"/>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="Shows_img" Source="\Assets\Shows.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+            <Image x:Name="Shows_img" Source="Assets/Shows.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i9_Trans" X="-120"/>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="BE_img" Source="\Assets\BE.png" Opacity="0" Height="100" Width="100" Margin="10,10,369,502">
+            <Image x:Name="BE_img" Source="Assets/BE.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i10_Trans" X="-120"/>
                 </Image.RenderTransform>
             </Image>
         </Grid>
         
-        <Grid x:Name="Aero" Opacity="0" Background="Red" Grid.Row="1" Margin="120,12,12,12">
+        <Grid x:Name="Aero" Opacity="0" Background="Red" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="AeroTrans" X="358"/>
             </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="DB" Opacity="0" Background="Orange" Grid.Row="1" Margin="120,12,12,12">
+        <Grid x:Name="DB" Opacity="0" Background="Orange" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="DBTrans" X="358"/>
             </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="Code" Opacity="0" Background="Green" Grid.Row="1" Margin="120,12,12,12">
+        <Grid x:Name="Code" Opacity="0" Background="Green" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="CodeTrans" X="358"/>
             </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="IQ" Opacity="0" Background="Turquoise" Grid.Row="1" Margin="120,12,12,12">
+        <Grid x:Name="IQ" Opacity="0" Background="Turquoise" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="IQTrans" X="358"/>
             </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="Elec" Opacity="0" Background="Blue" Grid.Row="1" Margin="120,12,12,12">
+        <Grid x:Name="Elec" Opacity="0" Background="Blue" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="ElecTrans" X="358"/>
             </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="FS" Opacity="0" Background="Purple" Grid.Row="1" Margin="120,12,12,12">
+        <Grid x:Name="FS" Opacity="0" Background="Purple" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="FSTrans" X="358"/>
             </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="SL" Opacity="0" Background="Lime" Grid.Row="1" Margin="120,12,12,12">
+        <Grid x:Name="SL" Opacity="0" Background="Lime" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="SLTrans" X="358"/>
             </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="WS" Opacity="0" Background="Gold" Grid.Row="1" Margin="120,12,12,12">
+        <Grid x:Name="WS" Opacity="0" Background="Gold" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="WSTrans" X="358"/>
             </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="Shows" Opacity="0" Background="Brown" Grid.Row="1" Margin="120,12,12,12">
+        <Grid x:Name="Shows" Opacity="0" Background="Brown" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="ShowsTrans" X="358"/>
             </Grid.RenderTransform>
         </Grid>
-        <Grid x:Name="BE" Opacity="0" Background="Yellow" Grid.Row="1" Margin="120,12,12,12">
+        <Grid x:Name="BE" Opacity="0" Background="Yellow" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="BETrans" X="358"/>
             </Grid.RenderTransform>
