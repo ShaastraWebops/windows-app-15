@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using Microsoft.Phone.Tasks;
 using Windows.Devices.Geolocation;
 using System.Device.Location;
+using System.Threading.Tasks;
 
 
 namespace Shaastra.Lectures
@@ -29,24 +30,16 @@ namespace Shaastra.Lectures
         public lecturedetails()
         {
             InitializeComponent();
+            progressOverlay.Show();
         }
 
-        protected override void OnRemovedFromJournal(System.Windows.Navigation.JournalEntryRemovedEventArgs e)
-        {
-            pos = null;
-            bearer.UriSource = null;
-            profilePic.Source = bearer;
-            GC.Collect();
-        }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        private async void loadData()
         {
             List<lectureDetailRootObject> scholars = new List<lectureDetailRootObject>();
-            NavigationContext.QueryString.TryGetValue("key", out argVal);
             Stream jsStream = Application.GetResourceStream(new Uri("Lectures\\lecture_data.json", UriKind.Relative)).Stream;
             TextReader dumper = new StreamReader(jsStream);
-            jsData = dumper.ReadToEnd();
-            scholars = Newtonsoft.Json.JsonConvert.DeserializeObject<List<lectureDetailRootObject>>(jsData);
+            jsData = await dumper.ReadToEndAsync();
+            await Task.Factory.StartNew(() => { scholars = Newtonsoft.Json.JsonConvert.DeserializeObject<List<lectureDetailRootObject>>(jsData); });
             foreach (lectureDetailRootObject element in scholars)
             {
                 if (element.key == argVal || element.pic == argVal)
@@ -72,13 +65,24 @@ namespace Shaastra.Lectures
                     break;
                 }
             }
+            progressOverlay.Hide();
         }
 
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        protected override void OnRemovedFromJournal(System.Windows.Navigation.JournalEntryRemovedEventArgs e)
         {
-
+            pos = null;
+            bearer.UriSource = null;
+            profilePic.Source = bearer;
+            GC.Collect();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            argVal = NavigationContext.QueryString["key"];
+            loadData();
+        }
+
+       
 
         private void glonass_Click(object sender, RoutedEventArgs e)
         {

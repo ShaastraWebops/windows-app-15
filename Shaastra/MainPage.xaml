@@ -73,6 +73,7 @@
             <Button x:Name="clickLectures" Click="clickLectures_Click" Height="80" Width="250" Content="Lectures" Margin="40,59,166,468"></Button>
             <Button x:Name="clickEvents" Click="clickEvents_Click" Height="80" Width="250" Content="Events" Margin="40,160,166,399"/>
             <Button x:Name="clickShows" Click="clickShows_Click" Height="80" Width="250" Content="Shows" Margin="40,245,166,314"></Button>
+            <Button x:Name="clickTemp" Click="clickTemp_Click" Height="80" Width="250" Content="Temp" Margin="40,330,166,229"></Button>
 </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are

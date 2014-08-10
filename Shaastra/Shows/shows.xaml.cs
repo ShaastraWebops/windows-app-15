@@ -11,6 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Media;
 using Coding4Fun.Toolkit.Controls;
 using System.Windows.Threading;
+using System.Diagnostics;
 
 namespace Shaastra.Shows
 {
@@ -34,14 +35,34 @@ namespace Shaastra.Shows
             imgOne.Source = bearer;
             nowShowing = imgOne;
             tickie = new DispatcherTimer();
-            tickie.Interval = new TimeSpan(0, 0, 4);
+            tickie.Interval = new TimeSpan(0, 0, 6);
             tickie.Tick += tickie_Tick;
             tickie.Start();
         }
 
         void tickie_Tick(object sender, EventArgs e)
         {
-            swypeStory.Begin();
+            DispatcherTimer changeImg = new DispatcherTimer();
+            changeImg.Interval = new TimeSpan(0, 0, 0, 0, 250);
+            changeImg.Tick += changeImg_Tick;
+            changeImg.Start();
+            mainPivotDown.Begin();
+        }
+
+        void changeImg_Tick(object sender, EventArgs e)
+        {
+            int prevIndex = mainPivot.SelectedIndex;
+            int resultIndex = (prevIndex + 1) % 3;
+            mainPivot.SelectedIndex = resultIndex;
+            imageStore++;
+            if (imageStore == 8)
+            {
+                imageStore = 1;
+            }
+            Debug.WriteLine(" now " + resultIndex.ToString() + "  " + " img " + imageStore.ToString() + " pivstate " + stateStore.ToString());
+            mainPivot_SelectionChanged(sender,null);
+            (sender as DispatcherTimer).Stop();
+            mainPivotUp.Begin();
         }
 
         protected override void OnRemovedFromJournal(System.Windows.Navigation.JournalEntryRemovedEventArgs e)
@@ -55,6 +76,11 @@ namespace Shaastra.Shows
         }
 
         private void mainPivot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            imgShuffler();
+        }
+
+        private void imgShuffler()
         {
             int state = mainPivot.SelectedIndex + 1;
             int forwardState = state - (stateStore % 3);
@@ -108,7 +134,10 @@ namespace Shaastra.Shows
         {
             isLockedToggle = !isLockedToggle;
             mainPivot.IsLocked = isLockedToggle;
-
+            if (mainPivot.IsLocked)
+                tickie.Stop();
+            else
+                tickie.Start();
             //Show Toast Message *******************************************
             ToastPrompt toast = GetToastWithImgAndTitle(isLockedToggle);
             toast.TextWrapping = TextWrapping.NoWrap;

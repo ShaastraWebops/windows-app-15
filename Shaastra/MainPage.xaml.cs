@@ -37,6 +37,11 @@ namespace Shaastra
             NavigationService.Navigate(new Uri("/Shows/shows.xaml", UriKind.Relative));
         }
 
+        private void clickTemp_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=pic1f",UriKind.Relative));
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{
