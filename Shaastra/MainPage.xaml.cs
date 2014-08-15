@@ -17,9 +17,20 @@ namespace Shaastra
         public MainPage()
         {
             InitializeComponent();
-            animeThree.Begin();
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+        }
+
+        private void TitlePanel_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            animeFourUp.Begin();
+            animeFourUp.Completed += animeFourUp_Completed;
+        }
+
+        void animeFourUp_Completed(object sender, EventArgs e)
+        {
+            turnFour.CenterOfRotationX = 0;
+            animeFourLeft.Begin();
         }
 
         private void clickLectures_Click(object sender, RoutedEventArgs e)
@@ -41,6 +52,8 @@ namespace Shaastra
         {
             NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=pic1f",UriKind.Relative));
         }
+
+        
 
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()

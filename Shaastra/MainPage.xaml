@@ -66,7 +66,7 @@
          -->
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Tap="TitlePanel_Tap">
             <TextBlock Text="SHAASTRA" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
             <TextBlock Text="main_page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
@@ -79,7 +79,7 @@
             <Button x:Name="clickTemp" Click="clickTemp_Click" Height="80" Width="250" Content="Temp" Margin="40,330,166,229"></Button>-->
             <Image x:Name="clickLectures" Source="Assets/part1.jpg" Opacity="0" Height="200" Margin="-92,69,92,370">
             </Image>
-            <Image x:Name="clickEvents" Source="Assets/part2.jpg" Height="200" Margin="108,69,-108,370">
+            <Image x:Name="clickEvents" Source="Assets/part2.jpg" Opacity="0" Height="200" Margin="108,69,-108,370">
                 <Image.Projection>
                     <PlaneProjection x:Name="turnTwo"/>
                 </Image.Projection>
@@ -91,7 +91,7 @@
             </Image>
             <Image x:Name="clickTemp" Source="Assets/part4.jpg" Height="200" Margin="108,269,-108,170">
                 <Image.Projection>
-                    <PlaneProjection x:Name="turnFour"/>
+                    <PlaneProjection x:Name="turnFour" CenterOfRotationY="0"/>
                 </Image.Projection>
             </Image>
         </Grid>
@@ -113,14 +113,14 @@
             </DoubleAnimation>
         </Storyboard>
         <Storyboard x:Name="animeFourUp">
-            <DoubleAnimation Storyboard.TargetName="turnFour" Storyboard.TargetProperty="RotationX" From="0" To="-180" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:0.75">
+            <DoubleAnimation Storyboard.TargetName="turnFour" Storyboard.TargetProperty="RotationX" From="0" To="-180" Duration="0:0:0.75">
                 <DoubleAnimation.EasingFunction>
                     <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
         <Storyboard x:Name="animeFourLeft">
-            <DoubleAnimation Storyboard.TargetName="turnFour" Storyboard.TargetProperty="RotationX" From="0" To="-180" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:0.75">
+            <DoubleAnimation Storyboard.TargetName="turnFour" Storyboard.TargetProperty="RotationY" From="0" To="180" Duration="0:0:0.75">
                 <DoubleAnimation.EasingFunction>
                     <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
