@@ -146,6 +146,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\nebula.jpg" />
+    <Content Include="Assets\part1.jpg" />
+    <Content Include="Assets\part2.jpg" />
+    <Content Include="Assets\part3.jpg" />
+    <Content Include="Assets\part4.jpg" />
     <Content Include="Events\Assets\Aero.png" />
     <Content Include="Events\Assets\AlignmentGrid.png" />
     <Content Include="Events\Assets\ApplicationIcon.png" />

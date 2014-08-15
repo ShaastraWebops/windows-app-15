@@ -37,7 +37,10 @@
         </toolkit:NavigationOutTransition>
     </toolkit:TransitionService.NavigationOutTransition>
 
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/nebula.jpg" Opacity="0.7"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -70,11 +73,28 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button x:Name="clickLectures" Click="clickLectures_Click" Height="80" Width="250" Content="Lectures" Margin="40,59,166,468"></Button>
+            <!--<Button x:Name="clickLectures" Click="clickLectures_Click" Height="80" Width="250" Content="Lectures" Margin="40,59,166,468"></Button>
             <Button x:Name="clickEvents" Click="clickEvents_Click" Height="80" Width="250" Content="Events" Margin="40,160,166,399"/>
             <Button x:Name="clickShows" Click="clickShows_Click" Height="80" Width="250" Content="Shows" Margin="40,245,166,314"></Button>
-            <Button x:Name="clickTemp" Click="clickTemp_Click" Height="80" Width="250" Content="Temp" Margin="40,330,166,229"></Button>
-</Grid>
+            <Button x:Name="clickTemp" Click="clickTemp_Click" Height="80" Width="250" Content="Temp" Margin="40,330,166,229"></Button>-->
+            <Image x:Name="clickLectures" Source="Assets/part1.jpg" Opacity="0" Height="200" Margin="-92,69,92,370">
+            </Image>
+            <Image x:Name="clickEvents" Source="Assets/part2.jpg" Height="200" Margin="108,69,-108,370">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turnTwo"/>
+                </Image.Projection>
+            </Image>
+            <Image x:Name="clickShows" Source="Assets/part3.jpg" Height="200" Margin="-92,269,92,170">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turnThree" CenterOfRotationY="0"/>
+                </Image.Projection>
+            </Image>
+            <Image x:Name="clickTemp" Source="Assets/part4.jpg" Height="200" Margin="108,269,-108,170">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turnFour"/>
+                </Image.Projection>
+            </Image>
+        </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
             aligned on common boundaries.  The image has a top margin of -32px to
@@ -84,5 +104,34 @@
             Before shipping remove this XAML and the image itself.-->
         <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
     </Grid>
-
+    <phone:PhoneApplicationPage.Resources>
+        <Storyboard x:Name="animeThree">
+            <DoubleAnimation Storyboard.TargetName="turnThree" Storyboard.TargetProperty="RotationX" From="0" To="-180" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:0.75">
+                <DoubleAnimation.EasingFunction>
+                    <ExponentialEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animeFourUp">
+            <DoubleAnimation Storyboard.TargetName="turnFour" Storyboard.TargetProperty="RotationX" From="0" To="-180" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:0.75">
+                <DoubleAnimation.EasingFunction>
+                    <ExponentialEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animeFourLeft">
+            <DoubleAnimation Storyboard.TargetName="turnFour" Storyboard.TargetProperty="RotationX" From="0" To="-180" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:0.75">
+                <DoubleAnimation.EasingFunction>
+                    <ExponentialEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="animeTwo">
+            <DoubleAnimation Storyboard.TargetName="turnTwo" Storyboard.TargetProperty="RotationX" From="0" To="-180" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:0.75">
+                <DoubleAnimation.EasingFunction>
+                    <ExponentialEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
 </phone:PhoneApplicationPage>

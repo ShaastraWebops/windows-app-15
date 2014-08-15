@@ -17,7 +17,7 @@ namespace Shaastra
         public MainPage()
         {
             InitializeComponent();
-
+            animeThree.Begin();
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
         }
