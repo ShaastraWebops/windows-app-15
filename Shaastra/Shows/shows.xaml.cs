@@ -128,6 +128,8 @@ namespace Shaastra.Shows
                     break;
             }
             stateStore = state;
+            tickie.Stop();
+            tickie.Start();
         }
 
         private void img_Tap(object sender, System.Windows.Input.GestureEventArgs e)
