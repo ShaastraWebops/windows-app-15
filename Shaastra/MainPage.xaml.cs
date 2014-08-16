@@ -8,11 +8,13 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Shaastra.Resources;
+using System.Windows.Threading;
 
 namespace Shaastra
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        System.Windows.Threading.DispatcherTimer unfoldTick; 
         // Constructor
         public MainPage()
         {
@@ -21,36 +23,63 @@ namespace Shaastra
             //BuildLocalizedApplicationBar();
         }
 
-        private void TitlePanel_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            clickEvents.Margin = new Thickness(-92, 69, 92, 370);
+            clickLectures.Margin = new Thickness(-92, 69, 92, 370);
+            clickShows.Margin = new Thickness(-92, 69, 92, 370);
+            clickTemp.Margin = new Thickness(-92, 69, 92, 370);
+            turnTwo.RotationX = 0;
+            turnTwo.RotationY = 0;
+            turnThree.RotationX = 0;
+            turnThree.RotationY = 0;
+            turnFour.RotationX = 0;
+            turnFour.RotationY = 0;
+            unfoldTick = new DispatcherTimer();
+            unfoldTick.Interval = new TimeSpan(0, 0, 0, 0, 750);
+            unfoldTick.Tick += unfoldTick_Tick;
+            unfoldTick.Start();
+        }
+
+        void unfoldTick_Tick(object sender, EventArgs e)
+        {
+            animeFourLeft.Completed += animeFourLeft_Completed;
+            turnFour.CenterOfRotationY = 1;
+            animeFourLeft.Begin();
+            animeTwo.Begin();
+            (sender as DispatcherTimer).Stop();
+        }
+
+        protected override void OnRemovedFromJournal(JournalEntryRemovedEventArgs e)
+        {
+            unfoldTick.Tick -= animeFourLeft_Completed;
+            unfoldTick = null;
+        }
+
+        void animeFourLeft_Completed(object sender, EventArgs e)
         {
             animeFourUp.Begin();
-            animeFourUp.Completed += animeFourUp_Completed;
+            animeThree.Begin();
         }
 
-        void animeFourUp_Completed(object sender, EventArgs e)
-        {
-            turnFour.CenterOfRotationX = 0;
-            animeFourLeft.Begin();
-        }
-
-        private void clickLectures_Click(object sender, RoutedEventArgs e)
+        private void clickLectures_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Lectures/lectures.xaml", UriKind.Relative));
         }
 
-        private void clickEvents_Click(object sender, RoutedEventArgs e)
+        private void clickEvents_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Events/events.xaml", UriKind.Relative));
         }
 
-        private void clickShows_Click(object sender, RoutedEventArgs e)
+        private void clickShows_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Shows/shows.xaml", UriKind.Relative));
         }
 
-        private void clickTemp_Click(object sender, RoutedEventArgs e)
+        private void clickTemp_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=pic1f",UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=pic1f", UriKind.Relative));
         }
 
         

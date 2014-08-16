@@ -66,7 +66,7 @@
          -->
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Tap="TitlePanel_Tap">
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="SHAASTRA" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
             <TextBlock Text="main_page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
@@ -77,21 +77,21 @@
             <Button x:Name="clickEvents" Click="clickEvents_Click" Height="80" Width="250" Content="Events" Margin="40,160,166,399"/>
             <Button x:Name="clickShows" Click="clickShows_Click" Height="80" Width="250" Content="Shows" Margin="40,245,166,314"></Button>
             <Button x:Name="clickTemp" Click="clickTemp_Click" Height="80" Width="250" Content="Temp" Margin="40,330,166,229"></Button>-->
-            <Image x:Name="clickLectures" Source="Assets/part1.jpg" Opacity="0" Height="200" Margin="-92,69,92,370">
+            <Image x:Name="clickLectures" Source="Assets/part1.jpg" Width="200" Tap="clickLectures_Tap" Margin="-92,69,92,370">
             </Image>
-            <Image x:Name="clickEvents" Source="Assets/part2.jpg" Opacity="0" Height="200" Margin="108,69,-108,370">
+            <Image x:Name="clickEvents" Source="Assets/part2.jpg" Width="200" Tap="clickEvents_Tap" Margin="-92,69,92,370">
                 <Image.Projection>
-                    <PlaneProjection x:Name="turnTwo"/>
+                    <PlaneProjection x:Name="turnTwo" CenterOfRotationX="1"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="clickShows" Source="Assets/part3.jpg" Height="200" Margin="-92,269,92,170">
+            <Image x:Name="clickShows" Source="Assets/part3.jpg" Width="200" Tap="clickShows_Tap" Margin="-92,69,92,370">
                 <Image.Projection>
-                    <PlaneProjection x:Name="turnThree" CenterOfRotationY="0"/>
+                    <PlaneProjection x:Name="turnThree" CenterOfRotationY="1"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="clickTemp" Source="Assets/part4.jpg" Height="200" Margin="108,269,-108,170">
+            <Image x:Name="clickTemp" Source="Assets/part4.jpg" Width="200" Tap="clickTemp_Tap" Margin="-92,69,92,370">
                 <Image.Projection>
-                    <PlaneProjection x:Name="turnFour" CenterOfRotationY="0"/>
+                    <PlaneProjection x:Name="turnFour" CenterOfRotationX="1"/>
                 </Image.Projection>
             </Image>
         </Grid>
@@ -106,7 +106,7 @@
     </Grid>
     <phone:PhoneApplicationPage.Resources>
         <Storyboard x:Name="animeThree">
-            <DoubleAnimation Storyboard.TargetName="turnThree" Storyboard.TargetProperty="RotationX" From="0" To="-180" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:0.75">
+            <DoubleAnimation Storyboard.TargetName="turnThree" Storyboard.TargetProperty="RotationX" From="0" To="180" Duration="0:0:0.75">
                 <DoubleAnimation.EasingFunction>
                     <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
@@ -120,14 +120,14 @@
             </DoubleAnimation>
         </Storyboard>
         <Storyboard x:Name="animeFourLeft">
-            <DoubleAnimation Storyboard.TargetName="turnFour" Storyboard.TargetProperty="RotationY" From="0" To="180" Duration="0:0:0.75">
+            <DoubleAnimation Storyboard.TargetName="turnFour" Storyboard.TargetProperty="RotationY" From="0" To="-180" Duration="0:0:0.75">
                 <DoubleAnimation.EasingFunction>
                     <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
         <Storyboard x:Name="animeTwo">
-            <DoubleAnimation Storyboard.TargetName="turnTwo" Storyboard.TargetProperty="RotationX" From="0" To="-180" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:0.75">
+            <DoubleAnimation Storyboard.TargetName="turnTwo" Storyboard.TargetProperty="RotationY" From="0" To="-180" Duration="0:0:0.75">
                 <DoubleAnimation.EasingFunction>
                     <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
