@@ -83,7 +83,7 @@ namespace Shaastra
 
         protected override void OnRemovedFromJournal(JournalEntryRemovedEventArgs e)
         {
-            //unfoldTick.Tick -= ;
+            unfoldTick.Tick -= unfoldTick_Tick;
             unfoldTick = null;
         }
 
