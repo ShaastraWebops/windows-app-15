@@ -37,10 +37,7 @@
         </toolkit:NavigationOutTransition>
     </toolkit:TransitionService.NavigationOutTransition>
 
-    <Grid x:Name="LayoutRoot">
-        <Grid.Background>
-            <ImageBrush ImageSource="Assets/nebula.jpg" Opacity="0.7"/>
-        </Grid.Background>
+    <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -66,32 +63,68 @@
          -->
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+        <!--<StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Opacity="0">
             <TextBlock Text="SHAASTRA" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
             <TextBlock Text="main_page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-        </StackPanel>
+        </StackPanel>-->
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <!--<Button x:Name="clickLectures" Click="clickLectures_Click" Height="80" Width="250" Content="Lectures" Margin="40,59,166,468"></Button>
-            <Button x:Name="clickEvents" Click="clickEvents_Click" Height="80" Width="250" Content="Events" Margin="40,160,166,399"/>
-            <Button x:Name="clickShows" Click="clickShows_Click" Height="80" Width="250" Content="Shows" Margin="40,245,166,314"></Button>
-            <Button x:Name="clickTemp" Click="clickTemp_Click" Height="80" Width="250" Content="Temp" Margin="40,330,166,229"></Button>-->
-            <Image x:Name="clickLectures" Source="Assets/part1.jpg" Width="200" Tap="clickLectures_Tap" Margin="-92,69,92,370">
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <!--<Image x:Name="clickLectures" Source="Assets/paper1.jpg" Tap="clickLectures_Tap"  Stretch="Fill">
             </Image>
-            <Image x:Name="clickEvents" Source="Assets/part2.jpg" Width="200" Tap="clickEvents_Tap" Margin="-92,69,92,370">
+            <Image x:Name="clickEvents" Source="Assets/paper2.jpg" Tap="clickEvents_Tap" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turnTwo" CenterOfRotationX="1"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="clickShows" Source="Assets/part3.jpg" Width="200" Tap="clickShows_Tap" Margin="-92,69,92,370">
+            <Image x:Name="clickShows" Source="Assets/paper3.jpg" Tap="clickShows_Tap" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turnThree" CenterOfRotationY="1"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="clickTemp" Source="Assets/part4.jpg" Width="200" Tap="clickTemp_Tap" Margin="-92,69,92,370">
+            <Image x:Name="clickTemp" Source="Assets/paper4.jpg" Tap="clickTemp_Tap" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turnFour" CenterOfRotationX="1"/>
+                </Image.Projection>
+            </Image>-->
+            <Image x:Name="part1x1" Source="Assets/Paper/paper1x1.jpg" Stretch="Fill">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turn1x1"/>
+                </Image.Projection>
+            </Image>
+            <Image x:Name="part1x2" Source="Assets/Paper/paper1x2.jpg" Stretch="Fill">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turn1x2"/>
+                </Image.Projection>
+            </Image>
+            <Image x:Name="part2x1" Source="Assets/Paper/paper2x1.jpg" Stretch="Fill">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turn2x1"/>
+                </Image.Projection>
+            </Image>
+            <Image x:Name="part2x2" Source="Assets/Paper/paper2x2.jpg" Stretch="Fill">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turn2x2"/>
+                </Image.Projection>
+            </Image>
+            <Image x:Name="part3x1" Source="Assets/Paper/paper3x1.jpg" Stretch="Fill">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turn3x1"/>
+                </Image.Projection>
+            </Image>
+            <Image x:Name="part3x2" Source="Assets/Paper/paper3x2.jpg" Stretch="Fill">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turn3x2"/>
+                </Image.Projection>
+            </Image>
+            <Image x:Name="part4x1" Source="Assets/Paper/paper4x1.jpg" Stretch="Fill">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turn4x1"/>
+                </Image.Projection>
+            </Image>
+            <Image x:Name="part4x2" Source="Assets/Paper/paper4x2.jpg" Stretch="Fill">
+                <Image.Projection>
+                    <PlaneProjection x:Name="turn4x2"/>
                 </Image.Projection>
             </Image>
         </Grid>
@@ -105,33 +138,13 @@
         <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
     </Grid>
     <phone:PhoneApplicationPage.Resources>
-        <Storyboard x:Name="animeThree">
+        <Storyboard x:Name="stageOne">
             <DoubleAnimation Storyboard.TargetName="turnThree" Storyboard.TargetProperty="RotationX" From="0" To="180" Duration="0:0:0.75">
                 <DoubleAnimation.EasingFunction>
                     <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
-        <Storyboard x:Name="animeFourUp">
-            <DoubleAnimation Storyboard.TargetName="turnFour" Storyboard.TargetProperty="RotationX" From="0" To="-180" Duration="0:0:0.75">
-                <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseInOut"/>
-                </DoubleAnimation.EasingFunction>
-            </DoubleAnimation>
-        </Storyboard>
-        <Storyboard x:Name="animeFourLeft">
-            <DoubleAnimation Storyboard.TargetName="turnFour" Storyboard.TargetProperty="RotationY" From="0" To="-180" Duration="0:0:0.75">
-                <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseInOut"/>
-                </DoubleAnimation.EasingFunction>
-            </DoubleAnimation>
-        </Storyboard>
-        <Storyboard x:Name="animeTwo">
-            <DoubleAnimation Storyboard.TargetName="turnTwo" Storyboard.TargetProperty="RotationY" From="0" To="-180" Duration="0:0:0.75">
-                <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseInOut"/>
-                </DoubleAnimation.EasingFunction>
-            </DoubleAnimation>
-        </Storyboard>
+        
     </phone:PhoneApplicationPage.Resources>
 </phone:PhoneApplicationPage>

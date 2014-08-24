@@ -147,10 +147,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\nebula.jpg" />
-    <Content Include="Assets\part1.jpg" />
-    <Content Include="Assets\part2.jpg" />
-    <Content Include="Assets\part3.jpg" />
-    <Content Include="Assets\part4.jpg" />
+    <Content Include="Assets\Paper\paper1x1.jpg" />
+    <Content Include="Assets\Paper\paper1x2.jpg" />
+    <Content Include="Assets\Paper\paper2x1.jpg" />
+    <Content Include="Assets\Paper\paper2x2.jpg" />
+    <Content Include="Assets\Paper\paper3x1.jpg" />
+    <Content Include="Assets\Paper\paper3x2.jpg" />
+    <Content Include="Assets\Paper\paper4x1.jpg" />
+    <Content Include="Assets\Paper\paper4x2.jpg" />
     <Content Include="Events\Assets\Aero.png" />
     <Content Include="Events\Assets\AlignmentGrid.png" />
     <Content Include="Events\Assets\ApplicationIcon.png" />
@@ -279,6 +283,7 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

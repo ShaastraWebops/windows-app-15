@@ -14,7 +14,7 @@ namespace Shaastra
 {
     public partial class MainPage : PhoneApplicationPage
     {
-        System.Windows.Threading.DispatcherTimer unfoldTick; 
+        System.Windows.Threading.DispatcherTimer unfoldTick;
         // Constructor
         public MainPage()
         {
@@ -25,16 +25,51 @@ namespace Shaastra
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            clickEvents.Margin = new Thickness(-92, 69, 92, 370);
-            clickLectures.Margin = new Thickness(-92, 69, 92, 370);
-            clickShows.Margin = new Thickness(-92, 69, 92, 370);
-            clickTemp.Margin = new Thickness(-92, 69, 92, 370);
-            turnTwo.RotationX = 0;
-            turnTwo.RotationY = 0;
-            turnThree.RotationX = 0;
-            turnThree.RotationY = 0;
-            turnFour.RotationX = 0;
-            turnFour.RotationY = 0;
+            //Height Setup
+            part1x1.Height = App.Current.Host.Content.ActualHeight / 4.0;
+            part1x2.Height = App.Current.Host.Content.ActualHeight / 4.0;
+            part2x1.Height = App.Current.Host.Content.ActualHeight / 4.0;
+            part2x2.Height = App.Current.Host.Content.ActualHeight / 4.0;
+            part3x1.Height = App.Current.Host.Content.ActualHeight / 4.0;
+            part3x2.Height = App.Current.Host.Content.ActualHeight / 4.0;
+            part4x1.Height = App.Current.Host.Content.ActualHeight / 4.0;
+            part4x2.Height = App.Current.Host.Content.ActualHeight / 4.0;
+            //Width Setup
+            part1x1.Width = App.Current.Host.Content.ActualWidth / 2.0;
+            part1x2.Width = App.Current.Host.Content.ActualWidth / 2.0;
+            part2x1.Width = App.Current.Host.Content.ActualWidth / 2.0;
+            part2x2.Width = App.Current.Host.Content.ActualWidth / 2.0;
+            part3x1.Width = App.Current.Host.Content.ActualWidth / 2.0;
+            part3x2.Width = App.Current.Host.Content.ActualWidth / 2.0;
+            part4x1.Width = App.Current.Host.Content.ActualWidth / 2.0;
+            part4x2.Width = App.Current.Host.Content.ActualWidth / 2.0;
+            //Margin Setup
+            part1x1.Margin = new Thickness(0, 0, 0, 0);
+            part1x2.Margin = new Thickness(0, 0, 0, 0);
+            part2x1.Margin = new Thickness(0, 0, 0, 0);
+            part2x2.Margin = new Thickness(0, 0, 0, 0);
+            part3x1.Margin = new Thickness(0, 0, 0, 0);
+            part3x2.Margin = new Thickness(0, 0, 0, 0);
+            part4x1.Margin = new Thickness(0, 0, 0, 0);
+            part4x2.Margin = new Thickness(0, 0, 0, 0);
+            //Plane Projection setup
+            turn1x1.RotationX = 0;
+            turn1x1.RotationY = 0;
+            turn1x2.RotationX = 0;
+            turn1x2.RotationY = 0;
+            turn2x1.RotationX = 0;
+            turn2x1.RotationY = 0;
+            turn2x2.RotationX = 0;
+            turn2x2.RotationY = 0;
+            turn3x1.RotationX = 0;
+            turn3x1.RotationY = 0;
+            turn3x2.RotationX = 0;
+            turn3x2.RotationY = 0;
+            turn4x1.RotationX = 0;
+            turn4x1.RotationY = 0;
+            turn4x2.RotationX = 0;
+            turn4x2.RotationY = 0;
+            
             unfoldTick = new DispatcherTimer();
             unfoldTick.Interval = new TimeSpan(0, 0, 0, 0, 750);
             unfoldTick.Tick += unfoldTick_Tick;
@@ -43,23 +78,13 @@ namespace Shaastra
 
         void unfoldTick_Tick(object sender, EventArgs e)
         {
-            animeFourLeft.Completed += animeFourLeft_Completed;
-            turnFour.CenterOfRotationY = 1;
-            animeFourLeft.Begin();
-            animeTwo.Begin();
-            (sender as DispatcherTimer).Stop();
+            
         }
 
         protected override void OnRemovedFromJournal(JournalEntryRemovedEventArgs e)
         {
-            unfoldTick.Tick -= animeFourLeft_Completed;
+            //unfoldTick.Tick -= ;
             unfoldTick = null;
-        }
-
-        void animeFourLeft_Completed(object sender, EventArgs e)
-        {
-            animeFourUp.Begin();
-            animeThree.Begin();
         }
 
         private void clickLectures_Tap(object sender, System.Windows.Input.GestureEventArgs e)
@@ -82,7 +107,7 @@ namespace Shaastra
             NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=pic1f", UriKind.Relative));
         }
 
-        
+
 
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
