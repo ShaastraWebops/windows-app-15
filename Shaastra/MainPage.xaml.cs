@@ -71,14 +71,49 @@ namespace Shaastra
             turn4x2.RotationY = 0;
             
             unfoldTick = new DispatcherTimer();
-            unfoldTick.Interval = new TimeSpan(0, 0, 0, 0, 750);
+            unfoldTick.Interval = new TimeSpan(0, 0, 0, 0, 1000);
             unfoldTick.Tick += unfoldTick_Tick;
             unfoldTick.Start();
         }
 
         void unfoldTick_Tick(object sender, EventArgs e)
         {
-            
+            turn1x2.CenterOfRotationY = 1;
+            turn3x1.CenterOfRotationY = 1;
+            turn2x2.CenterOfRotationY = 1;
+            turn4x1.CenterOfRotationY = 1;
+            stageOne4x1.Completed += stageOne4x1_Completed;         //Fire up Animation stage two on completing stage one
+            stageOne1x2.Begin();
+            stageOne3x1.Begin();
+            stageOne2x2.Begin();
+            stageOne4x1.Begin();
+            unfoldTick.Stop();
+        }
+
+        void stageOne4x1_Completed(object sender, EventArgs e)
+        {
+            turn2x1.CenterOfRotationX = 1;
+            turn4x2.CenterOfRotationX = 1;
+            turn2x2.CenterOfRotationX = 1;
+            turn4x1.CenterOfRotationX = 1;
+            stageTwo4x1.Completed += stageTwo4x1_Completed;         //Fire up Animation stage three on completing stage two
+            stageTwo2x1.Begin();
+            stageTwo4x2.Begin();
+            stageTwo2x2.Begin();
+            stageTwo4x1.Begin();
+        }
+
+        void stageTwo4x1_Completed(object sender, EventArgs e)
+        {
+            //Use Local offset X property here for 3x1 and 4x1
+            turn3x1.CenterOfRotationY = 1;
+            turn4x1.CenterOfRotationY = 1;
+            turn3x2.CenterOfRotationY = 2;
+            turn4x2.CenterOfRotationY = 2;
+            stageThree3x1.Begin();
+            stageThree3x2.Begin();
+            stageThree4x1.Begin();
+            stageThree4x2.Begin();
         }
 
         protected override void OnRemovedFromJournal(JournalEntryRemovedEventArgs e)

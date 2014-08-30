@@ -87,42 +87,42 @@
                     <PlaneProjection x:Name="turnFour" CenterOfRotationX="1"/>
                 </Image.Projection>
             </Image>-->
-            <Image x:Name="part1x1" Source="Assets/Paper/paper1x1.jpg" Stretch="Fill">
+            <Image x:Name="part1x1" Opacity="0" Source="Assets/Paper/paper1x1.jpg" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turn1x1"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="part1x2" Source="Assets/Paper/paper1x2.jpg" Stretch="Fill">
+            <Image x:Name="part1x2" Opacity="0" Source="Assets/Paper/paper1x2.jpg" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turn1x2"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="part2x1" Source="Assets/Paper/paper2x1.jpg" Stretch="Fill">
+            <Image x:Name="part2x1" Opacity="0" Source="Assets/Paper/paper2x1.jpg" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turn2x1"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="part2x2" Source="Assets/Paper/paper2x2.jpg" Stretch="Fill">
+            <Image x:Name="part2x2" Opacity="0" Source="Assets/Paper/paper2x2.jpg" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turn2x2"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="part3x1" Source="Assets/Paper/paper3x1.jpg" Stretch="Fill">
+            <Image x:Name="part3x1" Opacity="0" Source="Assets/Paper/paper3x1.jpg" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turn3x1"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="part3x2" Source="Assets/Paper/paper3x2.jpg" Stretch="Fill">
+            <Image x:Name="part3x2" Opacity="0" Source="Assets/Paper/paper3x2.jpg" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turn3x2"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="part4x1" Source="Assets/Paper/paper4x1.jpg" Stretch="Fill">
+            <Image x:Name="part4x1" Opacity="0" Source="Assets/Paper/paper4x1.jpg" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turn4x1"/>
                 </Image.Projection>
             </Image>
-            <Image x:Name="part4x2" Source="Assets/Paper/paper4x2.jpg" Stretch="Fill">
+            <Image x:Name="part4x2" Opacity="1" Source="Assets/Paper/paper4x2.jpg" Stretch="Fill">
                 <Image.Projection>
                     <PlaneProjection x:Name="turn4x2"/>
                 </Image.Projection>
@@ -169,21 +169,21 @@
         </Storyboard>
 
         <Storyboard x:Name="stageTwo2x1">
-            <DoubleAnimation Storyboard.TargetName="turn2x1" Storyboard.TargetProperty="RotationY" From="0" To="180" Duration="0:0:0.75">
+            <DoubleAnimation Storyboard.TargetName="turn2x1" Storyboard.TargetProperty="RotationY" From="0" To="-180" Duration="0:0:0.75">
                 <DoubleAnimation.EasingFunction>
                     <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
         <Storyboard x:Name="stageTwo4x2">
-            <DoubleAnimation Storyboard.TargetName="turn4x2" Storyboard.TargetProperty="RotationY" From="0" To="180" Duration="0:0:0.75">
+            <DoubleAnimation Storyboard.TargetName="turn4x2" Storyboard.TargetProperty="RotationY" From="0" To="-180" Duration="0:0:0.75">
                 <DoubleAnimation.EasingFunction>
                     <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
         <Storyboard x:Name="stageTwo2x2">
-            <DoubleAnimation Storyboard.TargetName="turn2x2" Storyboard.TargetProperty="RotationY" From="0" To="180" Duration="0:0:0.75">
+            <DoubleAnimation Storyboard.TargetName="turn2x2" Storyboard.TargetProperty="RotationY" From="0" To="-180" Duration="0:0:0.75">
                 <DoubleAnimation.EasingFunction>
                     <ExponentialEase EasingMode="EaseInOut"/>
                 </DoubleAnimation.EasingFunction>
