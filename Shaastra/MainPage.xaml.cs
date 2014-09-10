@@ -25,6 +25,7 @@ namespace Shaastra
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            
             //Height Setup
             part1x1.Height = App.Current.Host.Content.ActualHeight / 4.0;
             part1x2.Height = App.Current.Host.Content.ActualHeight / 4.0;
@@ -44,14 +45,14 @@ namespace Shaastra
             part4x1.Width = App.Current.Host.Content.ActualWidth / 2.0;
             part4x2.Width = App.Current.Host.Content.ActualWidth / 2.0;
             //Margin Setup
-            part1x1.Margin = new Thickness(0, 0, 0, 0);
-            part1x2.Margin = new Thickness(0, 0, 0, 0);
-            part2x1.Margin = new Thickness(0, 0, 0, 0);
-            part2x2.Margin = new Thickness(0, 0, 0, 0);
-            part3x1.Margin = new Thickness(0, 0, 0, 0);
-            part3x2.Margin = new Thickness(0, 0, 0, 0);
-            part4x1.Margin = new Thickness(0, 0, 0, 0);
-            part4x2.Margin = new Thickness(0, 0, 0, 0);
+            part1x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            part1x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            part2x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            part2x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            part3x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            part3x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            part4x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            part4x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
             //Plane Projection setup
             turn1x1.RotationX = 0;
             turn1x1.RotationY = 0;
@@ -70,6 +71,10 @@ namespace Shaastra
             turn4x2.RotationX = 0;
             turn4x2.RotationY = 0;
             
+            //Reset global Y offset on navigating back from reset
+            turn4x1.GlobalOffsetY = 0;
+            turn3x1.GlobalOffsetY = 0;
+            //Start main storyboard timer
             unfoldTick = new DispatcherTimer();
             unfoldTick.Interval = new TimeSpan(0, 0, 0, 0, 1000);
             unfoldTick.Tick += unfoldTick_Tick;
@@ -105,7 +110,8 @@ namespace Shaastra
 
         void stageTwo4x1_Completed(object sender, EventArgs e)
         {
-            //Use Local offset X property here for 3x1 and 4x1
+            turn3x1.GlobalOffsetY = App.Current.Host.Content.ActualHeight / 4.0;
+            turn4x1.GlobalOffsetY = App.Current.Host.Content.ActualHeight / 4.0;
             turn3x1.CenterOfRotationY = 1;
             turn4x1.CenterOfRotationY = 1;
             turn3x2.CenterOfRotationY = 2;
@@ -142,22 +148,5 @@ namespace Shaastra
             NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=pic1f", UriKind.Relative));
         }
 
-
-
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
-
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
-
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
     }
 }

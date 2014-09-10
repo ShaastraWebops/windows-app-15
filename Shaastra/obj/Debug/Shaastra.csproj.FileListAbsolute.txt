@@ -110,7 +110,6 @@ C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra.pdb
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\AppManifest.xaml
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Properties\WMAppManifest.xml
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap
-C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Coding4Fun.Toolkit.Controls.dll
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Microsoft.Phone.Controls.dll
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Newtonsoft.Json.dll
