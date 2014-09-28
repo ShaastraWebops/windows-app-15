@@ -118,6 +118,9 @@
       <DependentUpon>shows.xaml</DependentUpon>
     </Compile>
     <Compile Include="Shows\swipeFx.cs" />
+    <Compile Include="Sponsors\spons.xaml.cs">
+      <DependentUpon>spons.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -141,6 +144,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Shows\shows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sponsors\spons.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
