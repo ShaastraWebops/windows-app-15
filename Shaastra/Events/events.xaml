@@ -207,26 +207,26 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,12,0,12">
             <ScrollViewer>
                 <StackPanel>
-                    <Button Content="Aerofest" Foreground="Black" FontSize="36" BorderThickness="0" Background="Red" FontFamily="Jokerman" x:Name="Aero_Button" Click="Aero_Button_Click" Height="90">
+                    <Button Content="Aerofest" Foreground="Red" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="Aero_Button" Click="Aero_Button_Click" Height="90">
                     </Button>
-                    <Button Content="Design and Build" Foreground="Black" FontSize="36" BorderThickness="0" Background="Orange" FontFamily="Jokerman" x:Name="DB_Button" Click="DB_Button_Click" Height="90">
+                    <Button Content="B-Events" Foreground="Yellow" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="BE_Button" Click="BE_Button_Click" Height="90">
                     </Button>
-                    <Button Content="Coding" Foreground="Black" FontSize="36" BorderThickness="0" Background="Green" FontFamily="Jokerman" x:Name="Code_Button" Click="Code_Button_Click" Height="90">
+                    <Button Content="Coding" Foreground="Green" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="Code_Button" Click="Code_Button_Click" Height="90">
                     </Button>
-                    <Button Content="Involve and Quizzes" Foreground="Black" FontSize="36" BorderThickness="0" Background="Turquoise" FontFamily="Jokerman" x:Name="IQ_Button" Click="IQ_Button_Click" Height="90">
+                    <Button Content="Department Flagship" Foreground="Purple" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="FS_Button" Click="FS_Button_Click" Height="90">
                     </Button>
-                    <Button Content="Electronics" Foreground="Black" FontSize="36" BorderThickness="0" Background="Blue" FontFamily="Jokerman" x:Name="Elec_Button" Click="Elec_Button_Click" Height="90">
+                    <Button Content="Design and Build" Foreground="Orange" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="DB_Button" Click="DB_Button_Click" Height="90">
                     </Button>
-                    <Button Content="Flagship" Foreground="Black" FontSize="36" BorderThickness="0" Background="Purple" FontFamily="Jokerman" x:Name="FS_Button" Click="FS_Button_Click" Height="90">
+                    <Button Content="Electronics" Foreground="Blue" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="Elec_Button" Click="Elec_Button_Click" Height="90">
                     </Button>
-                    <Button Content="Spotlight" Foreground="Black" FontSize="36" BorderThickness="0" Background="Lime" FontFamily="Jokerman" x:Name="SL_Button" Click="SL_Button_Click" Height="90">
+                    <Button Content="Involve" Foreground="Turquoise" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="IQ_Button" Click="IQ_Button_Click" Height="90">
                     </Button>
-                    <Button Content="Workshop" Foreground="Black" FontSize="36" BorderThickness="0" Background="Gold" FontFamily="Jokerman" x:Name="WS_Button" Click="WS_Button_Click" Height="90">
+                    <Button Content="Quizzing" Foreground="Brown" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="Shows_Button" Click="Shows_Button_Click" Height="90">
+                    </Button>                    
+                    <Button Content="Spotlight" Foreground="Lime" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="SL_Button" Click="SL_Button_Click" Height="90">
                     </Button>
-                    <Button Content="Shows" Foreground="Black" FontSize="36" BorderThickness="0" Background="Brown" FontFamily="Jokerman" x:Name="Shows_Button" Click="Shows_Button_Click" Height="90">
-                    </Button>
-                    <Button Content="B-Events" Foreground="Black" FontSize="36" BorderThickness="0" Background="Yellow" FontFamily="Jokerman" x:Name="BE_Button" Click="BE_Button_Click" Height="90">
-                    </Button>
+                    <Button Content="Workshop" Foreground="Gold" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="WS_Button" Click="WS_Button_Click" Height="90">
+                    </Button>                
                 </StackPanel>
             </ScrollViewer>
             <Button x:Name="Back_Button" BorderThickness="0" Click="Back_Button_Click" Background="Crimson" Opacity="0" Height="90" Width="90" Margin="12,500,370,12"/>
@@ -282,55 +282,146 @@
             </Image>
         </Grid>
         
-        <Grid x:Name="Aero" Opacity="0" Background="Red" Grid.Row="1" Margin="130,12,12,12">
+        <Grid x:Name="Aero" Opacity="0" Background="Transparent" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="AeroTrans" X="358"/>
             </Grid.RenderTransform>
+            <ScrollViewer>
+                <StackPanel>
+                    <Button Content="Aerobotics" Foreground="Red" FontSize="32" Background="Transparent" Height="80" x:Name="AB" Click="AB_Click"  BorderThickness="3" BorderBrush="Red"/>
+                    <Button Content="Airshow" Foreground="Red" FontSize="32" Background="Transparent" Height="80" x:Name="AS" Click="AS_Click" BorderThickness="3" BorderBrush="Red"/>
+                    <Button Content="Wright Design" Foreground="Red" FontSize="32" Background="Transparent" Height="80" x:Name="WD" Click="WD_Click" BorderThickness="3" BorderBrush="Red"/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <Grid x:Name="DB" Opacity="0" Background="Orange" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="DBTrans" X="358"/>
             </Grid.RenderTransform>
+            <ScrollViewer>
+                <StackPanel>
+                    <Button Content="Autonomous Robotics" Foreground="Orange" FontSize="32" Background="Transparent" Height="80" x:Name="AR" Click="AR_Click" BorderThickness="3" BorderBrush="Orange"/>
+                    <Button Content="Contraptions" Foreground="Orange" FontSize="32" Background="Transparent" Height="80" x:Name="CP" Click="CP_Click" BorderThickness="3" BorderBrush="Orange"/>
+                    <Button Content="Fire and Ice" Foreground="Orange" FontSize="32" Background="Transparent" Height="80" x:Name="FI" Click="FI_Click" BorderThickness="3" BorderBrush="Orange"/>
+                    <Button Content="Junkyard Wars" Foreground="Orange" FontSize="32" Background="Transparent" Height="80" x:Name="JW" Click="JW_Click" BorderThickness="3" BorderBrush="Orange"/>
+                    <Button Content="Manual Robotics" Foreground="Orange" FontSize="32" Background="Transparent" Height="80" x:Name="MR" Click="MR_Click" BorderThickness="3" BorderBrush="Orange"/>
+                    <Button Content="Master Builder" Foreground="Orange" FontSize="32" Background="Transparent" Height="80" x:Name="MB" Click="MB_Click" BorderThickness="3" BorderBrush="Orange"/>
+                    <Button Content="Robo Oceana" Foreground="Orange" FontSize="32" Background="Transparent" Height="80" x:Name="RO" Click="RO_Click" BorderThickness="3" BorderBrush="Orange"/>
+                    <Button Content="Robowars" Foreground="Orange" FontSize="32" Background="Transparent" Height="80" x:Name="RW" Click="RW_Click" BorderThickness="3" BorderBrush="Orange"/>
+                    <Button Content="Ultimate Engineers" Foreground="Orange" FontSize="32" Background="Transparent" Height="80" x:Name="UE" Click="UE_Click" BorderThickness="3" BorderBrush="Orange"/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <Grid x:Name="Code" Opacity="0" Background="Green" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="CodeTrans" X="358"/>
             </Grid.RenderTransform>
+            <ScrollViewer>
+                <StackPanel>
+                    <Button Content="Big Data Challenge" Foreground="Green" FontSize="32" Background="Transparent" Height="80" x:Name="BDC" Click="BDC_Click" BorderThickness="3" BorderBrush="Green"/>
+                    <Button Content="Online Programming Contest" Foreground="Green" FontSize="32" Background="Transparent" Height="80" x:Name="OPC" Click="OPC_Click" BorderThickness="3" BorderBrush="Green"/>
+                    <Button Content="Reverse Coding" Foreground="Green" FontSize="32" Background="Transparent" Height="80" x:Name="RC" Click="RC_Click" BorderThickness="3" BorderBrush="Green"/>
+                    <Button Content="Triathlon" Foreground="Green" FontSize="32" Background="Transparent" Height="80" x:Name="TA" Click="TA_Click" BorderThickness="3" BorderBrush="Green"/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <Grid x:Name="IQ" Opacity="0" Background="Turquoise" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="IQTrans" X="358"/>
             </Grid.RenderTransform>
+            <ScrollViewer>
+                <StackPanel>
+                    <Button Content="ProjectX" Foreground="Turquoise" FontSize="32" Background="Transparent" Height="80" x:Name="PX" Click="PX_Click" BorderThickness="3" BorderBrush="Turquoise"/>
+                    <Button Content="Puzzle Champ" Foreground="Turquoise" FontSize="32" Background="Transparent" Height="80" x:Name="PC" Click="PC_Click" BorderThickness="3" BorderBrush="Turquoise"/>
+                    <Button Content="Shaastra Cube Open" Foreground="Turquoise" FontSize="32" Background="Transparent" Height="80" x:Name="SCO" Click="SCO_Click" BorderThickness="3" BorderBrush="Turquoise"/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <Grid x:Name="Elec" Opacity="0" Background="Blue" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="ElecTrans" X="358"/>
             </Grid.RenderTransform>
+            <ScrollViewer>
+                <StackPanel>
+                    <Button Content="Arduino Programmers' Challenge" Foreground="Blue" FontSize="32" Background="Transparent" Height="80" x:Name="APC" Click="APC_Click" BorderThickness="3" BorderBrush="Blue"/>
+                    <Button Content="Fun With Oscilloscopes" Foreground="Blue" FontSize="32" Background="Transparent" Height="80" x:Name="FWO" Click="FWO_Click" BorderThickness="3" BorderBrush="Blue"/>
+                    <Button Content="PCB Design Workshop" Foreground="Blue" FontSize="32" Background="Transparent" Height="80" x:Name="PDW" Click="PDW_Click" BorderThickness="3" BorderBrush="Blue"/>
+                    <Button Content="Shaastra Circuit Design Challenge" Foreground="Blue" FontSize="32" Background="Transparent" Height="80" x:Name="SCDC" Click="SCDC_Click" BorderThickness="3" BorderBrush="Blue"/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <Grid x:Name="FS" Opacity="0" Background="Purple" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="FSTrans" X="358"/>
             </Grid.RenderTransform>
+            <ScrollViewer>
+                <StackPanel>
+                    <Button Content="Desmod" Foreground="Purple" FontSize="32" Background="Transparent" Height="80" x:Name="DM" Click="DM_Click" BorderThickness="3" BorderBrush="Purple"/>
+                    <Button Content="Forensics" Foreground="Purple" FontSize="32" Background="Transparent" Height="80" x:Name="FN" Click="FN_Click" BorderThickness="3" BorderBrush="Purple"/>
+                    <Button Content="Master Builder" Foreground="Purple" FontSize="32" Background="Transparent" Height="80" x:Name="MD" Click="MB_Click" BorderThickness="3" BorderBrush="Purple"/>
+                    <Button Content="Robo Oceana" Foreground="Purple" FontSize="32" Background="Transparent" Height="80" x:Name="RB" Click="RO_Click" BorderThickness="3" BorderBrush="Purple"/>
+                    <Button Content="Shaastra Circuit Design Challenge" Foreground="Purple" FontSize="32" Background="Transparent" Height="80" x:Name="SCD" Click="SCDC_Click" BorderThickness="3" BorderBrush="Purple"/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <Grid x:Name="SL" Opacity="0" Background="Lime" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="SLTrans" X="358"/>
             </Grid.RenderTransform>
+            <ScrollViewer>
+                <StackPanel>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <Grid x:Name="WS" Opacity="0" Background="Gold" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="WSTrans" X="358"/>
             </Grid.RenderTransform>
+            <ScrollViewer>
+                <StackPanel>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <Grid x:Name="Shows" Opacity="0" Background="Brown" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="ShowsTrans" X="358"/>
             </Grid.RenderTransform>
+            <ScrollViewer>
+                <StackPanel>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <Grid x:Name="BE" Opacity="0" Background="Yellow" Grid.Row="1" Margin="130,12,12,12">
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="BETrans" X="358"/>
             </Grid.RenderTransform>
+            <ScrollViewer>
+                <StackPanel>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                    <Button Content="" Foreground="" FontSize="32" Background="Transparent" Height="80" x:Name="" Click="" BorderThickness="3" BorderBrush=""/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
 
     </Grid>

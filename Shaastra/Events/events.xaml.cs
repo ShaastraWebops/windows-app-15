@@ -213,6 +213,131 @@ namespace Shaastra.Events
             Button_in.Begin();
         }
 
+        private void AB_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AS_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void WD_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AR_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CP_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FI_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void JW_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MR_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MB_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RO_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RW_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UE_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BDC_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OPC_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RC_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TA_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PX_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PC_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SCO_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SCDC_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PDW_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FWO_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void APC_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DM_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FN_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{
