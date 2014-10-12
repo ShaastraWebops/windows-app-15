@@ -116,10 +116,16 @@ namespace Shaastra
             turn4x1.CenterOfRotationY = 1;
             turn3x2.CenterOfRotationY = 2;
             turn4x2.CenterOfRotationY = 2;
+            stageThree3x1.Completed += stageThree3x1_Completed;
             stageThree3x1.Begin();
             stageThree3x2.Begin();
             stageThree4x1.Begin();
             stageThree4x2.Begin();
+        }
+
+        void stageThree3x1_Completed(object sender, EventArgs e)
+        {
+            stageFour.Begin();
         }
 
         protected override void OnRemovedFromJournal(JournalEntryRemovedEventArgs e)
