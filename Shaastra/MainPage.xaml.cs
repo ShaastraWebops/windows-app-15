@@ -74,6 +74,14 @@ namespace Shaastra
             //Reset global Y offset on navigating back from reset
             turn4x1.GlobalOffsetY = 0;
             turn3x1.GlobalOffsetY = 0;
+            //Reset Opacity
+            partN1x1.Opacity = 0;
+            partN2x1.Opacity = 0;
+            partN2x2.Opacity = 0;
+            partN3x1.Opacity = 0;
+            partN3x2.Opacity = 0;
+            partN4x1.Opacity = 0;
+            partN4x2.Opacity = 0;
             //Start main storyboard timer
             unfoldTick = new DispatcherTimer();
             unfoldTick.Interval = new TimeSpan(0, 0, 0, 0, 1000);
