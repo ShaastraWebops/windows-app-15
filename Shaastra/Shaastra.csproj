@@ -162,6 +162,13 @@
     <Content Include="Assets\Paper\paper3x2.jpg" />
     <Content Include="Assets\Paper\paper4x1.jpg" />
     <Content Include="Assets\Paper\paper4x2.jpg" />
+    <Content Include="Assets\TilesX\fin1x2.png" />
+    <Content Include="Assets\TilesX\fin2x2.png" />
+    <Content Include="Assets\TilesX\fin3x1.png" />
+    <Content Include="Assets\TilesX\fin3x2.png" />
+    <Content Include="Assets\TilesX\fin4x1.png" />
+    <Content Include="Assets\TilesX\fin4x2.png" />
+    <Content Include="Assets\TilesX\paper_shaastra_banner.png" />
     <Content Include="Events\Assets\Aero.png" />
     <Content Include="Events\Assets\AlignmentGrid.png" />
     <Content Include="Events\Assets\ApplicationIcon.png" />

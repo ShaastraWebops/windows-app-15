@@ -25,7 +25,7 @@ namespace Shaastra
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            
+
             //Height Setup
             part1x1.Height = App.Current.Host.Content.ActualHeight / 4.0;
             part1x2.Height = App.Current.Host.Content.ActualHeight / 4.0;
@@ -45,14 +45,14 @@ namespace Shaastra
             part4x1.Width = App.Current.Host.Content.ActualWidth / 2.0;
             part4x2.Width = App.Current.Host.Content.ActualWidth / 2.0;
             //Margin Setup
-            part1x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part1x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part2x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part2x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part3x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part3x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part4x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part4x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            part1x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part1x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part2x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part2x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part3x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part3x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part4x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part4x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
             //Plane Projection setup
             turn1x1.RotationX = 0;
             turn1x1.RotationY = 0;
@@ -70,7 +70,7 @@ namespace Shaastra
             turn4x1.RotationY = 0;
             turn4x2.RotationX = 0;
             turn4x2.RotationY = 0;
-            
+
             //Reset global Y offset on navigating back from reset
             turn4x1.GlobalOffsetY = 0;
             turn3x1.GlobalOffsetY = 0;
@@ -125,6 +125,13 @@ namespace Shaastra
 
         void stageThree3x1_Completed(object sender, EventArgs e)
         {
+            partN1x1.Margin = new Thickness(0, 0, 0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            partN2x1.Margin = new Thickness(0, App.Current.Host.Content.ActualHeight / 4.0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 2.0);
+            partN2x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0, 0, App.Current.Host.Content.ActualHeight / 2.0);
+            partN3x1.Margin = new Thickness(0, App.Current.Host.Content.ActualHeight / 2.0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            partN3x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 2.0, 0, App.Current.Host.Content.ActualHeight / 4.0);
+            partN4x1.Margin = new Thickness(0, 3 * App.Current.Host.Content.ActualHeight / 4.0, App.Current.Host.Content.ActualWidth / 2.0, 0);
+            partN4x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0, 0, 0);
             stageFour.Begin();
         }
 
