@@ -25,7 +25,7 @@ namespace Shaastra
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
+            TiltEffect.TiltableItems.Add(typeof(Grid));
             //Height Setup
             part1x1.Height = App.Current.Host.Content.ActualHeight / 4.0;
             part1x2.Height = App.Current.Host.Content.ActualHeight / 4.0;
@@ -133,13 +133,13 @@ namespace Shaastra
 
         void stageThree3x1_Completed(object sender, EventArgs e)
         {
-            partN1x1.Margin = new Thickness(0, 0, 0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
-            partN2x1.Margin = new Thickness(0, App.Current.Host.Content.ActualHeight / 4.0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 2.0);
-            partN2x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0, 0, App.Current.Host.Content.ActualHeight / 2.0);
-            partN3x1.Margin = new Thickness(0, App.Current.Host.Content.ActualHeight / 2.0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            partN3x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 2.0, 0, App.Current.Host.Content.ActualHeight / 4.0);
-            partN4x1.Margin = new Thickness(0, 3 * App.Current.Host.Content.ActualHeight / 4.0, App.Current.Host.Content.ActualWidth / 2.0, 0);
-            partN4x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0, 0, 0);
+            N1x1.Margin = new Thickness(0, 0, 0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            N2x1.Margin = new Thickness(0, App.Current.Host.Content.ActualHeight / 4.0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 2.0);
+            N2x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0, 0, App.Current.Host.Content.ActualHeight / 2.0);
+            N3x1.Margin = new Thickness(0, App.Current.Host.Content.ActualHeight / 2.0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            N3x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 2.0, 0, App.Current.Host.Content.ActualHeight / 4.0);
+            N4x1.Margin = new Thickness(0, 3 * App.Current.Host.Content.ActualHeight / 4.0, App.Current.Host.Content.ActualWidth / 2.0, 0);
+            N4x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0, 0, 0);
             stageFour.Begin();
         }
 
@@ -167,6 +167,11 @@ namespace Shaastra
         private void clickTemp_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=pic1f", UriKind.Relative));
+        }
+
+        private void partN4x2_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Sponsors/spons.xaml", UriKind.Relative));
         }
 
     }
