@@ -15,6 +15,20 @@ namespace Shaastra.Sponsors
         public spons()
         {
             InitializeComponent();
+            this.Loaded += spons_Loaded;
+        }
+
+        void spons_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _browser.IsScriptEnabled = true;
+                _browser.Navigate(new Uri("http://shaastra.org/2015/main/php/pages/spons.php#tab0"));
+            }
+            catch(Exception _ex)
+            {
+                MessageBox.Show(_ex.Message, "Error loading page", MessageBoxButton.OK);
+            }
         }
     }
 }

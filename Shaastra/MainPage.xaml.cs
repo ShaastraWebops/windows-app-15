@@ -25,7 +25,7 @@ namespace Shaastra
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            
+            TiltEffect.TiltableItems.Add(typeof(Grid));
             //Height Setup
             part1x1.Height = App.Current.Host.Content.ActualHeight / 4.0;
             part1x2.Height = App.Current.Host.Content.ActualHeight / 4.0;
@@ -45,14 +45,14 @@ namespace Shaastra
             part4x1.Width = App.Current.Host.Content.ActualWidth / 2.0;
             part4x2.Width = App.Current.Host.Content.ActualWidth / 2.0;
             //Margin Setup
-            part1x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part1x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part2x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part2x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part3x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part3x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part4x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
-            part4x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            part1x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part1x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part2x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part2x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part3x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part3x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part4x1.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            part4x2.Margin = new Thickness(0, 0, App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
             //Plane Projection setup
             turn1x1.RotationX = 0;
             turn1x1.RotationY = 0;
@@ -70,10 +70,18 @@ namespace Shaastra
             turn4x1.RotationY = 0;
             turn4x2.RotationX = 0;
             turn4x2.RotationY = 0;
-            
+
             //Reset global Y offset on navigating back from reset
             turn4x1.GlobalOffsetY = 0;
             turn3x1.GlobalOffsetY = 0;
+            //Reset Opacity
+            partN1x1.Opacity = 0;
+            partN2x1.Opacity = 0;
+            partN2x2.Opacity = 0;
+            partN3x1.Opacity = 0;
+            partN3x2.Opacity = 0;
+            partN4x1.Opacity = 0;
+            partN4x2.Opacity = 0;
             //Start main storyboard timer
             unfoldTick = new DispatcherTimer();
             unfoldTick.Interval = new TimeSpan(0, 0, 0, 0, 1000);
@@ -116,10 +124,23 @@ namespace Shaastra
             turn4x1.CenterOfRotationY = 1;
             turn3x2.CenterOfRotationY = 2;
             turn4x2.CenterOfRotationY = 2;
+            stageThree3x1.Completed += stageThree3x1_Completed;
             stageThree3x1.Begin();
             stageThree3x2.Begin();
             stageThree4x1.Begin();
             stageThree4x2.Begin();
+        }
+
+        void stageThree3x1_Completed(object sender, EventArgs e)
+        {
+            N1x1.Margin = new Thickness(0, 0, 0, 3 * App.Current.Host.Content.ActualHeight / 4.0);
+            N2x1.Margin = new Thickness(0, App.Current.Host.Content.ActualHeight / 4.0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 2.0);
+            N2x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0, 0, App.Current.Host.Content.ActualHeight / 2.0);
+            N3x1.Margin = new Thickness(0, App.Current.Host.Content.ActualHeight / 2.0, App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 4.0);
+            N3x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, App.Current.Host.Content.ActualHeight / 2.0, 0, App.Current.Host.Content.ActualHeight / 4.0);
+            N4x1.Margin = new Thickness(0, 3 * App.Current.Host.Content.ActualHeight / 4.0, App.Current.Host.Content.ActualWidth / 2.0, 0);
+            N4x2.Margin = new Thickness(App.Current.Host.Content.ActualWidth / 2.0, 3 * App.Current.Host.Content.ActualHeight / 4.0, 0, 0);
+            stageFour.Begin();
         }
 
         protected override void OnRemovedFromJournal(JournalEntryRemovedEventArgs e)
@@ -148,9 +169,15 @@ namespace Shaastra
             NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=pic1f", UriKind.Relative));
         }
 
+<<<<<<< HEAD
         private void part1x1_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Events/events.xaml", UriKind.Relative));
+=======
+        private void partN4x2_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Sponsors/spons.xaml", UriKind.Relative));
+>>>>>>> origin/master
         }
 
     }
