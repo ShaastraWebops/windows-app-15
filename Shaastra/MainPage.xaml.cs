@@ -148,5 +148,10 @@ namespace Shaastra
             NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=pic1f", UriKind.Relative));
         }
 
+        private void part1x1_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Events/events.xaml", UriKind.Relative));
+        }
+
     }
 }

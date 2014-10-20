@@ -207,29 +207,63 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,12,0,12">
             <ScrollViewer>
                 <StackPanel>
-                    <Button Content="Aerofest" Foreground="Red" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="Aero_Button" Click="Aero_Button_Click" Height="90">
-                    </Button>
-                    <Button Content="B-Events" Foreground="Yellow" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="BE_Button" Click="BE_Button_Click" Height="90">
-                    </Button>
-                    <Button Content="Coding" Foreground="Green" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="Code_Button" Click="Code_Button_Click" Height="90">
-                    </Button>
-                    <Button Content="Department Flagship" Foreground="Purple" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="FS_Button" Click="FS_Button_Click" Height="90">
-                    </Button>
-                    <Button Content="Design and Build" Foreground="Orange" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="DB_Button" Click="DB_Button_Click" Height="90">
-                    </Button>
-                    <Button Content="Electronics" Foreground="Blue" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="Elec_Button" Click="Elec_Button_Click" Height="90">
-                    </Button>
-                    <Button Content="Involve" Foreground="Turquoise" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="IQ_Button" Click="IQ_Button_Click" Height="90">
-                    </Button>
-                    <Button Content="Quizzing" Foreground="Brown" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="Shows_Button" Click="Shows_Button_Click" Height="90">
-                    </Button>                    
-                    <Button Content="Spotlight" Foreground="Lime" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="SL_Button" Click="SL_Button_Click" Height="90">
-                    </Button>
-                    <Button Content="Workshop" Foreground="Gold" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Jokerman" x:Name="WS_Button" Click="WS_Button_Click" Height="90">
-                    </Button>                
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/Aero.png" Height="90" x:Name="aero_icon" Width="90" Stretch="Uniform" Opacity="1"/>
+                        <Button Content="Aerofest" Foreground="Red" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Comic Sans MS" x:Name="Aero_Button" Click="Aero_Button_Click" Height="90">
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/BE.png" Height="90" x:Name="be_icon" Width="90" Stretch="Uniform" Opacity="1"/>
+                        <Button Content="B-Events" Foreground="Yellow" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Comic Sans MS" x:Name="BE_Button" Click="BE_Button_Click" Height="90">
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/Code.png" Height="90" x:Name="code_icon" Width="90" Stretch="Uniform" Opacity="1"/>
+                        <Button Content="Coding" Foreground="Green" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Comic Sans MS" x:Name="Code_Button" Click="Code_Button_Click" Height="90">
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/FS.png" Height="90" x:Name="fs_icon" Width="90" Stretch="Uniform" Opacity="1"/>
+                        <Button Content="Department Flagship" Foreground="Purple" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Comic Sans MS" x:Name="FS_Button" Click="FS_Button_Click" Height="90">
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/DB.png" Height="90" x:Name="db_icon" Width="90" Stretch="Uniform" Opacity="1"/>
+                        <Button Content="Design and Build" Foreground="Orange" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Comic Sans MS" x:Name="DB_Button" Click="DB_Button_Click" Height="90">
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/Elec.png" Height="90" x:Name="elec_icon" Width="90" Stretch="Uniform" Opacity="1"/>
+                        <Button Content="Electronics" Foreground="Blue" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Comic Sans MS" x:Name="Elec_Button" Click="Elec_Button_Click" Height="90">
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/IQ.png" Height="90" x:Name="inv_icon" Width="90" Stretch="Uniform" Opacity="1"/>
+                        <Button Content="Involve" Foreground="Turquoise" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Comic Sans MS" x:Name="IQ_Button" Click="IQ_Button_Click" Height="90">
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/IQ.png" Height="90" x:Name="qu_icon" Width="90" Stretch="Uniform" Opacity="1"/>
+                        <Button Content="Quizzing" Foreground="Brown" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Comic Sans MS" x:Name="Shows_Button" Click="Shows_Button_Click" Height="90">
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/SL.png" Height="90" x:Name="sl_icon" Width="90" Stretch="Uniform" Opacity="1"/>
+                        <Button Content="Spotlight" Foreground="Lime" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Comic Sans MS" x:Name="SL_Button" Click="SL_Button_Click" Height="90">
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/WS.png" Height="90" x:Name="ws_icon" Width="90" Stretch="Uniform" Opacity="1"/>
+                        <Button Content="Workshop" Foreground="Gold" FontSize="36" BorderThickness="0" Background="Transparent" FontFamily="Comic Sans MS" x:Name="WS_Button" Click="WS_Button_Click" Height="90">
+                        </Button>
+                    </StackPanel>
                 </StackPanel>
             </ScrollViewer>
-            <Button x:Name="Back_Button" BorderThickness="0" Click="Back_Button_Click" Background="Crimson" Opacity="0" Height="90" Width="90" Margin="12,500,370,12"/>
+            <Button x:Name="Back_Button" BorderThickness="0" Click="Back_Button_Click" Background="Transparent" Opacity="0" Height="90" Width="90" Margin="12,500,370,12">
+                <Border>
+                    <Image Source="Assets/Back.png"/>
+                </Border>
+            </Button>
             <Image x:Name="Aero_img" Source="Assets/Aero.png" Opacity="0" Height="100" Width="100" Margin="10,10,359,502">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="i1_Trans" X="-120"/>

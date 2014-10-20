@@ -165,6 +165,7 @@
     <Content Include="Events\Assets\Aero.png" />
     <Content Include="Events\Assets\AlignmentGrid.png" />
     <Content Include="Events\Assets\ApplicationIcon.png" />
+    <Content Include="Events\Assets\Back.png" />
     <Content Include="Events\Assets\BE.png" />
     <Content Include="Events\Assets\Code.png" />
     <Content Include="Events\Assets\DB.png" />

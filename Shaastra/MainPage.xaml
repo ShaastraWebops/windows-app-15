@@ -88,7 +88,7 @@
                 </Image.Projection>
             </Image>-->
             
-            <Image x:Name="part1x1" Opacity="1" Source="Assets/Paper/paper1x1.jpg" Stretch="Fill">
+            <Image x:Name="part1x1" Opacity="1" Source="Assets/Paper/paper1x1.jpg" Stretch="Fill" Tap="part1x1_Tap">
                 <Image.Projection>
                     <PlaneProjection x:Name="turn1x1"/>
                 </Image.Projection>

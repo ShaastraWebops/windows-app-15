@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="10/12/2014 2:12:01 PM">
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="10/12/2014 2:11:59 PM" />
+﻿<xapCache source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="10/17/2014 7:14:07 PM">
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="10/17/2014 7:14:04 PM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Assets\nebula.jpg" archivePath="Assets\nebula.jpg" lastWriteTime="10/8/2014 2:09:01 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper1x1.jpg" archivePath="Assets\Paper\paper1x1.jpg" lastWriteTime="10/8/2014 2:09:01 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper1x2.jpg" archivePath="Assets\Paper\paper1x2.jpg" lastWriteTime="10/8/2014 2:09:01 AM" />
@@ -9,25 +9,26 @@
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper3x2.jpg" archivePath="Assets\Paper\paper3x2.jpg" lastWriteTime="10/8/2014 2:09:01 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper4x1.jpg" archivePath="Assets\Paper\paper4x1.jpg" lastWriteTime="10/8/2014 2:09:01 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper4x2.jpg" archivePath="Assets\Paper\paper4x2.jpg" lastWriteTime="10/8/2014 2:09:01 AM" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Aero.png" archivePath="Events\Assets\Aero.png" lastWriteTime="10/8/2014 2:09:02 AM" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Aero.png" archivePath="Events\Assets\Aero.png" lastWriteTime="10/12/2014 3:27:32 PM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\AlignmentGrid.png" archivePath="Events\Assets\AlignmentGrid.png" lastWriteTime="10/8/2014 2:09:02 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\ApplicationIcon.png" archivePath="Events\Assets\ApplicationIcon.png" lastWriteTime="10/8/2014 2:09:02 AM" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\BE.png" archivePath="Events\Assets\BE.png" lastWriteTime="10/8/2014 2:09:02 AM" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Code.png" archivePath="Events\Assets\Code.png" lastWriteTime="10/8/2014 2:09:02 AM" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\DB.png" archivePath="Events\Assets\DB.png" lastWriteTime="10/8/2014 2:09:02 AM" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Elec.png" archivePath="Events\Assets\Elec.png" lastWriteTime="10/8/2014 2:09:02 AM" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\FS.png" archivePath="Events\Assets\FS.png" lastWriteTime="10/8/2014 2:09:02 AM" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\IQ.png" archivePath="Events\Assets\IQ.png" lastWriteTime="10/8/2014 2:09:02 AM" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Back.png" archivePath="Events\Assets\Back.png" lastWriteTime="10/12/2014 2:50:56 PM" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\BE.png" archivePath="Events\Assets\BE.png" lastWriteTime="10/12/2014 3:27:34 PM" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Code.png" archivePath="Events\Assets\Code.png" lastWriteTime="10/12/2014 3:27:38 PM" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\DB.png" archivePath="Events\Assets\DB.png" lastWriteTime="10/12/2014 3:31:32 PM" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Elec.png" archivePath="Events\Assets\Elec.png" lastWriteTime="10/12/2014 3:31:36 PM" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\FS.png" archivePath="Events\Assets\FS.png" lastWriteTime="10/12/2014 3:31:38 PM" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\IQ.png" archivePath="Events\Assets\IQ.png" lastWriteTime="10/12/2014 3:31:44 PM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\little19.png" archivePath="Events\Assets\little19.png" lastWriteTime="10/8/2014 2:09:02 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Shows.png" archivePath="Events\Assets\Shows.png" lastWriteTime="10/8/2014 2:09:02 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\simple30.png" archivePath="Events\Assets\simple30.png" lastWriteTime="10/8/2014 2:09:02 AM" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\SL.png" archivePath="Events\Assets\SL.png" lastWriteTime="10/8/2014 2:09:02 AM" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\SL.png" archivePath="Events\Assets\SL.png" lastWriteTime="10/12/2014 3:31:48 PM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Events\Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="10/8/2014 2:09:02 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Events\Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="10/8/2014 2:09:02 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Events\Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="10/8/2014 2:09:02 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Events\Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="10/8/2014 2:09:02 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Tiles\IconicTileSmall.png" archivePath="Events\Assets\Tiles\IconicTileSmall.png" lastWriteTime="10/8/2014 2:09:02 AM" />
-  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\WS.png" archivePath="Events\Assets\WS.png" lastWriteTime="10/8/2014 2:09:02 AM" />
+  <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\WS.png" archivePath="Events\Assets\WS.png" lastWriteTime="10/12/2014 3:31:50 PM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Lectures\lecture_data.json" archivePath="Lectures\lecture_data.json" lastWriteTime="10/8/2014 2:09:02 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="10/8/2014 2:09:01 AM" />
   <file source="C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="10/8/2014 2:09:01 AM" />
