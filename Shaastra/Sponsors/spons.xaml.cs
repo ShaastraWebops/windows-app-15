@@ -22,8 +22,7 @@ namespace Shaastra.Sponsors
         {
             try
             {
-                _browser.IsScriptEnabled = true;
-                _browser.Navigate(new Uri("http://shaastra.org/2015/main/php/pages/spons.php#tab0"));
+                
             }
             catch(Exception _ex)
             {

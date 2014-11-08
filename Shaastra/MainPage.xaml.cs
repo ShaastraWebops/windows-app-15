@@ -169,15 +169,13 @@ namespace Shaastra
             NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=pic1f", UriKind.Relative));
         }
 
-<<<<<<< HEAD
         private void part1x1_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Events/events.xaml", UriKind.Relative));
-=======
-        private void partN4x2_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        }
+            private void partN4x2_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Sponsors/spons.xaml", UriKind.Relative));
->>>>>>> origin/master
         }
 
     }
