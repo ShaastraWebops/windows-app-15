@@ -36,7 +36,7 @@
     </toolkit:TransitionService.NavigationOutTransition>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="White">
+    <Grid x:Name="LayoutRoot" Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -69,10 +69,9 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1">
-
-            <!--Background for breathing action of middle hex-->
-            <Image Source="Assets/hexagon_layout.png" Height="198" x:Name="MiddleImageBg"/>
-
+            
+            <Button Height="75" Margin="0,0,0,0" HorizontalAlignment="Left" Width="125" Foreground="Black" Content="next" VerticalAlignment="Top" Tap="MiddleImage_Tap"/>
+            
             <!--Top-->
             <Image x:Name="TopImage" Tap="Image_Tap" Source="Assets/nameBoard/pic1x.png" Height="198" Margin="-1,68,1,399">
                 <Image.RenderTransform>
@@ -110,7 +109,7 @@
             </Image>
 
             <!--Bottom Left-->
-            <Image x:Name="BottomLeftImage" Tap="Image_Tap" Source="Assets/nameBoard/pic6x.png" Height="198" Margin="-144,317,144,150">
+            <Image x:Name="BottomLeftImage"  Tap="Image_Tap" Source="Assets/nameBoard/pic6x.png" Height="198" Margin="-144,317,144,150">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <CompositeTransform x:Name="Bottom_Left_c" TranslateY="0"/>
@@ -146,7 +145,11 @@
             </Image>
 
             <!--Middle Image-->
-            <Image Source="Assets/hexagon.png" Height="198" x:Name="MiddleImage" Tap="MiddleImage_Tap"/>
+            <Image Source="Assets/nameBoard/pic13x.png" Height="198" x:Name="MiddleImage" Tap="Image_Tap">
+                <Image.Projection>
+                    <PlaneProjection x:Name="Middle_cr" RotationY="0"/>
+                </Image.Projection>
+            </Image>
 
         </Grid>
 
@@ -162,9 +165,6 @@
         <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
     </Grid>
     <phone:PhoneApplicationPage.Resources>
-        <Storyboard x:Name="breathe">
-            <DoubleAnimation Storyboard.TargetName="MiddleImage" Storyboard.TargetProperty="Opacity" From="0.0" To="1.0" Duration="0:0:2" RepeatBehavior="Forever" AutoReverse="True"/>
-        </Storyboard>
 
         <Storyboard x:Name="Rot_Up_Top">
             <DoubleAnimation AutoReverse="True"
@@ -406,5 +406,19 @@
             </DoubleAnimation>
         </Storyboard>
 
+        <Storyboard x:Name="Rot_Middle">
+            <DoubleAnimation AutoReverse="True"
+                   Duration="0:0:0.25"
+                   
+                   From="0" 
+                   Storyboard.TargetName="Middle_cr"
+                   Storyboard.TargetProperty="RotationX"
+                   To="90">
+                <DoubleAnimation.EasingFunction>
+                    <ExponentialEase EasingMode="EaseOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        
     </phone:PhoneApplicationPage.Resources>
 </phone:PhoneApplicationPage>

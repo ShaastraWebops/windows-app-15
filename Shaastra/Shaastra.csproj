@@ -189,6 +189,15 @@
     <Content Include="Events\Assets\Tiles\IconicTileMediumLarge.png" />
     <Content Include="Events\Assets\Tiles\IconicTileSmall.png" />
     <Content Include="Events\Assets\WS.png" />
+    <Content Include="Lectures\Assets\nameBoard\pic12x.png" />
+    <Content Include="Lectures\Assets\nameBoard\pic13x.png" />
+    <Content Include="Lectures\Assets\nameBoard\pic14x.png" />
+    <Content Include="Lectures\Assets\pageFaces\pic12.jpg" />
+    <Content Include="Lectures\Assets\pageFaces\pic13.jpg" />
+    <Content Include="Lectures\Assets\pageFaces\pic14.jpg" />
+    <Content Include="Lectures\Assets\tileFaces\pic12f.png" />
+    <Content Include="Lectures\Assets\tileFaces\pic13f.png" />
+    <Content Include="Lectures\Assets\tileFaces\pic14f.png" />
     <Content Include="Lectures\lecture_data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -222,7 +231,6 @@
     <Content Include="Lectures\Assets\hexagon.png" />
     <Content Include="Lectures\Assets\hexagon_layout.png" />
     <Content Include="Lectures\Assets\hexagon_unfocused.png" />
-    <Content Include="Lectures\Assets\nameBoard\hexagon_face.png" />
     <Content Include="Lectures\Assets\nameBoard\pic10x.png" />
     <Content Include="Lectures\Assets\nameBoard\pic11x.png" />
     <Content Include="Lectures\Assets\nameBoard\pic1x.png" />

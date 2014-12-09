@@ -21,9 +21,15 @@ namespace Shaastra
             InitializeComponent();
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+            unFold();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            
+        }
+
+        private void unFold()
         {
             TiltEffect.TiltableItems.Add(typeof(Grid));
             //Height Setup
@@ -173,7 +179,8 @@ namespace Shaastra
         {
             NavigationService.Navigate(new Uri("/Events/events.xaml", UriKind.Relative));
         }
-            private void partN4x2_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+
+        private void partN4x2_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Sponsors/spons.xaml", UriKind.Relative));
         }

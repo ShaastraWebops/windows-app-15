@@ -30,6 +30,7 @@ namespace Shaastra.Lectures
         Uri store22 = (new Uri(@"Assets/nameBoard/pic4x.png", UriKind.Relative));
         Uri store31 = (new Uri(@"Assets/nameBoard/pic5x.png", UriKind.Relative));
         Uri store32 = (new Uri(@"Assets/nameBoard/pic6x.png", UriKind.Relative));
+        Uri storem = (new Uri(@"Assets/nameBoard/pic13x.png", UriKind.Relative));
 
         BitmapImage mem11 = new BitmapImage();
         BitmapImage mem12 = new BitmapImage();
@@ -37,6 +38,7 @@ namespace Shaastra.Lectures
         BitmapImage mem22 = new BitmapImage();
         BitmapImage mem31 = new BitmapImage();
         BitmapImage mem32 = new BitmapImage();
+        BitmapImage memm = new BitmapImage();
 
         DispatcherTimer set1;
 
@@ -53,14 +55,13 @@ namespace Shaastra.Lectures
             //appBar.Opacity = 0.8;
             //ApplicationBarIconButton button1 = new ApplicationBarIconButton();
 
-            breathe.Begin();
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
 
 
 
             //Timer For flipping
-            set1 = new DispatcherTimer();            
+            set1 = new DispatcherTimer();
             set1.Interval = new TimeSpan(0, 0, 0, 5, 0);
             set1.Start();
             set1.Tick += set1_Tick;
@@ -72,6 +73,7 @@ namespace Shaastra.Lectures
             BottomRightImage.Source = mem22;
             TopImage.Source = mem11;
             BottomImage.Source = mem12;
+            MiddleImage.Source = memm;
 
             //Initialize with default images
             mem11.UriSource = store11;
@@ -80,6 +82,7 @@ namespace Shaastra.Lectures
             mem22.UriSource = store22;
             mem31.UriSource = store31;
             mem32.UriSource = store32;
+            memm.UriSource = storem;
 
         }
 
@@ -91,9 +94,9 @@ namespace Shaastra.Lectures
             mem22.UriSource = null;
             mem31.UriSource = null;
             mem32.UriSource = null;
+            memm.UriSource = null;
             set1.Tick -= set1_Tick;
             set1.Stop();
-            breathe.Stop();
         }
 
         void set1_Tick(object sender, EventArgs e)
@@ -115,6 +118,7 @@ namespace Shaastra.Lectures
 
             Rot_Up_Top.Begin();
             Rot_Down_Bottom.Begin();
+            Rot_Middle.Begin();
 
             Rot_Left_Top_Left.BeginTime = new TimeSpan(0, 0, 0, 0, 125);
             Rot_Right_Bottom_Right.BeginTime = new TimeSpan(0, 0, 0, 0, 125);
@@ -182,19 +186,27 @@ namespace Shaastra.Lectures
                 rswitchTaps1 = !rswitchTaps1;
                 mem11.UriSource = store11;
                 mem12.UriSource = store12;
+                memm.UriSource = storem;
             }
             else
             {
                 rswitchTaps1 = !rswitchTaps1;
-                string s11, s12;
+                string s11, s12, sm;            //sm is for middle img
                 s11 = (TopImage.Source as BitmapImage).UriSource.ToString();
                 s12 = (BottomImage.Source as BitmapImage).UriSource.ToString();
+                sm = (MiddleImage.Source as BitmapImage).UriSource.ToString();
+
                 s11 = s11.Replace("nameBoard", "tileFaces");
                 s12 = s12.Replace("nameBoard", "tileFaces");
+                sm = sm.Replace("nameBoard", "tileFaces");
+
                 s11 = s11.Replace("x", "f");
                 s12 = s12.Replace("x", "f");
+                sm = sm.Replace("x", "f");
+
                 mem11.UriSource = (new Uri(@s11, UriKind.Relative));
                 mem12.UriSource = (new Uri(@s12, UriKind.Relative));
+                memm.UriSource = (new Uri(@sm, UriKind.Relative));
             }
             (sender as DispatcherTimer).Stop();
         }
@@ -264,7 +276,7 @@ namespace Shaastra.Lectures
             {
                 switchTaps3 = !switchTaps3;
                 mem31.UriSource = (new Uri(@"Assets/nameBoard/pic11x.png", UriKind.Relative));
-                mem32.UriSource = (new Uri(@"Assets/hexagon_unfocused.png", UriKind.Relative));
+                mem32.UriSource = (new Uri(@"Assets/nameBoard/pic12x.png", UriKind.Relative));
                 store31 = mem31.UriSource;
                 store32 = mem32.UriSource;
             }
@@ -299,16 +311,20 @@ namespace Shaastra.Lectures
                 switchTaps1 = !switchTaps1;
                 mem11.UriSource = (new Uri(@"Assets/nameBoard/pic1x.png", UriKind.Relative));
                 mem12.UriSource = (new Uri(@"Assets/nameBoard/pic2x.png", UriKind.Relative));
+                memm.UriSource = (new Uri(@"Assets/nameBoard/pic13x.png", UriKind.Relative));
                 store11 = mem11.UriSource;
                 store12 = mem12.UriSource;
+                storem = memm.UriSource;
             }
             else
             {
                 switchTaps1 = !switchTaps1;
                 mem11.UriSource = (new Uri(@"Assets/nameBoard/pic7x.png", UriKind.Relative));
                 mem12.UriSource = (new Uri(@"Assets/nameBoard/pic8x.png", UriKind.Relative));
+                memm.UriSource = (new Uri(@"Assets/nameBoard/pic14x.png", UriKind.Relative));
                 store11 = mem11.UriSource;
                 store12 = mem12.UriSource;
+                storem = memm.UriSource;
             }
             (sender as DispatcherTimer).Stop();
         }
@@ -319,11 +335,11 @@ namespace Shaastra.Lectures
             argVal = argVal.Replace("Assets/nameBoard/", "");
             argVal = argVal.Replace("Assets/tileFaces/", "");
             argVal = argVal.Replace(".png", "");
-            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key="+argVal, UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Lectures/lecturedetails.xaml?key=" + argVal, UriKind.Relative));
         }
 
-        
 
-        
+
+
     }
 }
