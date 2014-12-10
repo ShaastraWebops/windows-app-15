@@ -121,6 +121,8 @@
     <Compile Include="Sponsors\spons.xaml.cs">
       <DependentUpon>spons.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Sponsors\sponsRoot.cs" />
+    <Compile Include="Sponsors\sponsSecondary.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -206,6 +208,9 @@
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Sponsors\spons.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\AlignmentGrid.png" />
