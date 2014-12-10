@@ -30,32 +30,25 @@
                     <Rectangle Stroke="Black" Margin="2" RadiusX="0" RadiusY="0" Opacity="0.15"/>
                     <Rectangle Stroke="Black" Margin="1" RadiusX="0" RadiusY="0" Opacity="0.1"/>
                     <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>
-                    <!--<ScrollViewer Margin="0,0,0,10" Height="707">-->
-                    <ListBox x:Name="sponsListbox" ItemsSource="{Binding}" Margin="0,6,0,10">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate x:Name="sourceStack" >
-                                <StackPanel HorizontalAlignment="Center" Margin="0,0,0,20" Orientation="Vertical">
-                                    <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="sponsTitle"  Text="{Binding sponstype}" FontSize="30" Foreground="DarkSlateGray" FontFamily="Segoe WP Light"/>
+                    <ScrollViewer Margin="0,0,0,10" Height="707">
+                        <StackPanel x:Name="_scroller" Margin="0,5,0,20" Orientation="Vertical">
+                                    <!--<TextBlock Margin="10,0,0,0" TextWrapping="Wrap" x:Name="sponsTitle"  Text="Title Sponsor" FontSize="30" Foreground="DarkSlateGray" FontFamily="Segoe WP Light"/>
                                     <Image CacheMode="BitmapCache" Margin="30,20,30,20" HorizontalAlignment="Center" x:Name="profilePic" MaxHeight="150">
-                                        <!--<Image.Source>
+                                        <Image.Source>
                                             <BitmapImage CreateOptions="BackgroundCreation" UriSource="{Binding sponsimg}"/>
-                                        </Image.Source>-->
+                                        </Image.Source>
                                     </Image>
-                                    <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Center" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="sponsName"  Text="{Binding sponsname}" FontSize="35" Foreground="Black" FontFamily="Segoe WP"/>
+                                    <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Center" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="sponsName"  Text="{Binding sponsname}" FontSize="35" Foreground="Black" FontFamily="Segoe WP"/>-->
                                 </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-                    <!--</ScrollViewer>-->
+                    </ScrollViewer>
                 </Grid>
             </phone:PivotItem>
         </phone:Pivot>
-        <c4f:ProgressOverlay Canvas.ZIndex="1000" Name="progressOverlay"
-             Opacity="1" d:IsLocked="True" d:IsHidden="False">
+        <c4f:ProgressOverlay Canvas.ZIndex="1000" Name="progressOverlay" Opacity="1" d:IsLocked="True" d:IsHidden="True">
             <c4f:ProgressOverlay.Content>
                 <StackPanel>
                     <slToolkit:PerformanceProgressBar Foreground="Cyan" IsIndeterminate="True" />
-                    <TextBlock Foreground="White" HorizontalAlignment="Center">Processing data store...</TextBlock>
+                    <TextBlock Foreground="White" HorizontalAlignment="Center">Retrieving and processing data...</TextBlock>
                 </StackPanel>
             </c4f:ProgressOverlay.Content>
         </c4f:ProgressOverlay>
