@@ -40,6 +40,7 @@ namespace Shaastra.Lectures
         BitmapImage mem32 = new BitmapImage();
         BitmapImage memm = new BitmapImage();
 
+
         DispatcherTimer set1;
 
         // Constructor
@@ -74,6 +75,8 @@ namespace Shaastra.Lectures
             TopImage.Source = mem11;
             BottomImage.Source = mem12;
             MiddleImage.Source = memm;
+
+            
 
             //Initialize with default images
             mem11.UriSource = store11;
