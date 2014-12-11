@@ -262,3 +262,4 @@ C:\Users\Harsh\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\XapCacheFile.x
 C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Sponsors\spons.g.cs
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Sponsors\spons.g.cs
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Sponsors\spons.json
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Exhibition\exhibition.g.cs

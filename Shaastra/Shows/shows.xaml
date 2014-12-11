@@ -26,7 +26,7 @@
 
         <phone:PivotItem Margin="0" x:Name="pivOne">
                 <Grid>
-                    <Image x:Name="imgOne" Tap="img_Tap" CacheMode="BitMapCache" Stretch="UniformToFill">
+                    <Image x:Name="imgOne" Tap="img_Tap" CacheMode="BitMapCache" Stretch="Uniform">
                         <Image.RenderTransform>
                             <CompositeTransform ScaleX="1" ScaleY="1" />
                         </Image.RenderTransform>
@@ -39,7 +39,7 @@
 
             <phone:PivotItem Margin="0" x:Name="pivTwo">
                 <Grid>
-                    <Image x:Name="imgTwo" Tap="img_Tap" CacheMode="BitMapCache" Stretch="UniformToFill">
+                    <Image x:Name="imgTwo" Tap="img_Tap" CacheMode="BitMapCache" Stretch="Uniform">
                         <Image.RenderTransform>
                             <CompositeTransform ScaleX="1" ScaleY="1" />
                         </Image.RenderTransform>
@@ -52,7 +52,7 @@
 
             <phone:PivotItem Margin="0" x:Name="pivThree">
                 <Grid>
-                    <Image x:Name="imgThree" Tap="img_Tap" CacheMode="BitMapCache" Stretch="UniformToFill">
+                    <Image x:Name="imgThree" Tap="img_Tap" CacheMode="BitMapCache" Stretch="Uniform">
                         <Image.RenderTransform>
                             <CompositeTransform ScaleX="1" ScaleY="1" />
                         </Image.RenderTransform>

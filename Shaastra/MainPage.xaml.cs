@@ -185,5 +185,10 @@ namespace Shaastra
             NavigationService.Navigate(new Uri("/Sponsors/spons.xaml", UriKind.Relative));
         }
 
+        private void partN3x1_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Exhibition/exhibition.xaml", UriKind.Relative));
+        }
+
     }
 }

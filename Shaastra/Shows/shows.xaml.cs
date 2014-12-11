@@ -29,8 +29,8 @@ namespace Shaastra.Shows
         public shows()
         {
             InitializeComponent();
-            stateStore = 3;
-            imageStore = 7;
+            stateStore = 3;     //No. of pivot items
+            imageStore = 7;     //No. of Images
             bearer = new BitmapImage(new Uri(@"Assets/pic1.jpg", UriKind.Relative));
             imgOne.Source = bearer;
             nowShowing = imgOne;

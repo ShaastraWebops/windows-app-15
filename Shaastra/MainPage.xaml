@@ -141,7 +141,7 @@
                 <Image x:Name="partN2x2" Stretch="Fill" Opacity="0" Tap="clickLectures_Tap" Source="Assets/TilesX/fin2x2.png"/>
             </Grid>
             <Grid toolkit:TiltEffect.IsTiltEnabled="True" x:Name="N3x1">
-                <Image x:Name="partN3x1" Stretch="Fill" Opacity="0" Source="Assets/TilesX/fin3x1.png"/>
+                <Image x:Name="partN3x1" Stretch="Fill" Opacity="0" Tap="partN3x1_Tap" Source="Assets/TilesX/fin3x1.png"/>
             </Grid>
             <Grid toolkit:TiltEffect.IsTiltEnabled="True" x:Name="N3x2">
                 <Image x:Name="partN3x2" Stretch="Fill" Opacity="0" Tap="clickShows_Tap" Source="Assets/TilesX/fin3x2.png"/>

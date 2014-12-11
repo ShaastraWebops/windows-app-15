@@ -96,6 +96,9 @@
     <Compile Include="Events\events.xaml.cs">
       <DependentUpon>events.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Exhibition\exhibition.xaml.cs">
+      <DependentUpon>exhibition.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Lectures\FileHelper.cs" />
     <Compile Include="Lectures\lectureDetailRootObject.cs" />
     <Compile Include="Lectures\lecturedetails.xaml.cs">
@@ -132,6 +135,10 @@
     <Page Include="Events\events.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Exhibition\exhibition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Lectures\lecturedetails.xaml">
       <SubType>Designer</SubType>
@@ -191,6 +198,9 @@
     <Content Include="Events\Assets\Tiles\IconicTileMediumLarge.png" />
     <Content Include="Events\Assets\Tiles\IconicTileSmall.png" />
     <Content Include="Events\Assets\WS.png" />
+    <Content Include="Exhibition\Assets\airshow.jpg" />
+    <Content Include="Exhibition\Assets\cfi_arm.jpg" />
+    <Content Include="Exhibition\Assets\robowars.jpg" />
     <Content Include="Lectures\Assets\nameBoard\pic12x.png" />
     <Content Include="Lectures\Assets\nameBoard\pic13x.png" />
     <Content Include="Lectures\Assets\nameBoard\pic14x.png" />
