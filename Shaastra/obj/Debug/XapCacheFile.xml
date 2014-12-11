@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/11/2014 3:44:02 PM">
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="12/11/2014 3:43:59 PM" />
+﻿<xapCache source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/11/2014 9:14:34 PM">
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="12/11/2014 9:14:30 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\nebula.jpg" archivePath="Assets\nebula.jpg" lastWriteTime="8/15/2014 6:44:55 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper1x1.jpg" archivePath="Assets\Paper\paper1x1.jpg" lastWriteTime="8/24/2014 11:39:09 AM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper1x2.jpg" archivePath="Assets\Paper\paper1x2.jpg" lastWriteTime="8/24/2014 11:39:09 AM" />
@@ -16,6 +16,16 @@
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\TilesX\fin4x1.png" archivePath="Assets\TilesX\fin4x1.png" lastWriteTime="10/14/2014 11:01:33 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\TilesX\fin4x2.png" archivePath="Assets\TilesX\fin4x2.png" lastWriteTime="10/14/2014 11:01:33 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\TilesX\paper_shaastra_banner.png" archivePath="Assets\TilesX\paper_shaastra_banner.png" lastWriteTime="10/14/2014 11:01:33 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Category\aerofest.jpg" archivePath="Events\Assets\Category\aerofest.jpg" lastWriteTime="12/11/2014 4:08:03 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Category\b-events.jpg" archivePath="Events\Assets\Category\b-events.jpg" lastWriteTime="12/11/2014 4:08:03 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Category\coding.jpg" archivePath="Events\Assets\Category\coding.jpg" lastWriteTime="12/11/2014 4:08:03 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Category\department flagship.jpg" archivePath="Events\Assets\Category\department flagship.jpg" lastWriteTime="12/11/2014 4:08:03 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Category\design and build.jpg" archivePath="Events\Assets\Category\design and build.jpg" lastWriteTime="12/11/2014 4:08:03 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Category\electronics fest.jpg" archivePath="Events\Assets\Category\electronics fest.jpg" lastWriteTime="12/11/2014 4:08:03 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Category\involve.jpg" archivePath="Events\Assets\Category\involve.jpg" lastWriteTime="12/11/2014 4:08:03 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Category\quizzing.jpg" archivePath="Events\Assets\Category\quizzing.jpg" lastWriteTime="12/11/2014 4:08:03 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Category\spotlight.jpg" archivePath="Events\Assets\Category\spotlight.jpg" lastWriteTime="12/11/2014 4:08:03 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Category\workshops.jpg" archivePath="Events\Assets\Category\workshops.jpg" lastWriteTime="12/11/2014 4:08:03 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\photo4.jpg" archivePath="Events\Assets\photo4.jpg" lastWriteTime="12/11/2014 3:06:45 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Exhibition\Assets\airshow.jpg" archivePath="Exhibition\Assets\airshow.jpg" lastWriteTime="12/11/2014 11:06:32 AM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Exhibition\Assets\cfi_arm.jpg" archivePath="Exhibition\Assets\cfi_arm.jpg" lastWriteTime="12/11/2014 11:42:18 AM" />

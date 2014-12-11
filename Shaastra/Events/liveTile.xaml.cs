@@ -16,6 +16,7 @@ namespace Shaastra.Events
     {
         public liveTile()
         {
+            TiltEffect.TiltableItems.Add(typeof(StackPanel));
             InitializeComponent();
             Storyboard anim = (Storyboard)FindName("liveTileAnim1_Part1");
             anim.Begin();
@@ -47,6 +48,13 @@ namespace Shaastra.Events
             }
         }
 
+        public event EventHandler tileTap;
+
+        private void mainStack_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            if (this.tileTap != null)
+                this.mainStack_Tap(this, e);
+        }
 
         //Storyboard handling
         private void liveTileAnim1_Part1_Completed_1(object sender, EventArgs e)
@@ -69,5 +77,7 @@ namespace Shaastra.Events
             Storyboard anim = (Storyboard)FindName("liveTileAnim1_Part1");
             anim.Begin();
         }
+
+        
     }
 }

@@ -52,6 +52,8 @@
             <TextBlock Text="events" Margin="9,-7,0,0" Foreground="Black" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
+       
+        
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12, 0,12,0">
             <Rectangle Stroke="Black" Margin="5" RadiusX="0" RadiusY="0" Opacity="0.3"/>
@@ -60,31 +62,26 @@
             <Rectangle Stroke="Black" Margin="2" RadiusX="0" RadiusY="0" Opacity="0.15"/>
             <Rectangle Stroke="Black" Margin="1" RadiusX="0" RadiusY="0" Opacity="0.1"/>
             <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>
-            <ScrollViewer Margin="6,6,6,10" Height="700">
+            <ScrollViewer Margin="6,6,6,10" Height="670">
                 <StackPanel Margin="0,0,0,0">
-                    <Grid Margin="15">
-                        <local:liveTile _tileImage="Assets/photo4.jpg" _tileText=""  Width="200" Height="200" HorizontalAlignment="Left"/>
-                        <local:liveTile Width="200" Height="200" HorizontalAlignment="Right"/>
-                    </Grid>
-                    <Grid Margin="15">
-                        <local:liveTile Width="200" Height="200" HorizontalAlignment="Left"/>
-                        <local:liveTile Width="200" Height="200" HorizontalAlignment="Right"/>
-                    </Grid>
-                    <Grid Margin="15">
-                        <local:liveTile Width="200" Height="200" HorizontalAlignment="Left"/>
-                        <local:liveTile Width="200" Height="200" HorizontalAlignment="Right"/>
-                    </Grid>
-                    <Grid Margin="15">
-                        <local:liveTile Width="200" Height="200" HorizontalAlignment="Left"/>
-                        <local:liveTile Width="200" Height="200" HorizontalAlignment="Right"/>
-                    </Grid>
-                    <Grid Margin="15">
-                        <local:liveTile Width="200" Height="200" HorizontalAlignment="Left"/>
-                        <local:liveTile Width="200" Height="200" HorizontalAlignment="Right"/>
-                    </Grid>
+                    <Grid Margin="15" x:Name="grid1"/>
+                    <Grid Margin="15" x:Name="grid2"/>
+                    <Grid Margin="15" x:Name="grid3"/>
+                    <Grid Margin="15" x:Name="grid4"/>
+                    <Grid Margin="15" x:Name="grid5"/>
                 </StackPanel>
             </ScrollViewer>
         </Grid>
+        <c4f:ProgressOverlay Canvas.ZIndex="1000" Background="Black" Name="progressOverlay"
+             Opacity="0.9" d:IsLocked="True" d:IsHidden="False">
+            <c4f:ProgressOverlay.Content>
+                <StackPanel>
+                    <slToolkit:PerformanceProgressBar Foreground="White" IsIndeterminate="True" />
+                    <TextBlock FontSize="22" Foreground="White" HorizontalAlignment="Center">Initialising UI ...</TextBlock>
+                </StackPanel>
+            </c4f:ProgressOverlay.Content>
+        </c4f:ProgressOverlay>
     </Grid>
+    
 
 </phone:PhoneApplicationPage>

@@ -265,3 +265,4 @@ C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Exhibition\e
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\SocialCause\socialcause.g.cs
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.csprojResolveAssemblyReference.cache
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Events\liveTile.g.cs
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Events\eventslist.g.cs

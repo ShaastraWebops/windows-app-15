@@ -96,6 +96,9 @@
     <Compile Include="Events\events.xaml.cs">
       <DependentUpon>events.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Events\eventslist.xaml.cs">
+      <DependentUpon>eventslist.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Events\liveTile.xaml.cs">
       <DependentUpon>liveTile.xaml</DependentUpon>
     </Compile>
@@ -139,6 +142,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="Events\events.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Events\eventslist.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

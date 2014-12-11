@@ -1,0 +1,90 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Shaastra.Events.eventslist"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:slToolkit ="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:c4f="clr-namespace:Coding4Fun.Toolkit.Controls;assembly=Coding4Fun.Toolkit.Controls"
+    xmlns:Converters="clr-namespace:Coding4Fun.Toolkit.Controls.Converters;assembly=Coding4Fun.Toolkit.Controls"
+    xmlns:local="clr-namespace:Shaastra.Events"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="Black"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:SlideTransition Mode="SlideUpFadeIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideDownFadeIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:SlideTransition Mode="SlideUpFadeOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideDownFadeOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,10">
+            <TextBlock Text="events" Margin="9,-7,0,0" Foreground="Black" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12, 0,12,0">
+            <Rectangle Stroke="Black" Margin="5" RadiusX="0" RadiusY="0" Opacity="0.3"/>
+            <Rectangle Stroke="Black" Margin="4" RadiusX="0" RadiusY="0" Opacity="0.25"/>
+            <Rectangle Stroke="Black" Margin="3" RadiusX="0" RadiusY="0" Opacity="0.2"/>
+            <Rectangle Stroke="Black" Margin="2" RadiusX="0" RadiusY="0" Opacity="0.15"/>
+            <Rectangle Stroke="Black" Margin="1" RadiusX="0" RadiusY="0" Opacity="0.1"/>
+            <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>
+            <ScrollViewer Margin="6,6,6,10" Height="670">
+                <StackPanel Margin="0,0,0,0">
+                    <Grid Margin="15" x:Name="grid1">
+                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/aerofest.jpg" _tileText="Aerofest" Width="200" Height="200" HorizontalAlignment="Left"/>
+                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/b-events.jpg" _tileText="B-Events" Width="200" Height="200" HorizontalAlignment="Right"/>
+                    </Grid>
+                    <Grid Margin="15" x:Name="grid2">
+                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/coding.jpg" _tileText="Coding" Width="200" Height="200" HorizontalAlignment="Left"/>
+                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/department flagship.jpg" _tileText="Department Flagship" Width="200" Height="200" HorizontalAlignment="Right"/>
+                    </Grid>
+                    <Grid Margin="15" x:Name="grid3">
+                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/design and build.jpg" _tileText="Design and  Build" Width="200" Height="200" HorizontalAlignment="Left"/>
+                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/electronics fest.jpg" _tileText="Electronics Fest" Width="200" Height="200" HorizontalAlignment="Right"/>
+                    </Grid>
+                    <Grid Margin="15" x:Name="grid4">
+                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/involve.jpg" _tileText="Involve" Width="200" Height="200" HorizontalAlignment="Left"/>
+                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/quizzing.jpg" _tileText="Quizzing" Width="200" Height="200" HorizontalAlignment="Right"/>
+                    </Grid>
+                    <Grid Margin="15" x:Name="grid5">
+                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/spotlight.jpg" _tileText="Spotlight" Width="200" Height="200" HorizontalAlignment="Left"/>
+                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/workshops.jpg" _tileText="Workshops" Width="200" Height="200" HorizontalAlignment="Right"/>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

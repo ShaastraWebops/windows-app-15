@@ -44,7 +44,7 @@
                 </Grid>
             </phone:PivotItem>
         </phone:Pivot>
-        <c4f:ProgressOverlay Canvas.ZIndex="1000" Name="progressOverlay" Opacity="1" d:IsLocked="True" d:IsHidden="True">
+        <c4f:ProgressOverlay Canvas.ZIndex="1000" Name="progressOverlay" Opacity="1" d:IsLocked="True" d:IsHidden="False">
             <c4f:ProgressOverlay.Content>
                 <StackPanel>
                     <slToolkit:PerformanceProgressBar Foreground="Cyan" IsIndeterminate="True" />
