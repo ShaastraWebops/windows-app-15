@@ -96,6 +96,9 @@
     <Compile Include="Events\events.xaml.cs">
       <DependentUpon>events.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Events\liveTile.xaml.cs">
+      <DependentUpon>liveTile.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Exhibition\exhibition.xaml.cs">
       <DependentUpon>exhibition.xaml</DependentUpon>
     </Compile>
@@ -121,6 +124,9 @@
       <DependentUpon>shows.xaml</DependentUpon>
     </Compile>
     <Compile Include="Shows\swipeFx.cs" />
+    <Compile Include="SocialCause\socialcause.xaml.cs">
+      <DependentUpon>socialcause.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sponsors\spons.xaml.cs">
       <DependentUpon>spons.xaml</DependentUpon>
     </Compile>
@@ -133,8 +139,12 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="Events\events.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Events\liveTile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Exhibition\exhibition.xaml">
       <SubType>Designer</SubType>
@@ -153,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Shows\shows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SocialCause\socialcause.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -178,26 +192,17 @@
     <Content Include="Assets\TilesX\fin4x1.png" />
     <Content Include="Assets\TilesX\fin4x2.png" />
     <Content Include="Assets\TilesX\paper_shaastra_banner.png" />
-    <Content Include="Events\Assets\Aero.png" />
-    <Content Include="Events\Assets\AlignmentGrid.png" />
-    <Content Include="Events\Assets\ApplicationIcon.png" />
-    <Content Include="Events\Assets\Back.png" />
-    <Content Include="Events\Assets\BE.png" />
-    <Content Include="Events\Assets\Code.png" />
-    <Content Include="Events\Assets\DB.png" />
-    <Content Include="Events\Assets\Elec.png" />
-    <Content Include="Events\Assets\FS.png" />
-    <Content Include="Events\Assets\IQ.png" />
-    <Content Include="Events\Assets\little19.png" />
-    <Content Include="Events\Assets\Shows.png" />
-    <Content Include="Events\Assets\simple30.png" />
-    <Content Include="Events\Assets\SL.png" />
-    <Content Include="Events\Assets\Tiles\FlipCycleTileLarge.png" />
-    <Content Include="Events\Assets\Tiles\FlipCycleTileMedium.png" />
-    <Content Include="Events\Assets\Tiles\FlipCycleTileSmall.png" />
-    <Content Include="Events\Assets\Tiles\IconicTileMediumLarge.png" />
-    <Content Include="Events\Assets\Tiles\IconicTileSmall.png" />
-    <Content Include="Events\Assets\WS.png" />
+    <Content Include="Events\Assets\Category\aerofest.jpg" />
+    <Content Include="Events\Assets\Category\b-events.jpg" />
+    <Content Include="Events\Assets\Category\coding.jpg" />
+    <Content Include="Events\Assets\Category\department flagship.jpg" />
+    <Content Include="Events\Assets\Category\design and build.jpg" />
+    <Content Include="Events\Assets\Category\electronics fest.jpg" />
+    <Content Include="Events\Assets\Category\involve.jpg" />
+    <Content Include="Events\Assets\Category\quizzing.jpg" />
+    <Content Include="Events\Assets\Category\spotlight.jpg" />
+    <Content Include="Events\Assets\Category\workshops.jpg" />
+    <Content Include="Events\Assets\photo4.jpg" />
     <Content Include="Exhibition\Assets\airshow.jpg" />
     <Content Include="Exhibition\Assets\cfi_arm.jpg" />
     <Content Include="Exhibition\Assets\robowars.jpg" />
@@ -218,6 +223,8 @@
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="SocialCause\Assets\hands.jpg" />
+    <Content Include="SocialCause\Assets\pledgeabook.jpg" />
     <Content Include="Sponsors\spons.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -38,6 +38,33 @@ namespace Shaastra.Shows
             tickie.Interval = new TimeSpan(0, 0, 6);
             tickie.Tick += tickie_Tick;
             tickie.Start();
+            this.Loaded += shows_Loaded;
+        }
+
+        void shows_Loaded(object sender, RoutedEventArgs e)
+        {
+            ToastLoader();
+        }
+
+        void ToastLoader()
+        {
+            //Show Toast
+            ToastPrompt toast = GetToastWithImgAndTitle();
+            toast.TextWrapping = TextWrapping.NoWrap;
+            toast.MillisecondsUntilHidden = 5000;
+            toast.Show();
+            //End Toast Message ********************************************
+        }
+
+        private ToastPrompt GetToastWithImgAndTitle()
+        {
+            string textmsg = "Swipe Right for more...";
+            return new ToastPrompt
+            {
+                Title = "Shaastra",
+                TextOrientation = System.Windows.Controls.Orientation.Horizontal,
+                Message = textmsg
+            };
         }
 
         void tickie_Tick(object sender, EventArgs e)

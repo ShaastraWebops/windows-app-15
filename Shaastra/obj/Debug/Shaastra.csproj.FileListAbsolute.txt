@@ -177,7 +177,6 @@ C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.csp
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.pdb
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\XapCacheFile.xml
-C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.csprojResolveAssemblyReference.cache
 C:\Users\Harsh\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Assets\ApplicationIcon.png
 C:\Users\Harsh\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
 C:\Users\Harsh\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
@@ -263,3 +262,6 @@ C:\Users\black_viking\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Sponsor
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Sponsors\spons.g.cs
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Sponsors\spons.json
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Exhibition\exhibition.g.cs
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\SocialCause\socialcause.g.cs
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.csprojResolveAssemblyReference.cache
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Events\liveTile.g.cs

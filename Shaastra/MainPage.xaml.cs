@@ -199,5 +199,10 @@ namespace Shaastra
             _shaastra.Show();
         }
 
+        private void partN4x1_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/SocialCause/socialcause.xaml", UriKind.Relative));
+        }
+
     }
 }

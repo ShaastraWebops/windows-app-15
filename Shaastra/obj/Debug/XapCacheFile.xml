@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/11/2014 11:45:09 AM">
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="12/11/2014 11:45:03 AM" />
+﻿<xapCache source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/11/2014 3:44:02 PM">
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="12/11/2014 3:43:59 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\nebula.jpg" archivePath="Assets\nebula.jpg" lastWriteTime="8/15/2014 6:44:55 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper1x1.jpg" archivePath="Assets\Paper\paper1x1.jpg" lastWriteTime="8/24/2014 11:39:09 AM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper1x2.jpg" archivePath="Assets\Paper\paper1x2.jpg" lastWriteTime="8/24/2014 11:39:09 AM" />
@@ -16,26 +16,7 @@
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\TilesX\fin4x1.png" archivePath="Assets\TilesX\fin4x1.png" lastWriteTime="10/14/2014 11:01:33 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\TilesX\fin4x2.png" archivePath="Assets\TilesX\fin4x2.png" lastWriteTime="10/14/2014 11:01:33 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\TilesX\paper_shaastra_banner.png" archivePath="Assets\TilesX\paper_shaastra_banner.png" lastWriteTime="10/14/2014 11:01:33 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Aero.png" archivePath="Events\Assets\Aero.png" lastWriteTime="11/7/2014 6:35:08 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\AlignmentGrid.png" archivePath="Events\Assets\AlignmentGrid.png" lastWriteTime="7/13/2014 6:27:52 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\ApplicationIcon.png" archivePath="Events\Assets\ApplicationIcon.png" lastWriteTime="7/13/2014 6:27:52 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Back.png" archivePath="Events\Assets\Back.png" lastWriteTime="11/7/2014 6:35:08 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\BE.png" archivePath="Events\Assets\BE.png" lastWriteTime="11/7/2014 6:35:08 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Code.png" archivePath="Events\Assets\Code.png" lastWriteTime="11/7/2014 6:35:08 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\DB.png" archivePath="Events\Assets\DB.png" lastWriteTime="11/7/2014 6:35:08 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Elec.png" archivePath="Events\Assets\Elec.png" lastWriteTime="11/7/2014 6:35:08 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\FS.png" archivePath="Events\Assets\FS.png" lastWriteTime="11/7/2014 6:35:08 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\IQ.png" archivePath="Events\Assets\IQ.png" lastWriteTime="11/7/2014 6:35:08 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\little19.png" archivePath="Events\Assets\little19.png" lastWriteTime="8/10/2014 1:19:21 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Shows.png" archivePath="Events\Assets\Shows.png" lastWriteTime="8/10/2014 1:19:21 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\simple30.png" archivePath="Events\Assets\simple30.png" lastWriteTime="8/10/2014 1:19:21 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\SL.png" archivePath="Events\Assets\SL.png" lastWriteTime="11/7/2014 6:35:08 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Events\Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="7/13/2014 6:27:52 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Events\Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="7/13/2014 6:27:52 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Events\Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="7/13/2014 6:27:52 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Events\Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="7/13/2014 6:27:52 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\Tiles\IconicTileSmall.png" archivePath="Events\Assets\Tiles\IconicTileSmall.png" lastWriteTime="7/13/2014 6:27:52 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\WS.png" archivePath="Events\Assets\WS.png" lastWriteTime="11/7/2014 6:35:08 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\Assets\photo4.jpg" archivePath="Events\Assets\photo4.jpg" lastWriteTime="12/11/2014 3:06:45 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Exhibition\Assets\airshow.jpg" archivePath="Exhibition\Assets\airshow.jpg" lastWriteTime="12/11/2014 11:06:32 AM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Exhibition\Assets\cfi_arm.jpg" archivePath="Exhibition\Assets\cfi_arm.jpg" lastWriteTime="12/11/2014 11:42:18 AM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Exhibition\Assets\robowars.jpg" archivePath="Exhibition\Assets\robowars.jpg" lastWriteTime="12/11/2014 11:31:29 AM" />
@@ -49,6 +30,8 @@
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Lectures\Assets\tileFaces\pic13f.png" archivePath="Lectures\Assets\tileFaces\pic13f.png" lastWriteTime="12/9/2014 10:11:18 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Lectures\Assets\tileFaces\pic14f.png" archivePath="Lectures\Assets\tileFaces\pic14f.png" lastWriteTime="12/9/2014 10:11:18 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Lectures\lecture_data.json" archivePath="Lectures\lecture_data.json" lastWriteTime="12/10/2014 11:45:35 AM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\SocialCause\Assets\hands.jpg" archivePath="SocialCause\Assets\hands.jpg" lastWriteTime="12/11/2014 12:05:49 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\SocialCause\Assets\pledgeabook.jpg" archivePath="SocialCause\Assets\pledgeabook.jpg" lastWriteTime="12/11/2014 12:05:49 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Sponsors\spons.json" archivePath="Sponsors\spons.json" lastWriteTime="12/10/2014 1:28:03 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="6/25/2014 9:07:00 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="6/25/2014 9:07:00 PM" />
@@ -114,7 +97,7 @@
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="7/15/2014 3:05:41 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="7/15/2014 3:05:41 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="7/15/2014 3:05:41 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="8/30/2014 3:01:53 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/11/2014 11:59:10 AM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Coding4Fun.Toolkit.Controls.dll" archivePath="Coding4Fun.Toolkit.Controls.dll" lastWriteTime="8/3/2013 4:27:48 PM" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="1/1/2013 6:57:00 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\packages\WPtoolkit.Kinnara.4.2014.08.05\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="8/10/2014 1:19:27 PM" />
@@ -123,5 +106,5 @@
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="7/3/2014 9:09:18 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\shaastra_logo_opaque.png" archivePath="shaastra_logo_opaque.png" lastWriteTime="5/26/2014 4:00:27 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\tile336.png" archivePath="tile336.png" lastWriteTime="7/3/2014 7:18:28 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="8/30/2014 3:01:54 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="12/11/2014 11:59:11 AM" />
 </xapCache>
