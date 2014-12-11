@@ -9,6 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Shaastra.Resources;
 using System.Windows.Threading;
+using Microsoft.Phone.Tasks;
 
 namespace Shaastra
 {
@@ -188,6 +189,14 @@ namespace Shaastra
         private void partN3x1_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Exhibition/exhibition.xaml", UriKind.Relative));
+        }
+
+        private void partN1x1_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            //Take to shaastra website
+            WebBrowserTask _shaastra = new WebBrowserTask();
+            _shaastra.Uri = new Uri(@"http://shaastra.org/2015/main/php/pages/home.php",UriKind.Absolute);
+            _shaastra.Show();
         }
 
     }

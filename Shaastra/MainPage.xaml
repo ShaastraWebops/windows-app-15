@@ -42,32 +42,6 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <!-- LOCALIZATION NOTE:
-            To localize the displayed strings copy their values to appropriately named
-            keys in the app's neutral language resource file (AppResources.resx) then
-            replace the hard-coded text value between the attributes' quotation marks
-            with the binding clause whose path points to that string name.
-
-            For example:
-
-                Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}"
-
-            This binding points to the template's string resource named "ApplicationTitle".
-
-            Adding supported languages in the Project Properties tab will create a
-            new resx file per language that can carry the translated values of your
-            UI strings. The binding in these examples will cause the value of the
-            attributes to be drawn from the .resx file that matches the
-            CurrentUICulture of the app at run time.
-         -->
-
-        <!--TitlePanel contains the name of the application and page title-->
-        <!--<StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Opacity="0">
-            <TextBlock Text="SHAASTRA" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="main_page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-        </StackPanel>-->
-
         <!--ContentPanel - place additional content here-->
         <Grid HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
             <!--<Image x:Name="clickLectures" Source="Assets/paper1.jpg" Tap="clickLectures_Tap"  Stretch="Fill">
@@ -132,7 +106,7 @@
             <!-- ***************************************************************************** -->
 
             <Grid toolkit:TiltEffect.IsTiltEnabled="True" x:Name="N1x1">
-                <Image x:Name="partN1x1" Stretch="Fill" Opacity="0" Source="Assets/TilesX/paper_shaastra_banner.png"/>
+                <Image x:Name="partN1x1" Stretch="Fill" Opacity="0" Tap="partN1x1_Tap" Source="Assets/TilesX/paper_shaastra_banner.png"/>
             </Grid>
             <Grid toolkit:TiltEffect.IsTiltEnabled="True" x:Name="N2x1">
                 <Image x:Name="partN2x1" Stretch="Fill" Opacity="0" Tap="clickEvents_Tap" Source="Assets/TilesX/fin1x2.png"/>
