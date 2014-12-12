@@ -139,7 +139,7 @@
             <Grid.RenderTransform>
                 <TranslateTransform x:Name="panel2" Y="0" />
             </Grid.RenderTransform>
-            <Image Name="image1" toolkit:TiltEffect.IsTiltEnabled="False" Width="200" Height="200" Source="/Events/Assets/photo4.jpg" Stretch="UniformToFill" />
+            <Image CacheMode="BitmapCache" Name="image1" toolkit:TiltEffect.IsTiltEnabled="False" Width="200" Height="200" Source="/Events/Assets/photo4.jpg" Stretch="UniformToFill" />
         </Grid>
     </StackPanel>
     

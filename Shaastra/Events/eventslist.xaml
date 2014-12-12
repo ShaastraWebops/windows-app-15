@@ -49,8 +49,10 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,10">
-            <TextBlock Text="events" Margin="9,-7,0,0" Foreground="Black" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="_listTitle" Text="events" Margin="9,-7,0,0" Foreground="Black" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
+
+
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12, 0,12,0">
@@ -61,30 +63,22 @@
             <Rectangle Stroke="Black" Margin="1" RadiusX="0" RadiusY="0" Opacity="0.1"/>
             <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>
             <ScrollViewer Margin="6,6,6,10" Height="670">
-                <StackPanel Margin="0,0,0,0">
-                    <Grid Margin="15" x:Name="grid1">
-                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/aerofest.jpg" _tileText="Aerofest" Width="200" Height="200" HorizontalAlignment="Left"/>
-                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/b-events.jpg" _tileText="B-Events" Width="200" Height="200" HorizontalAlignment="Right"/>
-                    </Grid>
-                    <Grid Margin="15" x:Name="grid2">
-                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/coding.jpg" _tileText="Coding" Width="200" Height="200" HorizontalAlignment="Left"/>
-                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/department flagship.jpg" _tileText="Department Flagship" Width="200" Height="200" HorizontalAlignment="Right"/>
-                    </Grid>
-                    <Grid Margin="15" x:Name="grid3">
-                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/design and build.jpg" _tileText="Design and  Build" Width="200" Height="200" HorizontalAlignment="Left"/>
-                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/electronics fest.jpg" _tileText="Electronics Fest" Width="200" Height="200" HorizontalAlignment="Right"/>
-                    </Grid>
-                    <Grid Margin="15" x:Name="grid4">
-                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/involve.jpg" _tileText="Involve" Width="200" Height="200" HorizontalAlignment="Left"/>
-                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/quizzing.jpg" _tileText="Quizzing" Width="200" Height="200" HorizontalAlignment="Right"/>
-                    </Grid>
-                    <Grid Margin="15" x:Name="grid5">
-                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/spotlight.jpg" _tileText="Spotlight" Width="200" Height="200" HorizontalAlignment="Left"/>
-                        <local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/workshops.jpg" _tileText="Workshops" Width="200" Height="200" HorizontalAlignment="Right"/>
-                    </Grid>
+                <StackPanel x:Name="_tileStack" Margin="0,0,0,0">
+                    <!--<Grid Margin="15" x:Name="grid1"/>-->
+                    
                 </StackPanel>
             </ScrollViewer>
         </Grid>
+        <c4f:ProgressOverlay Canvas.ZIndex="1000" Background="Black" x:Name="progressOverlay"
+             Opacity="0.9" d:IsLocked="True" d:IsHidden="False">
+            <c4f:ProgressOverlay.Content>
+                <StackPanel>
+                    <slToolkit:PerformanceProgressBar Foreground="White" IsIndeterminate="True" />
+                    <TextBlock FontSize="22" Foreground="White" HorizontalAlignment="Center">Initialising UI ...</TextBlock>
+                </StackPanel>
+            </c4f:ProgressOverlay.Content>
+        </c4f:ProgressOverlay>
     </Grid>
+
 
 </phone:PhoneApplicationPage>

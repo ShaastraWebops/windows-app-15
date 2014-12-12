@@ -102,6 +102,7 @@
     <Compile Include="Events\liveTile.xaml.cs">
       <DependentUpon>liveTile.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Events\subcatRoot.cs" />
     <Compile Include="Exhibition\exhibition.xaml.cs">
       <DependentUpon>exhibition.xaml</DependentUpon>
     </Compile>
@@ -209,6 +210,81 @@
     <Content Include="Events\Assets\Category\quizzing.jpg" />
     <Content Include="Events\Assets\Category\spotlight.jpg" />
     <Content Include="Events\Assets\Category\workshops.jpg" />
+    <Content Include="Events\Assets\Event\aerobotics.jpg" />
+    <Content Include="Events\Assets\Event\airshow.jpg" />
+    <Content Include="Events\Assets\Event\android app workshop.jpg" />
+    <Content Include="Events\Assets\Event\arduino programmers challenge.jpg" />
+    <Content Include="Events\Assets\Event\art of business.jpg" />
+    <Content Include="Events\Assets\Event\astronomical data analysis workshop.jpg" />
+    <Content Include="Events\Assets\Event\auto quiz.jpg" />
+    <Content Include="Events\Assets\Event\autonomous robotics workshop.jpg" />
+    <Content Include="Events\Assets\Event\big data challenge.jpg" />
+    <Content Include="Events\Assets\Event\big data.jpg" />
+    <Content Include="Events\Assets\Event\boeing national aeromodelling.jpg" />
+    <Content Include="Events\Assets\Event\case study.jpg" />
+    <Content Include="Events\Assets\Event\chuckglider workshop.jpg" />
+    <Content Include="Events\Assets\Event\civil engineering software training by vriksha.jpg" />
+    <Content Include="Events\Assets\Event\consigliere.jpg" />
+    <Content Include="Events\Assets\Event\contraptions.jpg" />
+    <Content Include="Events\Assets\Event\crypto.jpg" />
+    <Content Include="Events\Assets\Event\debugging.jpg" />
+    <Content Include="Events\Assets\Event\desmod.jpg" />
+    <Content Include="Events\Assets\Event\estimus.jpg" />
+    <Content Include="Events\Assets\Event\finite element analysis using abaqus.jpg" />
+    <Content Include="Events\Assets\Event\fire n ice.jpg" />
+    <Content Include="Events\Assets\Event\forensics.jpg" />
+    <Content Include="Events\Assets\Event\hackathon.jpg" />
+    <Content Include="Events\Assets\Event\hackfest.jpg" />
+    <Content Include="Events\Assets\Event\hovercraft workshop.jpg" />
+    <Content Include="Events\Assets\Event\how things work.jpg" />
+    <Content Include="Events\Assets\Event\industrial automation workshop.jpg" />
+    <Content Include="Events\Assets\Event\industry defined problem.jpg" />
+    <Content Include="Events\Assets\Event\internet of things workshop.jpg" />
+    <Content Include="Events\Assets\Event\internet of things workshop2.jpg" />
+    <Content Include="Events\Assets\Event\junkyard wars.jpg" />
+    <Content Include="Events\Assets\Event\manual robotics workshop.jpg" />
+    <Content Include="Events\Assets\Event\manual robotics.jpg" />
+    <Content Include="Events\Assets\Event\master builder.jpg" />
+    <Content Include="Events\Assets\Event\online programming contest.jpg" />
+    <Content Include="Events\Assets\Event\oscilloscope drawing.jpg" />
+    <Content Include="Events\Assets\Event\paper and poster presentation.jpg" />
+    <Content Include="Events\Assets\Event\pcb design workshop.jpg" />
+    <Content Include="Events\Assets\Event\process simulation using aspen.jpg" />
+    <Content Include="Events\Assets\Event\product launch.jpg" />
+    <Content Include="Events\Assets\Event\project x.jpg" />
+    <Content Include="Events\Assets\Event\puzzle champ.jpg" />
+    <Content Include="Events\Assets\Event\reverse coding.jpg" />
+    <Content Include="Events\Assets\Event\robo oceana workshop.jpg" />
+    <Content Include="Events\Assets\Event\robo oceana.jpg" />
+    <Content Include="Events\Assets\Event\robo oceana_2.jpg" />
+    <Content Include="Events\Assets\Event\robosoccer.jpg" />
+    <Content Include="Events\Assets\Event\robowars.jpg" />
+    <Content Include="Events\Assets\Event\rubiks cube workshop.jpg" />
+    <Content Include="Events\Assets\Event\scent quiz.jpg" />
+    <Content Include="Events\Assets\Event\semi-autonomous robotics.jpg" />
+    <Content Include="Events\Assets\Event\shaastra circuit design challenge.jpg" />
+    <Content Include="Events\Assets\Event\shaastra cube open.jpg" />
+    <Content Include="Events\Assets\Event\shaastra diy workshop.jpg" />
+    <Content Include="Events\Assets\Event\shaastra exhibits.jpg" />
+    <Content Include="Events\Assets\Event\shaastra junior quiz.jpg" />
+    <Content Include="Events\Assets\Event\shaastra junior.jpg" />
+    <Content Include="Events\Assets\Event\shaastra main quiz.jpg" />
+    <Content Include="Events\Assets\Event\shaastra sudoku championship.jpg" />
+    <Content Include="Events\Assets\Event\simple plastic aircraft design workshop.jpg" />
+    <Content Include="Events\Assets\Event\startup hive.jpg" />
+    <Content Include="Events\Assets\Event\sustainable cityscape.jpg" />
+    <Content Include="Events\Assets\Event\symposium.jpg" />
+    <Content Include="Events\Assets\Event\tech a break.jpg" />
+    <Content Include="Events\Assets\Event\tech and innovation fair.jpg" />
+    <Content Include="Events\Assets\Event\tidbits.jpg" />
+    <Content Include="Events\Assets\Event\traders street.jpg" />
+    <Content Include="Events\Assets\Event\triathlon.jpg" />
+    <Content Include="Events\Assets\Event\ultimate engineer.jpg" />
+    <Content Include="Events\Assets\Event\vehicle overhauling workshop.jpg" />
+    <Content Include="Events\Assets\Event\vehicle overhauling workshop2.jpg" />
+    <Content Include="Events\Assets\Event\website development workshop.jpg" />
+    <Content Include="Events\Assets\Event\wireless motion controlled robotics workshop.jpg" />
+    <Content Include="Events\Assets\Event\wright design.jpg" />
     <Content Include="Events\Assets\photo4.jpg" />
     <Content Include="Exhibition\Assets\airshow.jpg" />
     <Content Include="Exhibition\Assets\cfi_arm.jpg" />
@@ -223,6 +299,9 @@
     <Content Include="Lectures\Assets\tileFaces\pic13f.png" />
     <Content Include="Lectures\Assets\tileFaces\pic14f.png" />
     <Content Include="Lectures\lecture_data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Events\eventcategory.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />

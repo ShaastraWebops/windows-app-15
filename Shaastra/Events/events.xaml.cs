@@ -20,10 +20,9 @@ namespace Shaastra.Events
             progressOverlay.Show();
         }
 
-        delegate void loadTileAsync();
-
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            progressOverlay.Show();
             Task.Factory.StartNew(() => { loadTile(); });                        
         }
 
