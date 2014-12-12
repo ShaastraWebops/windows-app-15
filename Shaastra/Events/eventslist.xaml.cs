@@ -20,7 +20,7 @@ namespace Shaastra.Events
         public eventslist()
         {
             InitializeComponent();
-            progressOverlay.Show();
+            //progressOverlay.Show();
         }
 
         protected override void OnRemovedFromJournal(JournalEntryRemovedEventArgs e)
@@ -33,27 +33,21 @@ namespace Shaastra.Events
                     (tileItem as liveTile).destroyImage();
                 }
             }
-            GC.Collect();
-            base.OnRemovedFromJournal(e);
-        }
-
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            foreach (Grid item in _tileStack.Children)
-            {
-                foreach (liveTile tileItem in item.Children)
-                {
-                    (tileItem as liveTile).Tap -= liveTile_Tap;
-                    (tileItem as liveTile).destroyImage();
-                }
-            }
-            GC.Collect();
-            base.OnNavigatedFrom(e);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Dispatcher.BeginInvoke(() => { progressOverlay.Show(); });
+            
+            _tileStack.Children.Clear();
+            //progressOverlay.Show();
+
+            SystemTray.IsVisible = true;
+            ProgressIndicator _progress = new ProgressIndicator();
+            _progress.IsIndeterminate = true;
+            _progress.IsVisible = true;
+            _progress.Text = "Initialising UI elements";
+            SystemTray.SetProgressIndicator(this, _progress);
+
             NavigationContext.QueryString.TryGetValue("arg", out _catKey);
             //MessageBox.Show(_catKey);
             Task.Factory.StartNew(() => { loadTile(); });
@@ -61,7 +55,7 @@ namespace Shaastra.Events
 
         async void loadTile()
         {
-            Dispatcher.BeginInvoke(() => { progressOverlay.Show(); });
+            //Dispatcher.BeginInvoke(() => { progressOverlay.Show(); });
             //<local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/aerofest.jpg" _tileText="Aerofest" Width="200" Height="200" HorizontalAlignment="Left"/>
             //Adding liveTiles to all grids
 
@@ -113,12 +107,13 @@ namespace Shaastra.Events
                         _tileStack.Children.Add(_tempGrid);
                     }
                 }
-
+                //progressOverlay.Hide();
+                SystemTray.ProgressIndicator.IsVisible = false;
+                SystemTray.IsVisible = false;
             });
             Dispatcher.BeginInvoke(() =>
             {
                 _listTitle.Text = _catKey;
-                progressOverlay.Hide();
             });
         }
 
@@ -141,9 +136,9 @@ namespace Shaastra.Events
         {
             string _imgString = (sender as liveTile)._tileImage.OriginalString;
             //sample string "Assets/Category/spotlight.jpg"
-            _imgString = _imgString.Replace("Assets/Category/", "");
+            _imgString = _imgString.Replace("Assets/Event/", "");
             _imgString = _imgString.Replace(".jpg", "");
-            //NavigationService.Navigate(new Uri("/Events/eventslist.xaml?arg=" + _imgString, UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Events/eventdetail.xaml?arg=" + _imgString, UriKind.Relative));
         }
     }
 }

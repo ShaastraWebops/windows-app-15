@@ -27,7 +27,7 @@ namespace Shaastra
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            
+            GC.Collect();
         }
 
         private void unFold()

@@ -1,0 +1,52 @@
+[
+  {
+    "eventname":"Aerofest",
+    "imagename":"aerofest",
+    "category":"null"
+  },
+  {
+    "eventname":"B-Events",
+    "imagename":"b-events",
+    "category":"null"
+  },
+  {
+    "eventname":"Coding",
+    "imagename":"coding",
+    "category":"null"
+  },
+  {
+    "eventname":"Department Flagship",
+    "imagename":"department flagship",
+    "category":"null"
+  },
+  {
+    "eventname":"Design and Build",
+    "imagename":"design and build",
+    "category":"null"
+  },
+  {
+    "eventname":"Electronics Fest",
+    "imagename":"electronics fest",
+    "category":"null"
+  },
+  {
+    "eventname":"Involve",
+    "imagename":"involve",
+    "category":"null"
+  },
+  {
+    "eventname":"Quizzing",
+    "imagename":"quizzing",
+    "category":"null"
+  },
+  {
+    "eventname":"Spotlight",
+    "imagename":"spotlight",
+    "category":"null"
+  },
+  {
+    "eventname":"Workshops",
+    "imagename":"workshops",
+    "category":"null"
+  }
+]
