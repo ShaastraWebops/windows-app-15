@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/12/2014 2:30:26 PM">
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="12/12/2014 2:30:22 PM" />
+﻿<xapCache source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/12/2014 3:47:02 PM">
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="12/12/2014 3:46:58 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\nebula.jpg" archivePath="Assets\nebula.jpg" lastWriteTime="8/15/2014 6:44:55 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper1x1.jpg" archivePath="Assets\Paper\paper1x1.jpg" lastWriteTime="8/24/2014 11:39:09 AM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper1x2.jpg" archivePath="Assets\Paper\paper1x2.jpg" lastWriteTime="8/24/2014 11:39:09 AM" />
@@ -183,7 +183,7 @@
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="7/15/2014 3:05:41 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="7/15/2014 3:05:41 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="7/15/2014 3:05:41 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/11/2014 11:59:10 AM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/12/2014 3:44:10 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Coding4Fun.Toolkit.Controls.dll" archivePath="Coding4Fun.Toolkit.Controls.dll" lastWriteTime="8/3/2013 4:27:48 PM" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="1/1/2013 6:57:00 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\packages\WPtoolkit.Kinnara.4.2014.08.05\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="8/10/2014 1:19:27 PM" />
@@ -192,5 +192,5 @@
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="7/3/2014 9:09:18 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\shaastra_logo_opaque.png" archivePath="shaastra_logo_opaque.png" lastWriteTime="5/26/2014 4:00:27 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\tile336.png" archivePath="tile336.png" lastWriteTime="7/3/2014 7:18:28 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="12/11/2014 11:59:11 AM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="12/12/2014 3:44:10 PM" />
 </xapCache>

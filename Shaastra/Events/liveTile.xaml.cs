@@ -22,7 +22,27 @@ namespace Shaastra.Events
             anim.Begin();
         }
 
+
         //Expose the property of usercontrol
+
+        public void destroyImage()
+        {
+            Storyboard anim1 = (Storyboard)FindName("liveTileAnim1_Part1");
+            anim1.Stop();
+            Storyboard anim2 = (Storyboard)FindName("liveTileAnim1_Part2");
+            anim2.Stop();
+            Storyboard anim3 = (Storyboard)FindName("liveTileAnim2_Part1");
+            anim3.Stop();
+            Storyboard anim4 = (Storyboard)FindName("liveTileAnim2_Part2");
+            anim4.Stop();
+            if (this.image1 != null)
+            {
+                (this.image1.Source as BitmapImage).UriSource = null;
+                (this.image1.Source) = null;
+                this.image1 = null;
+            }
+        }
+
         public string _tileText 
         {
             get

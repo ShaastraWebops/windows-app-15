@@ -16,6 +16,7 @@ namespace Shaastra.Events
     public partial class eventslist : PhoneApplicationPage
     {
         string _catKey;
+
         public eventslist()
         {
             InitializeComponent();
@@ -24,12 +25,35 @@ namespace Shaastra.Events
 
         protected override void OnRemovedFromJournal(JournalEntryRemovedEventArgs e)
         {
+            foreach (Grid item in _tileStack.Children)
+            {
+                foreach (liveTile tileItem in item.Children)
+                {
+                    (tileItem as liveTile).Tap -= liveTile_Tap;
+                    (tileItem as liveTile).destroyImage();
+                }
+            }
+            GC.Collect();
             base.OnRemovedFromJournal(e);
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            foreach (Grid item in _tileStack.Children)
+            {
+                foreach (liveTile tileItem in item.Children)
+                {
+                    (tileItem as liveTile).Tap -= liveTile_Tap;
+                    (tileItem as liveTile).destroyImage();
+                }
+            }
+            GC.Collect();
+            base.OnNavigatedFrom(e);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            progressOverlay.Show();
+            Dispatcher.BeginInvoke(() => { progressOverlay.Show(); });
             NavigationContext.QueryString.TryGetValue("arg", out _catKey);
             //MessageBox.Show(_catKey);
             Task.Factory.StartNew(() => { loadTile(); });
@@ -37,6 +61,7 @@ namespace Shaastra.Events
 
         async void loadTile()
         {
+            Dispatcher.BeginInvoke(() => { progressOverlay.Show(); });
             //<local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/aerofest.jpg" _tileText="Aerofest" Width="200" Height="200" HorizontalAlignment="Left"/>
             //Adding liveTiles to all grids
 

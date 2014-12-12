@@ -63,7 +63,7 @@
             <Rectangle Stroke="Black" Margin="1" RadiusX="0" RadiusY="0" Opacity="0.1"/>
             <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>
             <ScrollViewer Margin="6,6,6,10" Height="670">
-                <StackPanel Margin="0,0,0,0">
+                <StackPanel x:Name="_tileStack" Margin="0,0,0,0">
                     <Grid Margin="15" x:Name="grid1"/>
                     <Grid Margin="15" x:Name="grid2"/>
                     <Grid Margin="15" x:Name="grid3"/>

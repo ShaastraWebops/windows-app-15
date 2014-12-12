@@ -314,6 +314,7 @@
     <Content Include="Sponsors\spons.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Shaastra_2014_12_12_15_46_48.sap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\AlignmentGrid.png" />

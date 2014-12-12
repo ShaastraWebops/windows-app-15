@@ -20,38 +20,67 @@ namespace Shaastra.Events
             progressOverlay.Show();
         }
 
+        protected override void OnRemovedFromJournal(JournalEntryRemovedEventArgs e)
+        {
+            foreach (Grid item in _tileStack.Children)
+            {
+                foreach (liveTile tileItem in item.Children)
+                {
+                    (tileItem as liveTile).Tap -= liveTile_Tap;
+                    (tileItem as liveTile).destroyImage();
+                }
+            }
+            GC.Collect();
+            base.OnRemovedFromJournal(e);
+        }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             progressOverlay.Show();
-            Task.Factory.StartNew(() => { loadTile(); });                        
+            Task.Factory.StartNew(() => { loadTile(); });
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            foreach (Grid item in _tileStack.Children)
+            {
+                foreach (liveTile tileItem in item.Children)
+                {
+                    (tileItem as liveTile).Tap -= liveTile_Tap;
+                    (tileItem as liveTile).destroyImage();
+                }
+            }
+            GC.Collect();
+            base.OnNavigatedFrom(e);
         }
 
         void loadTile()
         {
+            Dispatcher.BeginInvoke(() => { progressOverlay.Show(); });
             //<local:liveTile Tap="liveTile_Tap" _tileImage="Assets/Category/aerofest.jpg" _tileText="Aerofest" Width="200" Height="200" HorizontalAlignment="Left"/>
             //Adding liveTiles to all grids
-            
+
             this.Dispatcher.BeginInvoke(() =>
             {
 
-            liveTile[] _tileList = new liveTile[10];
+                liveTile[] _tileList = new liveTile[10];
 
-            _tileList[0] = ((renderTile("Aerofest", "Assets/Category/aerofest.jpg", true)));
-            _tileList[1] = ((renderTile("B-Events", "Assets/Category/b-events.jpg", false)));
+                _tileList[0] = ((renderTile("Aerofest", "Assets/Category/aerofest.jpg", true)));
+                _tileList[1] = ((renderTile("B-Events", "Assets/Category/b-events.jpg", false)));
 
-            _tileList[2] = ((renderTile("Coding", "Assets/Category/coding.jpg", true)));
-            _tileList[3] = ((renderTile("Department Flagship", "Assets/Category/department flagship.jpg", false)));
+                _tileList[2] = ((renderTile("Coding", "Assets/Category/coding.jpg", true)));
+                _tileList[3] = ((renderTile("Department Flagship", "Assets/Category/department flagship.jpg", false)));
 
-            _tileList[4] = ((renderTile("Design and  Build", "Assets/Category/design and build.jpg", true)));
-            _tileList[5] = ((renderTile("Electronics Fest", "Assets/Category/electronics fest.jpg", false)));
+                _tileList[4] = ((renderTile("Design and  Build", "Assets/Category/design and build.jpg", true)));
+                _tileList[5] = ((renderTile("Electronics Fest", "Assets/Category/electronics fest.jpg", false)));
 
-            _tileList[6] = ((renderTile("Involve", "Assets/Category/involve.jpg", true)));
-            _tileList[7] = ((renderTile("Quizzing", "Assets/Category/quizzing.jpg", false)));
+                _tileList[6] = ((renderTile("Involve", "Assets/Category/involve.jpg", true)));
+                _tileList[7] = ((renderTile("Quizzing", "Assets/Category/quizzing.jpg", false)));
 
-            _tileList[8] = ((renderTile("Spotlight", "Assets/Category/spotlight.jpg", true)));
-            _tileList[9] = ((renderTile("Workshop", "Assets/Category/workshops.jpg", false)));
+                _tileList[8] = ((renderTile("Spotlight", "Assets/Category/spotlight.jpg", true)));
+                _tileList[9] = ((renderTile("Workshop", "Assets/Category/workshops.jpg", false)));
 
-            
+
                 grid1.Children.Add(_tileList[0]);
                 grid1.Children.Add(_tileList[1]);
 
