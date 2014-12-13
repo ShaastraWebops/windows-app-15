@@ -1,0 +1,322 @@
+[
+  {
+    "eventname":"Aerobotics",
+    "imagename":"aerobotics",
+    "category":"Aerofest"
+  },
+  {
+    "eventname":"Airshow",
+    "imagename":"airshow",
+    "category":"Aerofest"
+  },
+  {
+    "eventname":"Boeing National Aeromodelling",
+    "imagename":"boeing national aeromodelling",
+    "category":"Aerofest"
+  },
+  {
+    "eventname":"Wright Design",
+    "imagename":"wright design",
+    "category":"Aerofest"
+  },
+  {
+    "eventname":"Big Data Challenge",
+    "imagename":"big data challenge",
+    "category":"B-Events"
+  },
+  {
+    "eventname":"Case Study",
+    "imagename":"case study",
+    "category":"B-Events"
+  },
+  {
+    "eventname":"Consigliere",
+    "imagename":"consigliere",
+    "category":"B-Events"
+  },
+  {
+    "eventname":"Trader's Street",
+    "imagename":"traders street",
+    "category":"B-Events"
+  },
+  {
+    "eventname":"Big Data Challenge",
+    "imagename":"big data challenge",
+    "category":"Coding"
+  },
+  {
+    "eventname":"Crypto",
+    "imagename":"crypto",
+    "category":"Coding"
+  },
+  {
+    "eventname":"Hackathon",
+    "imagename":"hackathon",
+    "category":"Coding"
+  },
+  {
+    "eventname":"Hackfest",
+    "imagename":"hackfest",
+    "category":"Coding"
+  },
+  {
+    "eventname":"Online Programming Contest",
+    "imagename":"online programming contest",
+    "category":"Coding"
+  },
+  {
+    "eventname":"Reverse Coding",
+    "imagename":"reverse coding",
+    "category":"Coding"
+  },
+  {
+    "eventname":"Tidbits",
+    "imagename":"tidbits",
+    "category":"Coding"
+  },
+  {
+    "eventname":"Triathlon",
+    "imagename":"triathlon",
+    "category":"Coding"
+  },
+  {
+    "eventname":"Desmod",
+    "imagename":"desmod",
+    "category":"Department Flagship"
+  },
+  {
+    "eventname":"Forensics",
+    "imagename":"forensics",
+    "category":"Department Flagship"
+  },
+  {
+    "eventname":"Master Builder",
+    "imagename":"master builder",
+    "category":"Department Flagship"
+  },
+  {
+    "eventname":"Robo Oceana",
+    "imagename":"robo oceana",
+    "category":"Department Flagship"
+  },
+  {
+    "eventname":"Shaastra Circuit Design Challenge",
+    "imagename":"shaastra circuit design challenge",
+    "category":"Department Flagship"
+  },
+  {
+    "eventname":"Contraptions",
+    "imagename":"contraptions",
+    "category":"Design And Build"
+  },
+  {
+    "eventname":"Fire N Ice",
+    "imagename":"fire n ice",
+    "category":"Design And Build"
+  },
+  {
+    "eventname":"Junkyard Wars",
+    "imagename":"junkyard wars",
+    "category":"Design And Build"
+  },
+  {
+    "eventname":"Manual Robotics",
+    "imagename":"manual robotics",
+    "category":"Design And Build"
+  },
+  {
+    "eventname":"Master Builder",
+    "imagename":"master builder",
+    "category":"Design And Build"
+  },
+  {
+    "eventname":"Robowars",
+    "imagename":"robowars",
+    "category":"Design And Build"
+  },
+  {
+    "eventname":"Semi Autonomous Robotics",
+    "imagename":"semi-autonomous robotics",
+    "category":"Design And Build"
+  },
+  {
+    "eventname":"Ultimate Engineer",
+    "imagename":"ultimate engineer",
+    "category":"Design And Build"
+  },
+  {
+    "eventname":"Robo Oceana",
+    "imagename":"robo oceana",
+    "category":"Design And Build"
+  },
+  {
+    "eventname":"Arduino Programmers Challenge",
+    "imagename":"arduino programmers challenge",
+    "category":"Electronics Fest"
+  },
+  {
+    "eventname":"Oscilloscope Drawing",
+    "imagename":"oscilloscope drawing",
+    "category":"Electronics Fest"
+  },
+  {
+    "eventname":"PCB Design Workshop",
+    "imagename":"pcb design workshop",
+    "category":"Electronics Fest"
+  },
+  {
+    "eventname":"Shaastra Circuit Design Challenge",
+    "imagename":"shaastra circuit design challenge",
+    "category":"Electronics Fest"
+  },
+  {
+    "eventname":"Project X",
+    "imagename":"project x",
+    "category":"Involve"
+  },
+  {
+    "eventname":"Puzzle Champ",
+    "imagename":"puzzle champ",
+    "category":"Involve"
+  },
+  {
+    "eventname":"Shaastra Cube Open",
+    "imagename":"shaastra cube open",
+    "category":"Involve"
+  },
+  {
+    "eventname":"Shaastra Sudoku Championship",
+    "imagename":"shaastra sudoku championship",
+    "category":"Involve"
+  },
+  {
+    "eventname":"How Things Work",
+    "imagename":"how things work",
+    "category":"Quizzing"
+  },
+  {
+    "eventname":"ScEnt Quiz",
+    "imagename":"scent quiz",
+    "category":"Quizzing"
+  },
+  {
+    "eventname":"Shaastra Junior Quiz",
+    "imagename":"shaastra junior quiz",
+    "category":"Quizzing"
+  },
+  {
+    "eventname":"Shaastra Main Quiz",
+    "imagename":"shaastra main quiz",
+    "category":"Quizzing"
+  },
+  {
+    "eventname":"Industry Defined Problem",
+    "imagename":"industry defined problem",
+    "category":"Spotlight"
+  },
+  {
+    "eventname":"Paper and Poster Presentation",
+    "imagename":"paper and poster presentation",
+    "category":"Spotlight"
+  },
+  {
+    "eventname":"Startup Hive",
+    "imagename":"startup hive",
+    "category":"Spotlight"
+  },
+  {
+    "eventname":"Symposium",
+    "imagename":"symposium",
+    "category":"Spotlight"
+  },
+  {
+    "eventname":"Android App Workshop",
+    "imagename":"android app workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Astronomical Data Analysis Workshop",
+    "imagename":"astronomical data analysis workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Autonomous Robotics Workshop",
+    "imagename":"autonomous robotics workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Chuckglider Workshop",
+    "imagename":"chuckglider workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Civil Engineering Software Training",
+    "imagename":"civil engineering software training by vriksha",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Finite Element Analysis using ABAQUS",
+    "imagename":"finite element analysis using abaqus",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Hovercraft Workshop",
+    "imagename":"hovercraft workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Industrial Automation Workshop",
+    "imagename":"industrial automation workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Internet of Things Workshop",
+    "imagename":"internet of things workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Manual Robotics Workshop",
+    "imagename":"manual robotics workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"PCB Design Workshop",
+    "imagename":"pcb design workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Process Simulation using ASPEN",
+    "imagename":"process simulation using aspen",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Robo Oceana Workshop",
+    "imagename":"robo oceana workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Rubik's Cube Workshop",
+    "imagename":"rubiks cube workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Simple Plastic Aircraft Design",
+    "imagename":"simple plastic aircraft design workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Vehicle Overhauling Workshop",
+    "imagename":"vehicle overhauling workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Website Development Workshop",
+    "imagename":"website development workshop",
+    "category":"Workshops"
+  },
+  {
+    "eventname":"Wireless Motion Controlled Robotics",
+    "imagename":"wireless motion controlled robotics workshop",
+    "category":"Workshops"
+  }
+]

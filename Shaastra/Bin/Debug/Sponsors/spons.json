@@ -1,0 +1,127 @@
+[
+  {
+    "sponstype":"Presenting Sponsor",
+    "sponsname":"The Hindu",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/00.%20Presenting%20Sponsor/www.thehindu.com.jpg"
+  },
+  {
+    "sponstype":"Associate Sponsor",
+    "sponsname":"PayPal",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/01.%20Associate%20Sponsor/www.paypal.com%5Ein%5Ewebapps%5Empp%5Ehome.jpg"
+  },
+  {
+    "sponstype":"Co Sponsor",
+    "sponsname":"Boeing",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/02.%20Co%20Sponsors/www.boeing.com.jpg"
+  },
+  {
+    "sponstype":"Co Sponsor",
+    "sponsname":"Honeywell",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/02.%20Co%20Sponsors/www.honeywell.com.png"
+  },
+  {
+    "sponstype":"Co Sponsor",
+    "sponsname":"vmware",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/02.%20Co%20Sponsors/www.vmware.com%5Ein.jpg"
+  },
+  {
+    "sponstype":"Event Sponsor",
+    "sponsname":"AmadaSoft",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/03.%20Event%20Sponsors/www.amadasoft.co.png"
+  },
+  {
+    "sponstype":"Event Sponsor",
+    "sponsname":"Cerner",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/03.%20Event%20Sponsors/www.cerner.com.jpg"
+  },
+  {
+    "sponstype":"Event Sponsor",
+    "sponsname":"Microsoft",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/03.%20Event%20Sponsors/www.microsoft.com.jpg"
+  },
+  {
+    "sponstype":"Big Data Sponsor",
+    "sponsname":"CDAC",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/04.%20Big%20Data%20Sponsor/www.cdac.in.png"
+  },
+  {
+    "sponstype":"Literature Sponsor",
+    "sponsname":"FARO",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/05.%20Literature%20Sponsor/www.faro.com%5Een-in%5Ehome.png"
+  },
+  {
+    "sponstype":"Gifting Sponsor",
+    "sponsname":"giftxoxo",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/06.%20Gifting%20Sponsor/www.giftxoxo.com.jpg"
+  },
+  {
+    "sponstype":"Education Sponsor",
+    "sponsname":"Campus France",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/07.%20Education%20Sponsor/www.campusfrance.org.jpg"
+  },
+  {
+    "sponstype":"Education Sponsor",
+    "sponsname":"Imagine",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/07.%20Education%20Sponsor/www.educationau-incanada.ca.jpg"
+  },
+  {
+    "sponstype":"Financial Learning Sponsor",
+    "sponsname":"ICICI Direct",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/08.%20Financial%20Learning%20Sponsor/content.icicidirect.com%5Enewsitecontent%5EHome%5EHome.asp.png"
+  },
+  {
+    "sponstype":"Prize Sponsor",
+    "sponsname":"hachette",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/09.%20Prize%20Sponsor/www.hachetteindia.com.jpg"
+  },
+  {
+    "sponstype":"Prize Sponsor",
+    "sponsname":"Zebronics",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/09.%20Prize%20Sponsor/www.zebronics.com.jpg"
+  },
+  {
+    "sponstype":"Regenerative Soln Sponsor",
+    "sponsname":"Regrow",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/09.%20Regenerative%20Solutions%20Sponsor/www.regrow.in.png"
+  },
+  {
+    "sponstype":"Stationery Sponsor",
+    "sponsname":"MyCopie",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/10.%20Stationery%20Sponsor/www.mycopie.com.png"
+  },
+  {
+    "sponstype":"Depository Sponsor",
+    "sponsname":"NSDL",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/11.%20Depository%20Sponsor/www.nsdl.co.in.jpg"
+  },
+  {
+    "sponstype":"Data Mining Sponsor",
+    "sponsname":"Flutura",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/12.%20Data%20Mining%20Sponsor/www.flutura.com.jpg"
+  },
+  {
+    "sponstype":"Science Sponsor",
+    "sponsname":"Function Space",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/13.%20Science%20Sponsor/www.functionspace.org.png"
+  },
+  {
+    "sponstype":"Workshop Sponsor",
+    "sponsname":"Frugal Labs",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/14.%20Workshop%20Sponsor/www.frugal-labs.com.png"
+  },
+  {
+    "sponstype":"Workshop Sponsor",
+    "sponsname":"Innovians Tech",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/14.%20Workshop%20Sponsor/www.innovianstechnologies.com.png"
+  },
+  {
+    "sponstype":"Workshop Sponsor",
+    "sponsname":"Prigma",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/14.%20Workshop%20Sponsor/www.prigma.co.in.png"
+  },
+  {
+    "sponstype":"Media Sponsor",
+    "sponsname":"94.3 Club FM",
+    "sponsimg":"http://shaastra.org/2015/main/img/spons/15.%20Media%20Sponsor/clubfm.in.jpg"
+  }
+]
