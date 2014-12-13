@@ -267,5 +267,5 @@ C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Events\liveT
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Events\eventslist.g.cs
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Events\eventcategory.json
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Events\eventdetail.g.cs
-C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.csprojResolveAssemblyReference.cache
 C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Events\eventsroot.json
+C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Events\eventcore.json

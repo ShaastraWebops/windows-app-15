@@ -106,6 +106,7 @@
       <DependentUpon>liveTile.xaml</DependentUpon>
     </Compile>
     <Compile Include="Events\subcatRoot.cs" />
+    <Compile Include="Events\subEventRoot.cs" />
     <Compile Include="Exhibition\exhibition.xaml.cs">
       <DependentUpon>exhibition.xaml</DependentUpon>
     </Compile>
@@ -312,6 +313,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Events\eventsroot.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Events\eventcore.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />
