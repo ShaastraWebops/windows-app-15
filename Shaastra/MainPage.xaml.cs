@@ -204,5 +204,10 @@ namespace Shaastra
             NavigationService.Navigate(new Uri("/SocialCause/socialcause.xaml", UriKind.Relative));
         }
 
+        private void about_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Addons/about.xaml", UriKind.Relative));
+        }
+
     }
 }

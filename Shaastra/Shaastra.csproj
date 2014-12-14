@@ -90,6 +90,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Addons\about.xaml.cs">
+      <DependentUpon>about.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Addons\DeepLinkHelper.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -146,6 +150,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Addons\about.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Events\eventdetail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -192,6 +200,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Icons\favs.png" />
+    <Content Include="Assets\Icons\feature.email.png" />
+    <Content Include="Assets\Icons\folder.png" />
+    <Content Include="Assets\Icons\share.png" />
     <Content Include="Assets\nebula.jpg" />
     <Content Include="Assets\Paper\paper1x1.jpg" />
     <Content Include="Assets\Paper\paper1x2.jpg" />

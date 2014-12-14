@@ -1,5 +1,9 @@
-﻿<xapCache source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/13/2014 5:00:31 PM">
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="12/13/2014 4:49:42 PM" />
+﻿<xapCache source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Bin\Debug\Shaastra_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/14/2014 12:38:36 PM">
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\obj\Debug\Shaastra.dll" archivePath="Shaastra.dll" lastWriteTime="12/14/2014 12:38:33 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Icons\favs.png" archivePath="Assets\Icons\favs.png" lastWriteTime="12/14/2014 11:54:25 AM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Icons\feature.email.png" archivePath="Assets\Icons\feature.email.png" lastWriteTime="12/14/2014 11:54:25 AM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Icons\folder.png" archivePath="Assets\Icons\folder.png" lastWriteTime="12/14/2014 11:54:25 AM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Icons\share.png" archivePath="Assets\Icons\share.png" lastWriteTime="12/14/2014 11:54:25 AM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\nebula.jpg" archivePath="Assets\nebula.jpg" lastWriteTime="8/15/2014 6:44:55 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper1x1.jpg" archivePath="Assets\Paper\paper1x1.jpg" lastWriteTime="8/24/2014 11:39:09 AM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Assets\Paper\paper1x2.jpg" archivePath="Assets\Paper\paper1x2.jpg" lastWriteTime="8/24/2014 11:39:09 AM" />
@@ -117,7 +121,7 @@
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Lectures\lecture_data.json" archivePath="Lectures\lecture_data.json" lastWriteTime="12/10/2014 11:45:35 AM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\eventcategory.json" archivePath="Events\eventcategory.json" lastWriteTime="12/12/2014 1:59:34 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\eventsroot.json" archivePath="Events\eventsroot.json" lastWriteTime="12/12/2014 6:06:53 PM" />
-  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\eventcore.json" archivePath="Events\eventcore.json" lastWriteTime="12/13/2014 5:00:19 PM" />
+  <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Events\eventcore.json" archivePath="Events\eventcore.json" lastWriteTime="12/13/2014 5:25:12 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\SocialCause\Assets\hands.jpg" archivePath="SocialCause\Assets\hands.jpg" lastWriteTime="12/11/2014 12:05:49 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\SocialCause\Assets\pledgeabook.jpg" archivePath="SocialCause\Assets\pledgeabook.jpg" lastWriteTime="12/11/2014 12:05:49 PM" />
   <file source="C:\Users\Karthik\Documents\GitHub\windows-app-15\Shaastra\Sponsors\spons.json" archivePath="Sponsors\spons.json" lastWriteTime="12/10/2014 1:28:03 PM" />
