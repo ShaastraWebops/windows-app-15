@@ -88,7 +88,7 @@
                     <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>
                     <ScrollViewer Margin="0,0,0,10" Height="707">
                         <StackPanel Margin="0,0,0,0">
-                            <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}"  Text="Pledge a Book" FontSize="47" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
+                            <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}"  Text="Social Welfare" FontSize="47" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
                             <Image CacheMode="BitmapCache" Margin="0,10,0,10" Source="Assets/hands.jpg" MaxHeight="400" MaxWidth="442"/>
                             <RichTextBox TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
                                 <Paragraph>

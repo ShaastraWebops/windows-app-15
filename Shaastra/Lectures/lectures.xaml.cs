@@ -63,7 +63,7 @@ namespace Shaastra.Lectures
 
             //Timer For flipping
             set1 = new DispatcherTimer();
-            set1.Interval = new TimeSpan(0, 0, 0, 5, 0);
+            set1.Interval = new TimeSpan(0, 0, 0, 3, 0);
             set1.Start();
             set1.Tick += set1_Tick;
 

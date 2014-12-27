@@ -71,6 +71,83 @@
                     </ScrollViewer>
                 </Grid>
             </phone:PivotItem>
+
+            <phone:PivotItem>
+                <phone:PivotItem.Header>
+                    <TextBlock FontSize="40" Width="Auto" Text="details" Style="{StaticResource PanoramaItemHeaderTextStyle}" Foreground="Black" FontFamily="Segoe WP Light"/>
+                </phone:PivotItem.Header>
+
+                <Grid Margin="-6,-22,-6,-10">
+
+                    <Rectangle Stroke="Black" Margin="5" RadiusX="0" RadiusY="0" Opacity="0.3"/>
+                    <Rectangle Stroke="Black" Margin="4" RadiusX="0" RadiusY="0" Opacity="0.25"/>
+                    <Rectangle Stroke="Black" Margin="3" RadiusX="0" RadiusY="0" Opacity="0.2"/>
+                    <Rectangle Stroke="Black" Margin="2" RadiusX="0" RadiusY="0" Opacity="0.15"/>
+                    <Rectangle Stroke="Black" Margin="1" RadiusX="0" RadiusY="0" Opacity="0.1"/>
+                    <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>
+                    <ScrollViewer Margin="0,0,0,10" Height="707">
+                        <StackPanel Margin="0,0,0,0">
+                            
+                            <TextBlock Margin="10,5,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="eventformat"  Text="Event format" FontSize="40" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
+                            <RichTextBox x:Name="eventformatx" TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
+                                <Paragraph TextAlignment="Center">
+                                    <LineBreak/> We are gathering info.. A little patience would be cute! Take a deep breath!
+                                </Paragraph>
+                            </RichTextBox>
+                            
+                            <TextBlock Margin="10,5,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="ps"  Text="Problem Statement" FontSize="40" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
+                            <RichTextBox x:Name="psx" TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
+                                <Paragraph TextAlignment="Center">
+                                    <LineBreak/> We are gathering info.. A little patience would be cute! Take a deep breath!
+                                </Paragraph>
+                            </RichTextBox>
+                            
+                            <TextBlock Margin="10,5,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="registration"  Text="Registration" FontSize="40" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
+                            <RichTextBox x:Name="registrationx" TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
+                                <Paragraph TextAlignment="Center">
+                                    <LineBreak/> We are gathering info.. A little patience would be cute! Take a deep breath!
+                                </Paragraph>
+                            </RichTextBox>
+                            
+                            <TextBlock Margin="10,5,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="results"  Text="Results" FontSize="40" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
+                            <RichTextBox x:Name="resultsx" TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
+                                <Paragraph TextAlignment="Center">
+                                    <LineBreak/> We are gathering info.. A little patience would be cute! Take a deep breath!
+                                </Paragraph>
+                            </RichTextBox>
+                            
+                            <TextBlock Margin="10,5,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="resources"  Text="Resources" FontSize="40" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
+                            <RichTextBox x:Name="resourcesx" TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
+                                <Paragraph TextAlignment="Center">
+                                    <LineBreak/> We are gathering info.. A little patience would be cute! Take a deep breath!
+                                </Paragraph>
+                            </RichTextBox>
+                            
+                            <TextBlock Margin="10,5,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="faq"  Text="FAQ" FontSize="40" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
+                            <RichTextBox x:Name="faqx" TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
+                                <Paragraph TextAlignment="Center">
+                                    <LineBreak/> We are gathering info.. A little patience would be cute! Take a deep breath!
+                                </Paragraph>
+                            </RichTextBox>
+                           
+                            <TextBlock Margin="10,5,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="contact"  Text="Contact" FontSize="40" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
+                            <RichTextBox x:Name="contactx" TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
+                                <Paragraph TextAlignment="Center">
+                                    <LineBreak/> We are gathering info.. A little patience would be cute! Take a deep breath!
+                                </Paragraph>
+                            </RichTextBox>
+                            
+                            <TextBlock Margin="10,5,0,0" TextWrapping="Wrap" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" x:Name="prize"  Text="Prize" FontSize="40" Foreground="DarkSlateGray" FontFamily="Segoe WP"/>
+                            <RichTextBox x:Name="prizex" TextAlignment="Justify" Margin="0,0,0,10" Height="Auto" Foreground="Black" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="23">
+                                <Paragraph TextAlignment="Center">
+                                    <LineBreak/> We are gathering info.. A little patience would be cute! Take a deep breath!
+                                </Paragraph>
+                            </RichTextBox>
+                        
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </phone:PivotItem>
         </phone:Pivot>
         
         <c4f:ProgressOverlay Canvas.ZIndex="1000" Name="progressOverlay"

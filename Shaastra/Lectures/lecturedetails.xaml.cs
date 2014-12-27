@@ -58,10 +58,10 @@ namespace Shaastra.Lectures
                     descbox.Blocks.Clear();
                     descbox.Blocks.Add(dPara);
                     pos = new System.Device.Location.GeoCoordinate(element.latitude, element.longitude);
-                    eventLocation.Text = element.venue;
+                    //eventLocation.Text = element.venue;
                     dt = new DateTime(element.year, element.month, element.date, element.hrs, element.mins, 0);
-                    eventDate.Text = dt.DayOfWeek.ToString() + ", " + dt.Day + "/" + dt.Month + "/" + dt.Year;
-                    eventTime.Text = dt.Hour.ToString() + dt.Minute.ToString() + " hrs";
+                    //eventDate.Text = dt.DayOfWeek.ToString() + ", " + dt.Day + "/" + dt.Month + "/" + dt.Year;
+                    //eventTime.Text = dt.Hour.ToString() + dt.Minute.ToString() + " hrs";
                     break;
                 }
             }
@@ -90,7 +90,7 @@ namespace Shaastra.Lectures
             //await Windows.System.Launcher.LaunchUriAsync(new Uri(launchNokiaMaps));
             MapsDirectionsTask routeGen = new MapsDirectionsTask();
             routeGen.End = new LabeledMapLocation();
-            routeGen.End.Label = eventLocation.Text;
+            //routeGen.End.Label = eventLocation.Text;
             routeGen.End.Location = pos;
             routeGen.Show();
             
@@ -102,7 +102,7 @@ namespace Shaastra.Lectures
             myTask.StartTime = dt;
             myTask.EndTime = dt.AddHours(3);
             myTask.AppointmentStatus = Microsoft.Phone.UserData.AppointmentStatus.Busy;
-            myTask.Location = eventLocation.Text;
+            //myTask.Location = eventLocation.Text;
             myTask.Subject = "Lecture by " + personName.Text;
             myTask.Show();
         }

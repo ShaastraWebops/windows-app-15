@@ -56,12 +56,12 @@
         
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12, 0,12,0">
-            <Rectangle Stroke="Black" Margin="5" RadiusX="0" RadiusY="0" Opacity="0.3"/>
+            <!--<Rectangle Stroke="Black" Margin="5" RadiusX="0" RadiusY="0" Opacity="0.3"/>
             <Rectangle Stroke="Black" Margin="4" RadiusX="0" RadiusY="0" Opacity="0.25"/>
             <Rectangle Stroke="Black" Margin="3" RadiusX="0" RadiusY="0" Opacity="0.2"/>
             <Rectangle Stroke="Black" Margin="2" RadiusX="0" RadiusY="0" Opacity="0.15"/>
             <Rectangle Stroke="Black" Margin="1" RadiusX="0" RadiusY="0" Opacity="0.1"/>
-            <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>
+            <Rectangle Stroke="Black" Margin="0" RadiusX="12" RadiusY="12" Opacity="0.05"/>-->
             <ScrollViewer Margin="6,6,6,10" Height="670">
                 <StackPanel x:Name="_tileStack" Margin="0,0,0,0">
                     
