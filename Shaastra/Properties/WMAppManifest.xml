@@ -5,7 +5,7 @@
     <Extra Name="SDOptOut" />
   </AppExtra>
   <App xmlns="" ProductID="{7795db32-220f-425b-99c7-bc42b526e509}" Title="Shaastra" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Shaastra author" Description="Sample description" Publisher="Shaastra" PublisherID="{66476806-4c0b-4a5e-b53c-41004c5e41ec}">
-    <IconPath IsRelative="true" IsResource="false">shaastra_logo_opaque.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">small.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
@@ -21,9 +21,9 @@
     <Tokens>
       <PrimaryToken TokenID="ShaastraToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">tile70.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">small.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">tile336.png</BackgroundImageURI>
+          <BackgroundImageURI IsRelative="true" IsResource="false">medium.png</BackgroundImageURI>
           <Title>
           </Title>
           <BackContent>
@@ -32,13 +32,9 @@
           </BackBackgroundImageURI>
           <BackTitle>
           </BackTitle>
-          <LargeBackgroundImageURI IsRelative="true" IsResource="false">tile310.png</LargeBackgroundImageURI>
-          <LargeBackContent />
-          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">
-          </LargeBackBackgroundImageURI>
           <DeviceLockImageURI IsRelative="true" IsResource="false">
           </DeviceLockImageURI>
-          <HasLarge>True</HasLarge>
+          <HasLarge>false</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>

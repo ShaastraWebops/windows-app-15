@@ -335,6 +335,8 @@
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="medium.png" />
+    <Content Include="small.png" />
     <Content Include="SocialCause\Assets\hands.jpg" />
     <Content Include="SocialCause\Assets\pledgeabook.jpg" />
     <Content Include="Sponsors\spons.json">
